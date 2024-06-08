@@ -1,0 +1,19 @@
+.contact {
+  padding-block: $sectionPadding;
+
+  h2 {
+    text-align: center;
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-clip: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-position: center;
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: calc(100vw / 4.65);
+    white-space: nowrap;
+    font-weight: 900;
+    letter-spacing: -40px;
+  }
+}

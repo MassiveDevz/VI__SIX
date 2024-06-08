@@ -1,0 +1,48 @@
+.services {
+  background-color: $black;
+  color: $white;
+  padding-block: $sectionPadding;
+
+  &__left-side {
+    justify-content: space-between;
+    align-items: start;
+    height: 100%;
+  }
+
+  &__left-side-image {
+    align-self: center;
+  }
+
+  &__bg {
+    background-color: $white;
+  }
+  &__list {
+    color: $black;
+    padding: 16px;
+    font-size: 16px;
+
+    img {
+      width: 25%;
+      margin-inline: 8px;
+    }
+
+    .number {
+      align-self: flex-start;
+      font-size: 14px;
+    }
+    .copy {
+      align-self: flex-end;
+
+      .title {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .bottom-image {
+    padding: 16px;
+    margin-top: 48px;
+    width: 65%;
+    margin-left: auto;
+  }
+}

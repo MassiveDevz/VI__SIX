@@ -1,0 +1,29 @@
+.testimonials {
+  padding-block: $sectionPadding;
+
+  &__headline {
+    padding-bottom: 32px;
+    border-bottom: 2px solid #d2d2d2;
+  }
+
+  &__review {
+    padding-right: 96px !important;
+  }
+
+  &__copy {
+    margin-block: 16px 32px;
+    text-align: justify;
+  }
+
+  &__client {
+    img {
+      width: 75px;
+      margin-right: 16px;
+      object-fit: cover;
+    }
+  }
+
+  &__client.flexBetween {
+    align-items: unset;
+  }
+}

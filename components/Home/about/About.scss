@@ -1,0 +1,18 @@
+.about {
+  padding-block: $sectionPadding;
+
+  h2 {
+    width: 50%;
+  }
+
+  .row {
+    margin-top: 120px;
+  }
+
+  &__copy {
+    p {
+      width: 100%;
+      margin: 8px;
+    }
+  }
+}

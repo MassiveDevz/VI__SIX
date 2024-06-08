@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+// Variables & Utilities
+@import "/styles/utils/config";
+
+// Base & Layout
+@import "/styles/utils/reset";
+
+// Components
+@import "../components/Home/header/Header.scss";
+@import "../components/Home/about/About.scss";
+@import "../components/Home/whatWeDo/Services.scss";
+@import "../components/Home/blurb/Blurb.scss";
+@import "../components/Home/portfolio/Portfolio.scss";
+@import "../components/Home/brands/Brands.scss";
+@import "../components/Home/testimonials/Testimonials.scss";
+@import "../components/Home/contact/Contact.scss";
+@import "../components/footer/Footer.scss";
+
+body {
+  background-color: $white;
+  color: $black;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}

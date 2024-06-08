@@ -1,0 +1,26 @@
+.headline-blurb {
+  padding-bottom: $sectionPadding;
+
+  &__larger-image {
+    max-height: 50vh;
+    overflow: hidden;
+    img {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+
+  &__smaller-image {
+    width: 20%;
+    margin-left: auto;
+    padding-block: 24px;
+  }
+
+  &__copy {
+    p {
+      width: 70%;
+      text-indent: 75px;
+      font-size: 20px;
+    }
+  }
+}

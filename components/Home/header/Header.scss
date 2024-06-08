@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+// @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
+.header {
+  padding: 16px 16px 0;
+
+  img {
+    object-fit: cover;
+  }
+
+  &__left-side {
+    align-items: unset;
+    justify-content: space-between;
+    height: 100%;
+
+    nav {
+      text-align: end;
+      a {
+        p {
+          text-transform: capitalize !important;
+          margin: 4px;
+          transition: all ease-in-out 0.3s;
+          &:hover {
+            color: $green;
+          }
+        }
+      }
+    }
+    h1 {
+      font-family: "Chakra Petch", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+
+      // font-family: "Syncopate", sans-serif;
+      // font-weight: 700;
+
+      font-size: calc(60vw / 5);
+      span {
+        color: $green;
+      }
+    }
+    img {
+      width: 50%;
+    }
+  }
+  &__copy {
+    p {
+      margin-right: 40px;
+    }
+  }
+  &__image-div {
+    justify-content: end;
+    img {
+      // width: 93%;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+// Variables
+$white: #f1f1f1;
+$black: #121212;
+$green: #19e72f;
+$sectionPadding: 96px;
+
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 32px;
+}
+h4 {
+  font-size: 24px;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+%btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+  border-radius: 0;
+  padding: 16px;
+  width: max(8vw, 210px);
+  transition: all ease-in-out 0.3s;
+  margin: 4px;
+  border: 1px solid $black;
+}
+
+.main-btn {
+  @extend %btn;
+  background-color: $black;
+  color: $white;
+
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+}

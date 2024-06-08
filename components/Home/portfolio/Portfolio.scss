@@ -1,0 +1,24 @@
+.portfolio {
+  padding-block: $sectionPadding;
+  background-color: $black;
+  color: $white;
+
+  &__headline-copy {
+    h2 {
+      text-align: center;
+    }
+    p {
+      padding-block: 24px;
+      width: 25%;
+    }
+  }
+
+  &__projects {
+    .row {
+      margin: 0 auto;
+    }
+    .col-4 {
+      padding: 0;
+    }
+  }
+}
