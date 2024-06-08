@@ -2,26 +2,26 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div>
-      <section className='container-fluid header'>
-        <div className='row '>
-          <div className='col-6'>
-            <div className='header__left-side flexColumn'>
+    <>
+      <section className="container-fluid header">
+        <div className="row ">
+          <div className="col-6">
+            <div className="header__left-side flexColumn">
               <nav>
                 <div>
-                  <Link href='#'>
+                  <Link href="#">
                     <p>Home</p>
                   </Link>
-                  <Link href='#'>
+                  <Link href="#">
                     <p>About</p>
                   </Link>
-                  <Link href='#'>
+                  <Link href="#">
                     <p>portfolio</p>
                   </Link>
-                  <Link href='#'>
+                  <Link href="#">
                     <p>services</p>
                   </Link>
-                  <Link href='#'>
+                  <Link href="#">
                     <p>contact</p>
                   </Link>
                 </div>
@@ -29,18 +29,18 @@ export default function Header() {
               <h1>
                 (<span>VI</span>)__SIX
               </h1>
-              <div className='flexCenter header__copy'>
+              <div className="flexCenter header__copy">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus eos inventore dolore!</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus eos inventore dolore!</p>
               </div>
-              <img src='https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif' alt='vertical Image' />
+              <img src="https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif" alt="vertical Image" />
             </div>
           </div>
-          <div className='col-6 header__image-div flexCenter'>
-            <img src='../../../vertical2.jpeg' alt='vertical Image' />
+          <div className="col-6 header__image-div flexCenter">
+            <img src="../../../vertical2.jpeg" alt="vertical Image" />
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }
