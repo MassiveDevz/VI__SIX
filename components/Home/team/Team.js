@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Team() {
   return (
-    <div>
+    <>
       <section className="team">
         <div className="container-fluid">
           <div className="row">
@@ -64,6 +64,6 @@ export default function Team() {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }

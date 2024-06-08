@@ -1,0 +1,71 @@
+.services {
+  background-color: $black;
+  color: $white;
+  padding-block: $sectionPadding;
+
+  .headline {
+    .heading {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: calc(25vw / 4);
+      line-height: 1;
+      span {
+        color: $green;
+      }
+    }
+
+    .copy {
+      max-width: 70%;
+      margin-inline: auto;
+      padding-top: 56px;
+      align-items: flex-start;
+
+      span {
+        color: $green;
+      }
+    }
+    .copy > * {
+      width: 50%;
+    }
+  }
+
+  .service-section {
+    padding-top: $sectionPadding;
+    h3 {
+      text-transform: uppercase;
+      font-size: 40px;
+      span {
+        color: $green;
+        font-size: 16px;
+        margin-right: 16px;
+      }
+    }
+
+    p {
+      width: 65%;
+    }
+
+    .image-row {
+      justify-content: space-evenly;
+      img {
+        width: 47%;
+        padding-block: 24px;
+      }
+    }
+
+    .item-border {
+      border-right: 1px solid $white;
+      border-right-style: outset;
+    }
+
+    div.col-6 {
+      margin-block: 3rem;
+      margin-block: 40px;
+    }
+    hr {
+      margin-block: 32px;
+      //   width: 70%;
+      margin-inline: auto;
+    }
+  }
+}
