@@ -39,11 +39,11 @@ export default function About() {
               quisquam! Repellendus harum deserunt rem, reiciendis nisi temporibus est necessitatibus voluptatum eligendi!
             </h3>
 
-            <div class="row">
-              <div class="col-4">
+            <div className="row">
+              <div className="col-4">
                 <h5>About:</h5>
               </div>
-              <div class="col-8 flexBetween">
+              <div className="col-8 flexBetween">
                 <div className="flexColumn copy">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis possimus dolores fuga odio earum recusandae. Velit
