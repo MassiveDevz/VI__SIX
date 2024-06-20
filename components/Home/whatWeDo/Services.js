@@ -2,13 +2,13 @@ export default function Services() {
   return (
     <>
       <section className="services">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="headline">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="headline">
               <h2 className="heading">
                 We only make digital products and <span> services</span>
               </h2>
-              <div class="flexCenter copy">
+              <div className="flexCenter copy">
                 <h5>
                   (<span>VI</span>)__SIX <br /> <span>Services</span>
                 </h5>
@@ -19,10 +19,10 @@ export default function Services() {
               </div>
             </div>
 
-            <div class="service-section">
-              <div class="container">
-                <div class="row section-border">
-                  <div class="col-6 flexColumn item-border">
+            <div className="service-section">
+              <div className="container">
+                <div className="row section-border">
+                  <div className="col-6 flexColumn item-border">
                     <h3 className="flexCenter">
                       <span>01 /</span> ecommerce
                     </h3>
@@ -37,7 +37,7 @@ export default function Services() {
                     </div>
                   </div>
 
-                  <div class="col-6 flexColumn ">
+                  <div className="col-6 flexColumn ">
                     <h3 className="flexCenter">
                       <span>01 /</span> ecommerce
                     </h3>
@@ -54,7 +54,7 @@ export default function Services() {
 
                   {/* <hr /> */}
 
-                  <div class="col-6 flexColumn item-border">
+                  <div className="col-6 flexColumn item-border">
                     <h3 className="flexCenter">
                       <span>01 /</span> ecommerce
                     </h3>
@@ -69,7 +69,7 @@ export default function Services() {
                     </div>
                   </div>
 
-                  <div class="col-6 flexColumn ">
+                  <div className="col-6 flexColumn ">
                     <h3 className="flexCenter">
                       <span>01 /</span> ecommerce
                     </h3>

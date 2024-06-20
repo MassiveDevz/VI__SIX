@@ -21,14 +21,14 @@ export default function Team() {
                   <img src="../../../vertical2.jpeg" alt="" />
                 </div>
 
-                <div class="row">
-                  <div class="col-6">
+                <div className="row">
+                  <div className="col-6">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam est, quae earum sed atque quibusdam libero facere
                     quas, exercitationem eos, numquam quam eum cum velit recusandae delectus ab tenetur dolor. Lorem ipsum dolor, sit amet
                     consectetur adipisicing elit. Aliquam est, quae earum sed atque quibusdam libero facere quas, exercitationem eos,
                     numquam quam eum cum velit recusandae delectus ab tenetur dolor.
                   </div>
-                  <div class="col-6">
+                  <div className="col-6">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam est, quae earum sed atque quibusdam libero facere
                     quas, exercitationem eos, numquam quam eum cum velit recusandae delectus ab tenetur dolor.
                   </div>
@@ -49,9 +49,9 @@ export default function Team() {
 
             <div className="col-5 team__bg">
               <div className="team__list flexColumn">
-                <div class="founder">
+                <div className="founder">
                   <img src="../../../vertical2.jpeg" alt="" />
-                  <div class="copy flexBetween">
+                  <div className="copy flexBetween">
                     <h5>Ellen Jones</h5>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consequuntur, fugiat nostrum libero est qui mollitia
@@ -60,48 +60,48 @@ export default function Team() {
                   </div>
                 </div>
 
-                <div class="members">
-                  <div class="row">
-                    <div class="col-4">
+                <div className="members">
+                  <div className="row">
+                    <div className="col-4">
                       <img src="../../../vertical2.jpeg" alt="" />
-                      <div class="copy">
+                      <div className="copy">
                         <h5>Ellen Jones</h5>
                         <p>Marketing Manager</p>
                       </div>
                     </div>
-                    <div class="col-4">
+                    <div className="col-4">
                       <img src="../../../vertical2.jpeg" alt="" />{" "}
-                      <div class="copy">
+                      <div className="copy">
                         <h5>Ellen Jones</h5>
                         <p>Marketing Manager</p>
                       </div>
                     </div>
-                    <div class="col-4">
+                    <div className="col-4">
                       <img src="../../../vertical2.jpeg" alt="" />{" "}
-                      <div class="copy">
+                      <div className="copy">
                         <h5>Ellen Jones</h5>
                         <p>Marketing Manager</p>
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-4">
+                  <div className="row">
+                    <div className="col-4">
                       <img src="../../../vertical2.jpeg" alt="" />
-                      <div class="copy">
+                      <div className="copy">
                         <h5>Ellen Jones</h5>
                         <p>Marketing Manager</p>
                       </div>
                     </div>
-                    <div class="col-4">
+                    <div className="col-4">
                       <img src="../../../vertical2.jpeg" alt="" />{" "}
-                      <div class="copy">
+                      <div className="copy">
                         <h5>Ellen Jones</h5>
                         <p>Marketing Manager</p>
                       </div>
                     </div>
-                    <div class="col-4">
+                    <div className="col-4">
                       <img src="../../../vertical2.jpeg" alt="" />{" "}
-                      <div class="copy">
+                      <div className="copy">
                         <h5>Ellen Jones</h5>
                         <p>Marketing Manager</p>
                       </div>

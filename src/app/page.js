@@ -7,7 +7,6 @@ import Brands from "../../components/Home/brands/Brands";
 import Testimonials from "../../components/Home/testimonials/Testimonials";
 import Faq from "../../components/Home/faq/Faq";
 import Contact from "../../components/Home/contact/Contact";
-import Footer from "../../components/footer/Footer";
 import Services from "../../components/Home/whatWeDo/Services";
 
 export default function Home() {
@@ -23,7 +22,6 @@ export default function Home() {
       <Testimonials />
       <Faq />
       <Contact />
-      {/* <Footer /> */}
     </main>
   );
 }
