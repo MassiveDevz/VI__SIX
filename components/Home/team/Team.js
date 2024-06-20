@@ -33,17 +33,6 @@ export default function Team() {
                     quas, exercitationem eos, numquam quam eum cum velit recusandae delectus ab tenetur dolor.
                   </div>
                 </div>
-
-                {/* <div>
-                  <p>Contact</p>
-                  <p>New York</p>
-                  <p>+212-555-5555</p>
-                  <p>+212-555-5555</p>
-                  <p>Freedom and curiosity on the streets of LA</p>
-                  <p>
-                    <Link href="mailto:email.email.com">meetinthecity@mail.com</Link>
-                  </p>
-                </div> */}
               </div>
             </div>
 

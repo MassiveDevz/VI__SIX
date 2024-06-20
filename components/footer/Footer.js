@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import logo from "../../public/logo-white.svg";
 
 export default function Footer() {
   return (
@@ -46,10 +48,11 @@ export default function Footer() {
           <div className="col-3">
             <img src="../../../horizontal.jpeg" alt="" />
           </div>
-          <div className="col-9 flexCenter">
-            <h2>
+          <div className="col-9 logo flexCenter ">
+            <Image src={logo} />
+            {/* <h2>
               (<span>VI</span>)__SIX
-            </h2>
+            </h2> */}
           </div>
         </div>
       </div>

@@ -6,7 +6,6 @@ import Portfolio from "../../components/Home/portfolio/Portfolio";
 import Brands from "../../components/Home/brands/Brands";
 import Testimonials from "../../components/Home/testimonials/Testimonials";
 import Faq from "../../components/Home/faq/Faq";
-import Contact from "../../components/Home/contact/Contact";
 import Services from "../../components/Home/whatWeDo/Services";
 
 export default function Home() {
@@ -21,7 +20,6 @@ export default function Home() {
       <Brands />
       <Testimonials />
       <Faq />
-      <Contact />
     </main>
   );
 }

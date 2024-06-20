@@ -11,9 +11,12 @@
     -moz-background-clip: text;
     -webkit-background-clip: text;
     text-transform: uppercase;
-    font-size: calc(100vw / 4.65);
-    white-space: nowrap;
+    font-size: calc(80vw / 4.75);
     font-weight: 900;
-    letter-spacing: -40px;
+    letter-spacing: -15px;
+    line-height: 0.9;
+  }
+  .cta {
+    padding-top: 16px;
   }
 }
