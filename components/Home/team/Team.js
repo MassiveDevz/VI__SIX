@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import vertical from "../../../public/vertical2.jpeg";
 
 export default function Team() {
   return (
@@ -6,13 +8,33 @@ export default function Team() {
       <section className="team">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-8">
+            <div className="col-7">
               <div className="team__left-side flexColumn">
-                <h2>Meet Me In The City</h2>
-                <div className="col-4 team__left-side-image">
+                <h2>
+                  Meet The Team{" "}
+                  <div className="six">
+                    [<span>VI</span>]__SIX
+                  </div>
+                </h2>
+
+                <div className="team__left-side-image">
                   <img src="../../../vertical2.jpeg" alt="" />
                 </div>
-                <div className="team__left-side-copy">
+
+                <div class="row">
+                  <div class="col-6">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam est, quae earum sed atque quibusdam libero facere
+                    quas, exercitationem eos, numquam quam eum cum velit recusandae delectus ab tenetur dolor. Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. Aliquam est, quae earum sed atque quibusdam libero facere quas, exercitationem eos,
+                    numquam quam eum cum velit recusandae delectus ab tenetur dolor.
+                  </div>
+                  <div class="col-6">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam est, quae earum sed atque quibusdam libero facere
+                    quas, exercitationem eos, numquam quam eum cum velit recusandae delectus ab tenetur dolor.
+                  </div>
+                </div>
+
+                {/* <div>
                   <p>Contact</p>
                   <p>New York</p>
                   <p>+212-555-5555</p>
@@ -21,48 +43,81 @@ export default function Team() {
                   <p>
                     <Link href="mailto:email.email.com">meetinthecity@mail.com</Link>
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
-            <div className="col-4 ">
-              <div className="team__bg">
-                <div className="team__list">
-                  <div className="flexCenter">
-                    <p className="number">/01</p>
-                    <img src="../../../vertical2.jpeg" alt="" />
-                    <div className="copy">
-                      <p className="title">Lorem</p>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
+
+            <div className="col-5 team__bg">
+              <div className="team__list flexColumn">
+                <div class="founder">
+                  <img src="../../../vertical2.jpeg" alt="" />
+                  <div class="copy flexBetween">
+                    <h5>Ellen Jones</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consequuntur, fugiat nostrum libero est qui mollitia
+                      laudantium dolorum sit totam excepturi ab voluptatum rerum. Veritatis quisquam in qui eius hic?
+                    </p>
                   </div>
                 </div>
-                <div className="team__list">
-                  <div className="flexCenter">
-                    <p className="number">/01</p>
-                    <img src="../../../vertical2.jpeg" alt="" />
-                    <div className="copy">
-                      <p className="title">Lorem</p>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+                <div class="members">
+                  <div class="row">
+                    <div class="col-4">
+                      <img src="../../../vertical2.jpeg" alt="" />
+                      <div class="copy">
+                        <h5>Ellen Jones</h5>
+                        <p>Marketing Manager</p>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <img src="../../../vertical2.jpeg" alt="" />{" "}
+                      <div class="copy">
+                        <h5>Ellen Jones</h5>
+                        <p>Marketing Manager</p>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <img src="../../../vertical2.jpeg" alt="" />{" "}
+                      <div class="copy">
+                        <h5>Ellen Jones</h5>
+                        <p>Marketing Manager</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="team__list">
-                  <div className="flexCenter">
-                    <p className="number">/01</p>
-                    <img src="../../../vertical2.jpeg" alt="" />
-                    <div className="copy">
-                      <p className="title">Lorem</p>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <div class="row">
+                    <div class="col-4">
+                      <img src="../../../vertical2.jpeg" alt="" />
+                      <div class="copy">
+                        <h5>Ellen Jones</h5>
+                        <p>Marketing Manager</p>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <img src="../../../vertical2.jpeg" alt="" />{" "}
+                      <div class="copy">
+                        <h5>Ellen Jones</h5>
+                        <p>Marketing Manager</p>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <img src="../../../vertical2.jpeg" alt="" />{" "}
+                      <div class="copy">
+                        <h5>Ellen Jones</h5>
+                        <p>Marketing Manager</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="bottom-image">
-                  <img src="../../../horizontal.jpeg" alt="" />
                 </div>
               </div>
+
+              {/* <div className="bottom-image">
+                <img src="../../../horizontal.jpeg" alt="" />
+              </div> */}
             </div>
           </div>
         </div>
+
+        {/* <hr className="mt-5" /> */}
       </section>
     </>
   );
