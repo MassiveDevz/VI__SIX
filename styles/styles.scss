@@ -7,6 +7,7 @@
 @import "/styles/utils/reset";
 
 // Components
+// Home
 @import "../components/Home/header/Header.scss";
 @import "../components/Home/about/About.scss";
 @import "../components/Home/whatWeDo/Services.scss";
@@ -18,6 +19,11 @@
 @import "../components/Home/faq/Faq.scss";
 @import "../components/contact/Contact.scss";
 @import "../components/footer/Footer.scss";
+
+// About
+@import "../components/portfolioProjects/header/Header.scss";
+@import "../components/portfolioProjects/about/About.scss";
+@import "../components/portfolioProjects/projectDetails/ProjectDetails.scss";
 
 body {
   background-color: $white;

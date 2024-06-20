@@ -1,0 +1,22 @@
+.portfolio-about {
+  padding-block: $sectionPadding;
+
+  .heading {
+    .flexBetween {
+      justify-content: space-evenly;
+    }
+
+    h2 {
+      text-align: center;
+      margin-block: 40px;
+      padding-bottom: 48px;
+      border-bottom: 3px solid rgba(128, 128, 128, 0.2);
+      font-weight: 500;
+      font-style: normal;
+      text-transform: uppercase;
+      font-size: calc(90vw / 6);
+      white-space: wrap;
+      line-height: 0.9;
+    }
+  }
+}

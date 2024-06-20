@@ -1,0 +1,60 @@
+.project-details {
+  padding-block: $sectionPadding;
+  background-color: #000;
+  color: #fff;
+
+  .heading {
+    width: 50%;
+    margin-inline: auto;
+    h3 {
+      font-size: 3rem;
+    }
+
+    .info {
+      display: flex;
+      p {
+        font-size: 12px;
+        margin: 24px 24px 24px 0;
+      }
+    }
+  }
+
+  .main-image {
+    max-height: 60vh;
+    overflow: hidden;
+    padding-inline: 24px;
+    margin-block: 40px;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+
+  .details {
+    h6 {
+      padding-top: 12px;
+      font-size: 12px;
+      width: 70%;
+      border-top: 1px solid gray;
+    }
+  }
+
+  .copy {
+    margin-block: 48px;
+    max-width: 75%;
+    & > * {
+      padding-bottom: 2rem;
+    }
+
+    li {
+      list-style-type: disc;
+      padding-bottom: 8px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
