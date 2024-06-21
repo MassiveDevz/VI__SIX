@@ -25,6 +25,9 @@
 @import "../components/portfolioProjects/about/About.scss";
 @import "../components/portfolioProjects/projectDetails/ProjectDetails.scss";
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: $white;
   color: $black;

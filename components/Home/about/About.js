@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section className="about container-fluid">
+    <section id="about" className="about container-fluid">
       <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sunt dolor sequi ea.</h2>
 
       <div className="row flexCenter">

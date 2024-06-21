@@ -1,31 +1,60 @@
 .faq {
-  //   background-color: $black;
-  background-color: #000;
+  background-color: $black;
   padding-block: $sectionPadding;
 }
 
 .accordion {
-  //   max-width: 600px;
   margin: 2rem auto;
+  color: $white;
 }
 
 .accordion-title {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   cursor: pointer;
-  background-color: #21aeca;
-}
-
-.accordion-title:hover {
-  background-color: #3ab4cc;
-}
-
-.accordion-title,
-.accordion-content {
+  background-color: $black;
+  transition: all ease-in-out 0.5s;
+  font-size: 32px;
   padding: 1rem;
 }
 
+.accordion-title:hover {
+  color: $green;
+  background-color: $black;
+  // color: $black;
+  // background-color: $white;
+}
+
 .accordion-content {
-  background-color: #39b9d2;
+  color: $black;
+  background-color: $white;
+  // padding: 1rem;
+  transition: all ease-in-out 5s;
+
+  img {
+    width: 30%;
+    margin-right: 24px;
+  }
+  p {
+    padding: 24px;
+    align-self: baseline;
+  }
+}
+
+//
+//
+//
+.accordion-content {
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  max-height: 0;
+}
+
+.accordion-content.active {
+  max-height: 1000px;
+  /* large enough to accommodate the content */
+}
+
+.accordion-content-inner {
+  padding: 10px;
 }

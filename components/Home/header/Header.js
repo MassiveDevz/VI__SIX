@@ -7,7 +7,7 @@ export default function Header() {
     <>
       <section className="container-fluid header">
         <div className="row ">
-          <div className="col-6">
+          <div className="col-md-6">
             <div className="header__left-side flexColumn">
               <div className="flexBetween">
                 <div className="logo">
@@ -15,22 +15,22 @@ export default function Header() {
                 </div>
                 <nav>
                   <div>
-                    <Link href="#">
+                    <Link href="/">
                       <p>Home</p>
                     </Link>
-                    <Link href="#">
+                    <Link href="#about">
                       <p>About</p>
                     </Link>
-                    <Link href="#">
+                    <Link href="#services">
                       <p>services</p>
                     </Link>
-                    <Link href="#">
+                    <Link href="#portfolio">
                       <p>portfolio</p>
                     </Link>
-                    <Link href="#">
+                    <Link href="#team">
                       <p>the team</p>
                     </Link>
-                    <Link href="#">
+                    <Link href="#contact">
                       <p>contact</p>
                     </Link>
                   </div>
@@ -48,7 +48,7 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="col-6 header__image-div flexCenter">
+          <div className="col-md-6 header__image-div flexCenter">
             <img src="../../../vertical2.jpeg" alt="vertical Image" />
           </div>
         </div>
