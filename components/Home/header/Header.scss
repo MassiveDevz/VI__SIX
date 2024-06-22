@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 .header {
   padding: 16px 16px 0;
@@ -7,9 +7,10 @@
     object-fit: cover;
   }
 
-  &__left-side {
+  .left-side {
     align-items: unset;
     justify-content: space-between;
+    max-height: 95vh;
     height: 100%;
 
     .logo {
@@ -25,7 +26,7 @@
       a {
         p {
           text-transform: capitalize !important;
-          margin: 4px;
+          margin: 2px;
           transition: all ease-in-out 0.3s;
           &:hover {
             color: $green;
@@ -47,15 +48,41 @@
       width: 50%;
     }
   }
-  &__copy {
-    p {
-      margin-right: 40px;
+  .copy {
+    align-items: flex-start;
+
+    h1 {
+      text-transform: uppercase;
+    }
+
+    p span {
+      margin: 8px;
+      font-size: 12px;
+      text-align: center;
+      padding: 4px 8px;
+      border-radius: 50px;
+
+      background: linear-gradient(800deg, $black 40%, #000000ba 25%, #000 60%);
+      background-size: 300%;
+      background-position-x: 100%;
+      animation: shimmer 5s infinite ease-in-out;
+
+      // background-color: $black;
+      color: $green;
+      // border: 2px solid $green;
+    }
+
+    @keyframes shimmer {
+      to {
+        background-position-x: 0%;
+      }
     }
   }
-  &__image-div {
+  .right-side {
     justify-content: end;
-    // img {
-    //   width: 93%;
-    // }
+    max-height: 95vh;
+    img {
+      height: 100%;
+    }
   }
 }
