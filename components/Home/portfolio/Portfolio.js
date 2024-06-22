@@ -19,7 +19,7 @@ export default function Portfolio() {
             <div className="col-4">
               <p>01</p>
               <img src="../../../vertical2.jpeg" alt="" />
-              <div>
+              <div className="info">
                 <h5>Project One</h5>
                 <p>Sound · Meditation · Work</p>
               </div>
@@ -27,7 +27,7 @@ export default function Portfolio() {
             <div className="col-4">
               <p>01</p>
               <img src="../../../vertical2.jpeg" alt="" />
-              <div>
+              <div className="info">
                 <h5>Project One</h5>
                 <p>Sound · Meditation · Work</p>
               </div>
@@ -35,7 +35,7 @@ export default function Portfolio() {
             <div className="col-4">
               <p>01</p>
               <img src="../../../vertical2.jpeg" alt="" />
-              <div>
+              <div className="info">
                 <h5>Project One</h5>
                 <p>Sound · Meditation · Work</p>
               </div>

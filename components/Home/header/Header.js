@@ -1,3 +1,4 @@
+import { RiArrowRightSFill } from "react-icons/ri";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../../../public/logo-black.svg";
@@ -49,28 +50,26 @@ export default function Header() {
               </div>
             </div>
 
-            {/* <div className="flexCenter">
-              <a className="main-btn" href="#">
-                Browse Our Services
-              </a>
-              <a className="main-btn" href="#">
-                Meet the team
-              </a>
-            </div> */}
+            <div className="bottom">
+              <img src="https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif" alt="vertical Image" />
 
-            <img src="https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif" alt="vertical Image" />
+              <span className="line-container flexCenter">
+                <a className="line" href="/">
+                  Cool hover link
+                </a>
+                <span className="arrow flexCenter">
+                  <RiArrowRightSFill />
+                </span>
+              </span>
+            </div>
           </div>
         </div>
 
         <div className="col-md-6 right-side flexCenter">
           <img
-            src="https://images.unsplash.com/photo-1540200009570-89197b85a6f7?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://images.unsplash.com/photo-1619455061893-0e650d1baab9?q=80&w=2247&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="vertical Image"
           />
-          {/* <img
-            src="https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="vertical Image"
-          /> */}
         </div>
       </div>
     </section>

@@ -31,8 +31,14 @@ export default function Services() {
                   </p>
 
                   <div className="image-row flexCenter">
-                    <img src="../../../vertical2.jpeg" alt="" />
-                    <img src="../../../vertical2.jpeg" alt="" />
+                    <div>
+                      <img src="../../../vertical2.jpeg" alt="" />
+                      <span className="company">Prosper NYC</span>
+                    </div>
+                    <div>
+                      <img src="../../../vertical2.jpeg" alt="" />
+                      <span className="company">Prosper NYC</span>
+                    </div>
                   </div>
                 </div>
 
@@ -46,8 +52,14 @@ export default function Services() {
                   </p>
 
                   <div className="image-row flexCenter">
-                    <img src="../../../vertical2.jpeg" alt="" />
-                    <img src="../../../vertical2.jpeg" alt="" />
+                    <div>
+                      <img src="../../../vertical2.jpeg" alt="" />
+                      <span className="company">Prosper NYC</span>
+                    </div>
+                    <div>
+                      <img src="../../../vertical2.jpeg" alt="" />
+                      <span className="company">Prosper NYC</span>
+                    </div>
                   </div>
                 </div>
 
@@ -63,8 +75,14 @@ export default function Services() {
                   </p>
 
                   <div className="image-row flexCenter">
-                    <img src="../../../vertical2.jpeg" alt="" />
-                    <img src="../../../vertical2.jpeg" alt="" />
+                    <div>
+                      <img src="../../../vertical2.jpeg" alt="" />
+                      <span className="company">Prosper NYC</span>
+                    </div>
+                    <div>
+                      <img src="../../../vertical2.jpeg" alt="" />
+                      <span className="company">Prosper NYC</span>
+                    </div>
                   </div>
                 </div>
 
@@ -78,8 +96,16 @@ export default function Services() {
                   </p>
 
                   <div className="image-row flexCenter">
-                    <img src="../../../vertical2.jpeg" alt="" />
-                    <img src="../../../vertical2.jpeg" alt="" />
+                    <div>
+                      <img src="../../../vertical2.jpeg" alt="" />
+                      <span className="company">Prosper NYC</span>
+                    </div>
+                    <div>
+                      <img src="../../../vertical2.jpeg" alt="" />
+                      <span className="company">Prosper NYC</span>
+                    </div>
+                    {/* <img src="../../../vertical2.jpeg" alt="" />
+                    <img src="../../../vertical2.jpeg" alt="" /> */}
                   </div>
                 </div>
               </div>

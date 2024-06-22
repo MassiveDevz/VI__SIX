@@ -60,3 +60,36 @@ h4 {
     // color: $black;
   }
 }
+
+.line-container {
+  // display: inline-block;
+  width: fit-content;
+}
+a.line {
+  // color: red;
+  transition: all ease-in-out 0.3s;
+  position: relative;
+  padding-bottom: 2.5px;
+  font-weight: 600;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: $green;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+    transform: scalex(0.075);
+    transition: all ease-out 0.5s;
+  }
+
+  &:hover {
+    // color: yellow;
+    // text-decoration: none;
+    opacity: 0.9;
+    &::after {
+      transform: scalex(1);
+    }
+  }
+}

@@ -14,6 +14,11 @@
       }
     }
 
+    h5 {
+      // align-self: center;
+      // align-self: flex-end;
+      text-align: center;
+    }
     .copy {
       max-width: 70%;
       margin-inline: auto;
@@ -47,16 +52,25 @@
 
     .image-row {
       justify-content: space-evenly;
+      div:first-of-type {
+        margin-inline: 1rem;
+      }
       img {
-        width: 47%;
-        padding-block: 24px;
+        // width: 47%;
+        padding-top: 24px;
+        // padding-right: 16px;
+      }
+      span.company {
+        display: block;
+        margin-top: 4px;
+        // border: 10px solid red;
       }
     }
 
-    .item-border {
-      border-right: 1px solid $white;
-      border-right-style: outset;
-    }
+    // .item-border {
+    //   border-right: 1px solid $white;
+    //   border-right-style: outset;
+    // }
 
     div.col-6 {
       margin-block: 3rem;

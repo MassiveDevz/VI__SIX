@@ -12,7 +12,7 @@ export default function Team() {
               <h2>
                 Meet The Team{" "}
                 <div className="six">
-                  [<span>VI</span>]__SIX
+                  (<span>VI</span>)__SIX
                 </div>
               </h2>
 
@@ -80,14 +80,14 @@ export default function Team() {
                       <p>Marketing Manager</p>
                     </div>
                   </div>
-                  <div className="col-4">
+                  <div className="col-4 ">
                     <img src="../../../vertical2.jpeg" alt="" />{" "}
                     <div className="copy">
                       <h5>Ellen Jones</h5>
                       <p>Marketing Manager</p>
                     </div>
                   </div>
-                  <div className="col-4">
+                  <div className="col-4 ">
                     <img src="../../../vertical2.jpeg" alt="" />{" "}
                     <div className="copy">
                       <h5>Ellen Jones</h5>

@@ -4,10 +4,10 @@ export default function About() {
       <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sunt dolor sequi ea.</h2>
 
       <div className="row flexCenter">
-        <div className="col-2">
+        <div className="col-md-2">
           <img src="../../../vertical2.jpeg" alt="vertical Image" />
         </div>
-        <div className="col-8 top-copy">
+        <div className="col-md-8 top-copy">
           <div className="flexCenter">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quae, rerum pariatur quibusdam ducimus provident ipsum eum
@@ -23,7 +23,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="col-2">
+        <div className="col-md-2">
           <img src="../../../vertical2.jpeg" alt="vertical Image" />
         </div>
       </div>
