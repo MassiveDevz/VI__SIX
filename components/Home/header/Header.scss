@@ -93,9 +93,12 @@
       transition: all ease-in-out 0.5s;
     }
     &:hover {
-      .arrow {
-        margin-left: 2px;
+      .line {
+        margin-right: 1.5px;
       }
+      // .arrow {
+      //   margin-left: 2px;
+      // }
     }
   }
 }

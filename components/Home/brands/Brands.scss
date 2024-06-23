@@ -1,6 +1,10 @@
 .brands {
   padding-top: $sectionPadding;
-
+  h3 {
+    // width: min-content;
+    line-height: 1;
+    text-transform: uppercase;
+  }
   &__logo-container {
     width: 65%;
     margin-bottom: 96px;

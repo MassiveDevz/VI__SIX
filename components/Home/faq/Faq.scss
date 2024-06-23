@@ -1,6 +1,9 @@
 .faq {
   background-color: $black;
   padding-block: $sectionPadding;
+  h3 {
+    color: $white;
+  }
 }
 
 .accordion {
@@ -14,8 +17,8 @@
   cursor: pointer;
   background-color: $black;
   transition: all ease-in-out 0.5s;
-  font-size: 32px;
-  padding: 1rem;
+  font-size: 24px;
+  padding: 16px 0;
 }
 
 .accordion-title:hover {
@@ -57,4 +60,5 @@
 
 .accordion-content-inner {
   padding: 10px;
+  background-color: $white;
 }

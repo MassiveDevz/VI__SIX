@@ -32,7 +32,8 @@ const accordionData = [
 
 export default function Faq() {
   return (
-    <section className="faq">
+    <section className="faq container-fluid">
+      <h3>FAQ's</h3>
       <div className="accordion">
         {accordionData.map(({ id, title, content, image }) => (
           <Accordion key={id} title={title} content={content} image={image} />

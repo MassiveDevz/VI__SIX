@@ -8,9 +8,14 @@ export default function Contact() {
 
         <div className="cta flexBetween container">
           <p>Lorem ipsum dolor sit amet consectetur.</p>
-          <Link href="https://calendly.com/" target="blank" className="main-btn">
+          <span className="line-container flexCenter">
+            <a className="line" href="/">
+              Cool hover link
+            </a>
+          </span>
+          {/* <Link href="https://calendly.com/" target="blank" className="main-btn">
             Book a Call
-          </Link>
+          </Link> */}
         </div>
       </div>
 

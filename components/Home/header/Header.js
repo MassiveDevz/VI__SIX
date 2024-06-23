@@ -5,7 +5,7 @@ import logo from "../../../public/logo-black.svg";
 
 export default function Header() {
   return (
-    <section className="container-fluid header">
+    <section id="home" className="container-fluid header">
       <div className="row ">
         <div className="col-md-6">
           <div className="left-side flexColumn">
@@ -54,9 +54,9 @@ export default function Header() {
               <img src="https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif" alt="vertical Image" />
 
               <span className="line-container flexCenter">
-                <a className="line" href="/">
-                  Cool hover link
-                </a>
+                <Link target="blank" className="line" href="https://calendly.com/">
+                  Let's Work!
+                </Link>
                 <span className="arrow flexCenter">
                   <RiArrowRightSFill />
                 </span>

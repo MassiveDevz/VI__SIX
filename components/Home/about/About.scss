@@ -4,13 +4,23 @@
   h2 {
     width: 50%;
     margin-bottom: 64px;
+    line-height: 1;
+  }
+
+  .row.flexCenter {
+    align-items: flex-start;
   }
 
   .top-copy {
+    .flexCenter {
+      align-items: baseline;
+    }
     p {
       width: 100%;
-      margin: 8px;
+      // margin: 8px;
+      padding: 0 16px;
       text-align: justify;
+      letter-spacing: 0;
     }
   }
 
@@ -27,13 +37,11 @@
     .headline {
       text-indent: 20%;
       padding-bottom: 72px;
-
-      // text-indent: 75px;
     }
 
     .image-row {
       img {
-        max-width: 25%;
+        max-width: 15%;
         margin: 20px 20px 0 0;
       }
     }
@@ -47,6 +55,9 @@
         max-width: 70%;
         text-align: justify;
       }
+    }
+    .right-image {
+      width: 100%;
     }
   }
 }
