@@ -66,10 +66,21 @@ export default function Header() {
         </div>
 
         <div className="col-md-6 right-side flexCenter">
-          <img
+          <img src="https://framerusercontent.com/images/HGyhRrTfTGM97yYaq2JtY7xEk.png?scale-down-to=1024" alt="vertical Image" />
+
+          {/* <img src="https://framerusercontent.com/images/XggtqZ81bNw3sA74pPXLjCVvv4.png?scale-down-to=1024" alt="vertical Image" /> */}
+          {/* <img
+            src="https://images.unsplash.com/photo-1561065533-316e3142d586?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="vertical Image"
+          /> */}
+          {/* <img
+            src="https://images.unsplash.com/photo-1580071268077-81cf8742f7fb?q=80&w=2304&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="vertical Image"
+          /> */}
+          {/* <img
             src="https://images.unsplash.com/photo-1619455061893-0e650d1baab9?q=80&w=2247&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="vertical Image"
-          />
+          /> */}
         </div>
       </div>
     </section>
