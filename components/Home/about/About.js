@@ -1,43 +1,47 @@
 export default function About() {
   return (
     <section id="about" className="about container-fluid">
-      <h2>
-        Helping brands to stand out in the digital era. Together we will set the new status quo. No nonsense, always on the cutting edge.
-      </h2>
-      {/* <h2>We are a socially led creative agency</h2> */}
-      {/* <h2>AN AWARD-WINNING AGENCY</h2> */}
-      {/* <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sunt dolor sequi ea.</h2> */}
+      <h2>Empowering brands to thrive in the digital age. Together, we redefine the standard. Direct and always at the forefront.</h2>
 
       <div className="row flexCenter">
         <div className="col-md-2">
-          <img src="../../../vertical2.jpeg" alt="vertical Image" />
+          <img
+            src="https://images.unsplash.com/photo-1620920501588-0160acd50099?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="vertical Image"
+          />
         </div>
         <div className="col-md-8 top-copy">
           <div className="flexCenter">
             <p>
-              At Komodo, we offer a service unrivalled in industry. We never do normal. Why? Easy. Because we aren't in the business to
-              simply recreate. Instead, we innovate. By definition, we're a global social agency, specialising in content and influencer
-              marketing; but that sounds a little corporate, doesn't it?
+              At SIX, our service is unmatched in the industry. We never do ordinary. Why? Simple. We're here to innovate, not just
+              replicate. We're a global social agency, specializing in content and influencer marketing, but that sounds too corporate,
+              doesn't it?
             </p>
             <p>
-              What that actually means is that we understand how to connect people. Content is communication and it's what we do best. We
-              combine market intelligence and expertise to deliver award winning client services across every corner of the globe.
+              This means we know how to connect people. Content is communication, and it's our specialty. We merge market intelligence with
+              expertise to provide award-winning client services worldwide.
             </p>
           </div>
         </div>
         <div className="col-md-2">
-          <img src="../../../vertical2.jpeg" alt="vertical Image" />
+          <img
+            src="https://images.unsplash.com/photo-1644952285377-cc18edb29b73?q=80&w=2100&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="vertical Image"
+          />
         </div>
       </div>
 
       <div className="row bottom-row">
         <div className="larger-image">
-          <img src="../../../horizontal.jpeg" alt="vertical Image" />
+          <img
+            src="https://images.unsplash.com/photo-1516062423079-7ca13cdc7f5a?q=80&w=2083&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="vertical Image"
+          />
         </div>
         <div>
           <h3 className="headline">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ea earum alias eum nulla accusantium consequatur provident modi
-            quisquam! Repellendus harum deserunt rem, reiciendis nisi temporibus est necessitatibus voluptatum eligendi!
+            With a passionate team of industry specialists, we are dedicated to nurturing the careers of content creators and personal
+            brands, linking them with tailored opportunities that align with their distinctive style and personality.
           </h3>
 
           <div className="row">
@@ -47,17 +51,27 @@ export default function About() {
             <div className="col-8 flexBetween">
               <div className="flexColumn copy">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis possimus dolores fuga odio earum recusandae. Velit aperiam
-                  ipsum doloremque eveniet vero architecto, similique quo, totam repellat a, suscipit quis. Aspernatur.
+                  SIX Marketing specializes in social media management. Our firm provides a range of services including social media
+                  marketing, advertising, and email campaigns. We excel in creating and overseeing effective social media campaigns across
+                  platforms like Facebook, Instagram, Twitter, LinkedIn, and Pinterest.
                 </p>
 
                 <div className="image-row">
-                  <img src="../../../vertical2.jpeg" alt="vertical Image" />
-                  <img src="../../../vertical2.jpeg" alt="vertical Image" />
+                  <img
+                    src="https://images.unsplash.com/photo-1553843808-453b4f1be5a3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="vertical Image"
+                  />
+                  <img
+                    src="https://images.unsplash.com/photo-1597339677445-daa4479e6d8f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="vertical Image"
+                  />
                 </div>
               </div>
               <div className="right-image">
-                <img src="../../../vertical2.jpeg" alt="vertical Image" />
+                <img
+                  src="https://images.unsplash.com/photo-1598201116904-9613ee826e9a?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="vertical Image"
+                />
               </div>
             </div>
           </div>

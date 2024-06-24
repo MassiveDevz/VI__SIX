@@ -29,9 +29,11 @@
       margin-block: 24px;
       max-height: 70vh;
       overflow: hidden;
+
       img {
         object-fit: cover;
         height: 100%;
+        object-position: top;
       }
     }
     .headline {
@@ -41,7 +43,8 @@
 
     .image-row {
       img {
-        max-width: 15%;
+        max-width: 20%;
+        // max-width: 15%;
         margin: 20px 20px 0 0;
       }
     }
@@ -57,7 +60,7 @@
       }
     }
     .right-image {
-      width: 100%;
+      // width: 100%;
     }
   }
 }
