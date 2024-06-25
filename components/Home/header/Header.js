@@ -52,7 +52,7 @@ export default function Header() {
 
             <div className="bottom">
               <figure>
-                <video autoPlay muted loop playsInline priority>
+                <video autoPlay muted loop playsInline priority={true}>
                   <source src="https://cdn.pixabay.com/video/2023/10/20/185790-876545922_large.mp4" type="video/mp4" />
 
                   {/* <source src="https://cdn.pixabay.com/video/2016/08/22/4723-179738625_large.mp4" type="video/mp4" /> */}
