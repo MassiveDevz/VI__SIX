@@ -16,14 +16,24 @@
   }
 
   &__client {
-    img {
-      width: 75px;
-      margin-right: 16px;
-      object-fit: cover;
+    .details {
+      max-width: 65%;
+      img {
+        width: 125px;
+        margin-right: 12px;
+        object-fit: cover;
+      }
+      span {
+        font-size: 12px;
+        font-weight: normal;
+      }
     }
   }
 
   &__client.flexBetween {
     align-items: unset;
+  }
+  .flexCenter {
+    align-items: flex-start;
   }
 }

@@ -57,7 +57,7 @@
       justify-content: space-evenly;
       margin-top: 40px;
       div {
-        border: 3px solid red;
+        // border: 3px solid red;
         height: 400px;
         width: 50%;
       }
@@ -73,6 +73,7 @@
       span.company {
         display: block;
         margin-top: 4px;
+        font-size: 12px;
         // border: 10px solid red;
       }
     }

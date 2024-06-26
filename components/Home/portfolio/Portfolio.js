@@ -5,10 +5,11 @@ export default function Portfolio() {
         <div className="row">
           <div className="portfolio__headline-copy">
             <h2>Our Work</h2>
-            <div>
+            <div className="copy">
+              {/* <p>We help brands reach their goals.</p> */}
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum perspiciatis eos aliquam amet tenetur, ducimus cum! A
-                laborum asperiores adipisci beatae eligendi similique delectus totam nulla ex quia! Fugiat, temporibus.
+                Our teams are experienced in crafting strategies and handling daily operations across various industries, including food and
+                beverage, music, travel, and more. Explore some of our case studies below!
               </p>
             </div>
           </div>
@@ -16,27 +17,36 @@ export default function Portfolio() {
 
         <div className="portfolio__projects">
           <div className="row">
-            <div className="col-4">
+            <div className="col-4 img-container">
               <p>01</p>
-              <img src="../../../vertical2.jpeg" alt="" />
+              <img
+                src="https://images.unsplash.com/photo-1595475038784-bbe439ff41e6?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
               <div className="info">
-                <h5>Project One</h5>
+                <h5>Chef</h5>
                 <p>Sound · Meditation · Work</p>
               </div>
             </div>
-            <div className="col-4">
+            <div className="col-4 img-container">
               <p>01</p>
-              <img src="../../../vertical2.jpeg" alt="" />
+              <img
+                src="https://images.unsplash.com/photo-1527609720421-5a7486dcabec?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
               <div className="info">
-                <h5>Project One</h5>
+                <h5>Traveler</h5>
                 <p>Sound · Meditation · Work</p>
               </div>
             </div>
-            <div className="col-4">
+            <div className="col-4 img-container">
               <p>01</p>
-              <img src="../../../vertical2.jpeg" alt="" />
+              <img
+                src="https://images.unsplash.com/photo-1581034496165-0ab7eb788e29?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
               <div className="info">
-                <h5>Project One</h5>
+                <h5>Music</h5>
                 <p>Sound · Meditation · Work</p>
               </div>
             </div>

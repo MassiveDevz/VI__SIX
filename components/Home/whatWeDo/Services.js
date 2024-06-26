@@ -37,14 +37,14 @@ export default function Services() {
                         src="https://images.unsplash.com/photo-1620316721535-7a4c53bdafec?q=80&w=2189&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt=""
                       />
-                      <span className="company">Prosper NYC</span>
+                      <span className="company">@SerendipityShots</span>
                     </div>
                     <div>
                       <img
                         src="https://images.unsplash.com/photo-1619454949394-699b7a27c04c?q=80&w=2100&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt=""
                       />
-                      <span className="company">Prosper NYC</span>
+                      <span className="company">@UrbanTrailblazer</span>
                     </div>
                   </div>
                 </div>
@@ -60,12 +60,18 @@ export default function Services() {
 
                   <div className="image-row flexCenter">
                     <div>
-                      <img src="../../../vertical2.jpeg" alt="" />
-                      <span className="company">Prosper NYC</span>
+                      <img
+                        src="https://images.unsplash.com/photo-1627244714766-94dab62ed964?q=80&w=2130&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""
+                      />
+                      <span className="company">@CosmicVibes</span>
                     </div>
                     <div>
-                      <img src="../../../vertical2.jpeg" alt="" />
-                      <span className="company">Prosper NYC</span>
+                      <img
+                        src="https://images.unsplash.com/photo-1620403724159-40363e84a155?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""
+                      />
+                      <span className="company">@TitanLens</span>
                     </div>
                   </div>
                 </div>
@@ -83,12 +89,18 @@ export default function Services() {
 
                   <div className="image-row flexCenter">
                     <div>
-                      <img src="../../../vertical2.jpeg" alt="" />
-                      <span className="company">Prosper NYC</span>
+                      <img
+                        src="https://images.unsplash.com/photo-1506133813359-396cbcb973fe?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""
+                      />
+                      <span className="company">@BoldPathfinder</span>
                     </div>
                     <div>
-                      <img src="../../../vertical2.jpeg" alt="" />
-                      <span className="company">Prosper NYC</span>
+                      <img
+                        src="https://images.unsplash.com/photo-1555777710-1b3551d16971?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""
+                      />
+                      <span className="company">@DreamyDusk</span>
                     </div>
                   </div>
                 </div>
@@ -104,12 +116,18 @@ export default function Services() {
 
                   <div className="image-row flexCenter">
                     <div>
-                      <img src="../../../vertical2.jpeg" alt="" />
-                      <span className="company">Prosper NYC</span>
+                      <img
+                        src="https://images.unsplash.com/photo-1617898688995-bace3192b863?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""
+                      />
+                      <span className="company">@UrbanWanderlust</span>
                     </div>
                     <div>
-                      <img src="../../../vertical2.jpeg" alt="" />
-                      <span className="company">Prosper NYC</span>
+                      <img
+                        src="https://images.unsplash.com/photo-1585298969498-a2d7d69dff4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""
+                      />
+                      <span className="company">@FearlessFocus</span>
                     </div>
                     {/* <img src="../../../vertical2.jpeg" alt="" />
                     <img src="../../../vertical2.jpeg" alt="" /> */}

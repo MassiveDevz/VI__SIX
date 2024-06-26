@@ -8,10 +8,13 @@
     h2 {
       text-align: start;
     }
+    .copy {
+      display: flex;
+    }
     p {
       padding-top: 8px;
       padding-bottom: 48px;
-      width: 35%;
+      width: 40%;
     }
   }
 
@@ -30,6 +33,14 @@
       p {
         margin-top: 4px;
         font-size: 12px;
+      }
+    }
+    .img-container {
+      max-height: 600px;
+      img {
+        object-fit: cover;
+        height: 100%;
+        max-width: 100%;
       }
     }
   }
