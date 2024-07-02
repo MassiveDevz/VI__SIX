@@ -16,6 +16,13 @@
   }
 
   &__client {
+    a {
+      height: fit-content;
+      transition: all ease-in 0.3s;
+      &:hover {
+        color: $green;
+      }
+    }
     .details {
       max-width: 65%;
       img {

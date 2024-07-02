@@ -29,7 +29,7 @@ export default function Portfolio() {
               </div>
             </div>
             <div className="col-4 img-container">
-              <p>01</p>
+              <p>02</p>
               <img
                 src="https://images.unsplash.com/photo-1527609720421-5a7486dcabec?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
@@ -40,7 +40,7 @@ export default function Portfolio() {
               </div>
             </div>
             <div className="col-4 img-container">
-              <p>01</p>
+              <p>03</p>
               <img
                 src="https://images.unsplash.com/photo-1581034496165-0ab7eb788e29?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""

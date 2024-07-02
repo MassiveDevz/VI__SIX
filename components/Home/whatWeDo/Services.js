@@ -8,9 +8,9 @@ export default function Services() {
               We only make digital products and <span> services</span>
             </h2>
             <div className="flexCenter copy">
-              <h5>
+              {/* <h5>
                 (<span>VI</span>)__SIX <br /> <span>Services</span>
-              </h5>
+              </h5> */}
               <p>
                 We provide comprehensive social marketing services, including creative, media, and technical expertise, all rooted in a deep
                 understanding of online culture and social behaviors. Our exceptional research skills allow us to uncover valuable social

@@ -11,27 +11,27 @@ export default function Footer() {
             <h3>Follow Us</h3>
             <li>
               <Link target="blank" href="https://www.instagram.com/">
-                IG
+                / IG
               </Link>
             </li>
             <li>
               <Link target="blank" href="https://www.facebook.com/">
-                FB
+                / FB
               </Link>
             </li>
             <li>
               <Link target="blank" href="https://x.com/">
-                X
+                / X
               </Link>
             </li>
             <li>
               <Link target="blank" href="https://www.tiktok.com/explore">
-                TT
+                / TT
               </Link>
             </li>
             <li>
               <Link target="blank" href="https://www.youtube.com/">
-                YT
+                / YT
               </Link>
             </li>
           </ul>
