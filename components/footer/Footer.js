@@ -83,7 +83,26 @@ export default function Footer() {
 
         <div className="row footer__bottom-row flexCenter">
           <div className="col-3">
-            <img src="../../../horizontal.jpeg" alt="" />
+            <img
+              src="https://images.unsplash.com/photo-1568658176307-bfbd2873abda?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            {/* <img
+              src="https://images.unsplash.com/photo-1529717730488-7a2492983b2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            /> */}
+            {/* <img
+              src="https://images.unsplash.com/photo-1495106245177-55dc6f43e83f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            /> */}
+            {/* <img
+              src="https://images.unsplash.com/photo-1553451166-232112bda6f6?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            /> */}
+            {/* <img
+              src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            /> */}
           </div>
           <div className="col-9">
             <div className="logo flexColumn">

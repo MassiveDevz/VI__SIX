@@ -16,20 +16,14 @@ export default function About() {
           <div className="row">
             <div className="col-6">Purpose</div>
             <div className="col-6">
-              <div className="row">
-                <div className="col-6">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit laborum quae, fugiat temporibus, quasi mollitia
-                  molestiae repellat fuga amet porro explicabo perferendis dolores iste aspernatur eaque perspiciatis accusamus minus animi.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consectetur doloremque magnam ipsam distinctio laudantium
-                  inventore repellat unde obcaecati, quae harum rerum officiis molestiae odio nihil aliquam nam cumque aspernatur!
-                </div>
-                <div className="col-6">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, doloribus nesciunt, sequi officiis ducimus magni
-                  eveniet debitis itaque consectetur reiciendis delectus iste nostrum earum! Tempora suscipit sequi quae vel libero? Lorem
-                  ipsum dolor sit amet consectetur, adipisicing elit. Temporibus ullam eveniet totam quas, mollitia facilis iste quisquam,
-                  consectetur nihil, nulla corporis unde nostrum eum tenetur omnis veritatis numquam ducimus fugiat.
-                </div>
-              </div>
+              <p>
+                The goal of our short video marketing efforts is to elevate our client’s social media presence, increase brand awareness,
+                and drive engagement. In this case, we used Reels to showcase the gloves’ features and benefits. By creating captivating
+                reels that highlight key selling points such as durability and performance, and following funny trends that connect with the
+                target audience, we effectively differentiated the brand in a competitive market. Leveraging organic tactics like Reels
+                trends and user-generated content alongside targeted paid social ads has ultimately increased followers, engagement, and
+                purchases.
+              </p>
             </div>
           </div>
         </div>
