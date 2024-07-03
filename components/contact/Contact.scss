@@ -1,9 +1,13 @@
 .contact {
   padding-block: $sectionPadding;
+  background-color: $black;
 
   h2 {
     text-align: center;
-    background-image: url(https://images.unsplash.com/photo-1644952350841-070996fad2af?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    // background-image: url(https://images.unsplash.com/photo-1677750958453-cf79199840c7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+    background-image: url(https://images.unsplash.com/photo-1532591871029-f38a4c550d8d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
     // background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
     // background-clip: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
     background-position: center;
@@ -19,8 +23,8 @@
     line-height: 0.9;
   }
   .cta {
+    color: $white;
     padding-top: 32px;
-
     justify-content: space-evenly;
   }
 }

@@ -104,16 +104,17 @@ export default function Footer() {
               alt=""
             /> */}
           </div>
+
           <div className="col-9">
-            <div className="logo flexColumn">
-              <div className="contact-links">
+            <div className="logo flexCenter">
+              {/* <div className="contact-links">
                 <a className="line" href="/">
                   info@vi__six.com
                 </a>
                 <a className="line" href="/">
                   212 · 555 · 1234
                 </a>
-              </div>
+              </div> */}
               <Image src={logo} />
             </div>
           </div>

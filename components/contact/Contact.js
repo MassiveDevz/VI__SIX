@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <section id="contact" className="contact">
+    <section id="contact" className="contact ">
       <div className="container-fluid">
         <h2>Let's Work</h2>
 

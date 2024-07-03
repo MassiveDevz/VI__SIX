@@ -19,7 +19,7 @@ export default function Accordion({ title, content, image }) {
           maxHeight: isActive ? `${contentRef.current.scrollHeight}px` : "0px",
         }}
       >
-        <div className="accordion-content-inner flexCenter">
+        <div className="accordion-content-inner flexBetween">
           <img src={image} />
           <p>{content}</p>
         </div>
