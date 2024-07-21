@@ -89,4 +89,33 @@
       margin-inline: auto;
     }
   }
+  @media (max-width: 576px) {
+    .headline {
+      .copy {
+        max-width: unset;
+        justify-content: center;
+        p {
+          width: 100%;
+          padding-inline: 8px;
+        }
+      }
+    }
+    .service-section {
+      padding-top: 48px;
+      h3 {
+        width: max-content;
+      }
+      p {
+        width: 90%;
+        padding-top: 16px;
+      }
+      .image-row {
+        margin-bottom: 64px;
+        div {
+          height: 250px;
+          width: 200px;
+        }
+      }
+    }
+  }
 }

@@ -22,7 +22,7 @@ export default function Services() {
           <div className="service-section">
             <div className="container">
               <div className="row section-border">
-                <div className="col-6 flexColumn item-border">
+                <div className="col-md-6 flexColumn item-border">
                   <h3 className="flexCenter">
                     <span>01 /</span> Influencer Campaigns
                   </h3>
@@ -49,7 +49,7 @@ export default function Services() {
                   </div>
                 </div>
 
-                <div className="col-6 flexColumn ">
+                <div className="col-md-6 flexColumn ">
                   <h3 className="flexCenter">
                     <span>02 /</span> Content Creation
                   </h3>
@@ -78,7 +78,7 @@ export default function Services() {
 
                 {/* <hr /> */}
 
-                <div className="col-6 flexColumn item-border">
+                <div className="col-md-6 flexColumn item-border">
                   <h3 className="flexCenter">
                     <span>03 /</span> Talent Management
                   </h3>
@@ -105,7 +105,7 @@ export default function Services() {
                   </div>
                 </div>
 
-                <div className="col-6 single-service flexColumn ">
+                <div className="col-md-6 single-service flexColumn ">
                   <h3 className="flexCenter">
                     <span>04 /</span> Social Media Management
                   </h3>

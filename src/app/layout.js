@@ -15,8 +15,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         {children}
-        <Contact />
-        <Footer />
+        {/* <Contact /> */}
+        {/* <Footer /> */}
       </body>
     </html>
   );

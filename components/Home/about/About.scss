@@ -63,4 +63,41 @@
       // width: 100%;
     }
   }
+
+  @media (max-width: 576px) {
+    h2 {
+      width: 100%;
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+    .top-copy {
+      padding-block: 16px;
+      p {
+        padding: 0 8px;
+        text-align: start;
+      }
+    }
+    .bottom-row {
+      .headline {
+        text-indent: 0;
+        padding-bottom: 40px;
+      }
+      .copy {
+        p {
+          max-width: 100%;
+          text-align: start;
+        }
+      }
+      .image-row {
+        margin-inline: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          max-width: 34%;
+          margin: 16px 2px 0;
+        }
+      }
+    }
+  }
 }

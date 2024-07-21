@@ -23,7 +23,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="col-md-2">
+        <div className="col-md-2 d-none d-md-block">
           <img
             src="https://images.unsplash.com/photo-1644952285377-cc18edb29b73?q=80&w=2100&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="vertical Image"
@@ -48,7 +48,7 @@ export default function About() {
             {/* <div className="col-4">
               <h5>About:</h5>
               </div> */}
-            <div className="col-8 flexBetween">
+            <div className="col 12 col-md-8 flexBetween">
               <div className="flexColumn copy">
                 <p>
                   SIX Marketing specializes in social media management. Our firm provides a range of services including social media
@@ -70,7 +70,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="col-4">
+            <div className="col-md-4 d-none d-md-block">
               <div className="right-image">
                 <img
                   src="https://images.unsplash.com/photo-1598201116904-9613ee826e9a?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
