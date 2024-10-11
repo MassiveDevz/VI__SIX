@@ -24,7 +24,7 @@ export default function Team() {
               </div>
 
               <div className="row six">
-                <div className="col-6">
+                <div className="col-lg-6">
                   <p>
                     In a world where every marketing company claims to do social media, (<span>VI</span>)__SIX Agency truly leads the way
                     with a team of dozens of full-time staff. Operating globally from offices in New York City, Miami and Los Angeles, we
@@ -32,7 +32,7 @@ export default function Team() {
                     experiences to enhance your digital marketing campaigns.
                   </p>
                 </div>
-                <div className="col-6">
+                <div className="col-lg-6">
                   <p>
                     We've seen trends come and go and pioneered industry practices. As the 2016 Social Media Agency of the Year, we lead the
                     way. With expertise in content creation, community management, influencer relations, promotions, strategy, reporting,
@@ -64,7 +64,7 @@ export default function Team() {
 
               <div className="members">
                 <div className="row">
-                  <div className="col-4">
+                  <div className="col-lg-4">
                     <img
                       src="https://images.unsplash.com/photo-1544168190-79c17527004f?q=80&w=2188&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                       alt=""
@@ -74,7 +74,7 @@ export default function Team() {
                       <p>managing director</p>
                     </div>
                   </div>
-                  <div className="col-4">
+                  <div className="col-lg-4">
                     <img
                       src="https://images.unsplash.com/photo-1587614382231-d1590f0039e7?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                       alt=""
@@ -92,7 +92,7 @@ export default function Team() {
                       <p>Head of Social & Design</p>
                     </div>
                   </div>
-                  <div className="col-4">
+                  <div className="col-lg-4">
                     <img
                       src="https://images.unsplash.com/photo-1692286375229-7511455115f0?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                       alt=""
@@ -104,7 +104,7 @@ export default function Team() {
                   </div>
                 </div>
                 <div className="row">
-                  <div className="col-4">
+                  <div className="col-lg-4">
                     <img
                       src="https://images.unsplash.com/photo-1587614295506-f03c0e6f5b44?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                       alt=""
@@ -114,7 +114,7 @@ export default function Team() {
                       <p>SVP Global Talent</p>
                     </div>
                   </div>
-                  <div className="col-4 ">
+                  <div className="col-lg-4 ">
                     <img
                       src="https://images.unsplash.com/photo-1680721698104-5fff20073eee?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                       alt=""
@@ -124,7 +124,7 @@ export default function Team() {
                       <p>Office Goofballz</p>
                     </div>
                   </div>
-                  <div className="col-4 ">
+                  <div className="col-lg-4 ">
                     <img
                       src="https://images.unsplash.com/photo-1550682290-d071c75759f9?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                       alt=""

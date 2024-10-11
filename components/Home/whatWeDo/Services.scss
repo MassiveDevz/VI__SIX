@@ -37,9 +37,15 @@
 
   .service-section {
     padding-top: $sectionPadding;
+
+    .section-border {
+      row-gap: 50px;
+    }
+
     .flexColumn {
       justify-content: space-around;
     }
+
     h3 {
       text-transform: uppercase;
       font-size: 32px;
@@ -56,7 +62,7 @@
 
     .image-row {
       justify-content: space-evenly;
-      margin-top: 40px;
+      margin-block: 32px;
       div {
         // border: 3px solid red;
         height: 400px;
@@ -72,7 +78,7 @@
         max-width: 100%;
       }
       span.company {
-        display: block;
+        display: inline-block;
         margin-top: 4px;
         font-size: 12px;
         // border: 10px solid red;
@@ -117,6 +123,12 @@
           width: 200px;
         }
       }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .headline .copy {
+      max-width: unset;
     }
   }
 }

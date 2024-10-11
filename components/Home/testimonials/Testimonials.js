@@ -7,7 +7,7 @@ export default function Testimonials() {
         </div>
 
         <div className="row">
-          <div className="col-6 testimonials__review">
+          <div className="col-lg-6 testimonials__review">
             <p className="testimonials__copy">
               The entire (VI)__SIX team went above and beyond, surpassing all expectations on our activation. Every detail, no matter how
               small, was meticulously handled with precision and care. Your team's dedication and thoroughness ensured that every aspect of
@@ -31,7 +31,7 @@ export default function Testimonials() {
             </div>
           </div>
 
-          <div className="col-6 testimonials__review">
+          <div className="col-lg-6 testimonials__review">
             <p className="testimonials__copy">
               The team demonstrated exceptional efficiency in their operations and meticulous attention to itinerary management on the
               ground. Their overall performance was impressive, and the content they produced not only met but significantly exceeded our

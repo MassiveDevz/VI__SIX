@@ -10,16 +10,14 @@ import Faq from "../../components/Home/faq/Faq";
 export default function Home() {
   return (
     <main>
-      {/* <Header />
+      <Header />
       <About />
-      <Services /> */}
-
+      <Services />
       <Portfolio />
-
-      {/* <Team />
+      <Team />
       <Brands />
       <Testimonials />
-      <Faq /> */}
+      <Faq />
     </main>
   );
 }

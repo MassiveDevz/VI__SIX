@@ -38,7 +38,7 @@ export default function Footer() {
         </div>
 
         <div className="row flexBetween middle-row">
-          <div className="col-8">
+          <div className="col-lg-8">
             <ul>
               <div className="flexCenter page-links">
                 <li>

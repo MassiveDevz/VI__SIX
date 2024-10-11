@@ -67,6 +67,17 @@
         background-position-x: 0%;
       }
     }
+    @media (max-width: 768px) {
+      flex-direction: column;
+
+      &__p {
+        margin-top: 8px;
+      }
+
+      p span {
+        margin: 8px 0 0 0;
+      }
+    }
     @media (max-width: 576px) {
       padding-block: 2rem;
       flex-direction: column;

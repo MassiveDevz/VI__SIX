@@ -8,6 +8,12 @@
       font-weight: bolder;
       color: $green;
     }
+
+    @media (max-width: 768px) {
+      > div {
+        margin-bottom: 16px;
+      }
+    }
   }
 
   &__left-side {
@@ -20,6 +26,9 @@
       font-size: 144px;
       line-height: 0.9;
       text-transform: uppercase;
+      @media (max-width: 768px) {
+        font-size: 80px;
+      }
       .six {
         font-family: "Chakra Petch", sans-serif;
         font-weight: bold;
@@ -75,6 +84,15 @@
         width: 70%;
         font-size: 14px;
       }
+      @media (max-width: 768px) {
+        .flexBetween {
+          flex-direction: column;
+        }
+        p {
+          width: 100%;
+          margin-block: 8px;
+        }
+      }
     }
 
     .members {
@@ -90,6 +108,9 @@
         font-size: 12px;
         p {
           text-transform: capitalize !important;
+        }
+        @media (max-width: 768px) {
+          margin-bottom: 24px;
         }
       }
       img {

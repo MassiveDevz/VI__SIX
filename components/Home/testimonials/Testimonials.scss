@@ -43,4 +43,20 @@
   .flexCenter {
     align-items: flex-start;
   }
+
+  @media (max-width: 768px) {
+    padding-block: 56px;
+
+    &__review {
+      padding-inline: 16px !important;
+    }
+
+    &__copy {
+      margin-block: 16px;
+    }
+
+    &__client {
+      margin-bottom: 24px;
+    }
+  }
 }
