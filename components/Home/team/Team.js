@@ -1,13 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
 import vertical from "../../../public/vertical2.jpeg";
+import zane from "../../../assets/images/Team-zane.jpg";
+import luna from "../../../assets/images/Team-luna.jpg";
+import goofballz from "../../../assets/images/Team-goofballz.jpg";
+import aurora from "../../../assets/images/Team-aurora.jpg";
 
 export default function Team() {
   return (
     <section id="team" className="team">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-7">
+          <div className="col-lg-7">
             <div className="team__left-side flexColumn">
               <h2>
                 Meet The Team{" "}
@@ -44,7 +48,7 @@ export default function Team() {
             </div>
           </div>
 
-          <div className="col-5 team__bg">
+          <div className="col-lg-5 team__bg">
             <div className="team__list flexColumn">
               <div className="founder">
                 <img
@@ -64,7 +68,7 @@ export default function Team() {
 
               <div className="members">
                 <div className="row">
-                  <div className="col-lg-4">
+                  {/* <div className="col-lg-4 d-none">
                     <img
                       src="https://images.unsplash.com/photo-1544168190-79c17527004f?q=80&w=2188&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                       alt=""
@@ -73,30 +77,16 @@ export default function Team() {
                       <h5>Kai Alexander</h5>
                       <p>managing director</p>
                     </div>
-                  </div>
-                  <div className="col-lg-4">
-                    <img
-                      src="https://images.unsplash.com/photo-1587614382231-d1590f0039e7?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      alt=""
-                    />{" "}
-                    {/* <img
-                      src="https://images.unsplash.com/photo-1629726249835-e7e5d5c1c689?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      alt=""
-                    />{" "} */}
-                    {/* <img
-                      src="https://images.unsplash.com/photo-1646161248031-ab02bb04e4ee?q=80&w=2124&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      alt=""
-                    />{" "} */}
+                  </div> */}
+                  <div className="col-lg-6">
+                    <Image src={luna} alt="Luna Jade" />
                     <div className="copy">
                       <h5>Luna Jade</h5>
                       <p>Head of Social & Design</p>
                     </div>
                   </div>
-                  <div className="col-lg-4">
-                    <img
-                      src="https://images.unsplash.com/photo-1692286375229-7511455115f0?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      alt=""
-                    />{" "}
+                  <div className="col-lg-6">
+                    <Image src={zane} alt="Zane Carter" />
                     <div className="copy">
                       <h5>Zane Carter</h5>
                       <p>Social Media Visual Expert</p>
@@ -104,7 +94,7 @@ export default function Team() {
                   </div>
                 </div>
                 <div className="row">
-                  <div className="col-lg-4">
+                  {/* <div className="col-lg-4 d-none">
                     <img
                       src="https://images.unsplash.com/photo-1587614295506-f03c0e6f5b44?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                       alt=""
@@ -113,22 +103,16 @@ export default function Team() {
                       <h5>Harper Quinn</h5>
                       <p>SVP Global Talent</p>
                     </div>
-                  </div>
-                  <div className="col-lg-4 ">
-                    <img
-                      src="https://images.unsplash.com/photo-1680721698104-5fff20073eee?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      alt=""
-                    />{" "}
+                  </div> */}
+                  <div className="col-lg-6 ">
+                    <Image src={goofballz} alt="Office Goofballz" />
                     <div className="copy">
                       <h5>Ryder & Jett</h5>
                       <p>Office Goofballz</p>
                     </div>
                   </div>
-                  <div className="col-lg-4 ">
-                    <img
-                      src="https://images.unsplash.com/photo-1550682290-d071c75759f9?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      alt=""
-                    />{" "}
+                  <div className="col-lg-6 ">
+                    <Image src={aurora} alt="Aurora Blake" />
                     <div className="copy">
                       <h5>Aurora Blake</h5>
                       <p>Marketing Manager</p>

@@ -71,6 +71,9 @@
 
       div:first-of-type {
         margin-inline: 1rem;
+        @media (max-width: 576px) {
+          margin-inline: 0;
+        }
       }
       img {
         object-fit: cover;

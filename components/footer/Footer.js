@@ -6,7 +6,8 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="container-fluid content">
-        <div className="row">
+        <div className="row top-row">
+          {/* <h3>Follow Us</h3> */}
           <ul className="flexBetween">
             <h3>Follow Us</h3>
             <li>
@@ -82,7 +83,7 @@ export default function Footer() {
         </div>
 
         <div className="row footer__bottom-row flexCenter">
-          <div className="col-3">
+          <div className="col-6 col-lg-3">
             <img
               src="https://images.unsplash.com/photo-1568658176307-bfbd2873abda?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
@@ -105,7 +106,7 @@ export default function Footer() {
             /> */}
           </div>
 
-          <div className="col-9">
+          <div className="col-6 col-lg-9">
             <div className="logo flexCenter">
               {/* <div className="contact-links">
                 <a className="line" href="/">

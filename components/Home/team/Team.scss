@@ -29,6 +29,9 @@
       @media (max-width: 768px) {
         font-size: 80px;
       }
+      @media (max-width: 576px) {
+        font-size: 72px;
+      }
       .six {
         font-family: "Chakra Petch", sans-serif;
         font-weight: bold;
@@ -100,12 +103,16 @@
       width: 100%;
       .row {
         margin-bottom: 2rem;
+        @media (max-width: 576px) {
+          margin-bottom: 0;
+        }
         .col-4 {
           padding-inline: 8px;
         }
       }
       .copy {
         font-size: 12px;
+
         p {
           text-transform: capitalize !important;
         }
@@ -114,9 +121,8 @@
         }
       }
       img {
-        height: 225px;
+        max-height: 275px;
         width: 100%;
-        max-height: 100%;
         object-fit: cover;
       }
     }

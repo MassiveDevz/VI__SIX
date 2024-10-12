@@ -3,10 +3,10 @@ export default function Brands() {
     <section className="brands">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-3">
+          <div className="col-lg-3">
             <h3>Select Clients:</h3>
           </div>
-          <div className="col-9">
+          <div className="col-lg-9 logos">
             <div className="row">
               <div className="col-4">
                 <div className="brands__logo-container">

@@ -15,12 +15,23 @@
     .flexCenter {
       align-items: baseline;
     }
+
     p {
       width: 100%;
       // margin: 8px;
       padding: 0 16px;
       text-align: justify;
       letter-spacing: 0;
+    }
+
+    @media (max-width: 576px) {
+      .flexCenter {
+        display: block;
+      }
+      p {
+        padding: 8px;
+        text-align: start;
+      }
     }
   }
 
@@ -84,10 +95,6 @@
     }
     .top-copy {
       padding-block: 16px;
-      p {
-        padding: 0 8px;
-        text-align: start;
-      }
     }
     .bottom-row {
       .headline {

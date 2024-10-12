@@ -1,23 +1,30 @@
 .footer {
   background-color: $black;
   color: $white;
-  // Footer Effect
-  // position: relative;
-  // height: 700px;
-  // clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
 
-  // // footer effect
-  // .content {
-  //   position: fixed;
-  //   bottom: 0;
-  //   height: 700px;
-  //   width: 100%;
-  // }
-
+  h3 {
+    @media (max-width: 576px) {
+      text-align: center;
+    }
+  }
   ul {
     padding: 32px;
+    @media (max-width: 576px) {
+      padding: 16px;
+    }
   }
 
+  .top-row {
+    @media (max-width: 576px) {
+      ul.flexBetween {
+        flex-wrap: wrap;
+        h3 {
+          width: 100%;
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
   .middle-row {
     padding-block: $sectionPadding;
 
@@ -34,6 +41,11 @@
         p {
           text-transform: capitalize;
         }
+
+        @media (max-width: 576px) {
+          text-align: center;
+          margin-inline: 8px;
+        }
       }
     }
 
@@ -41,6 +53,7 @@
       text-align: center;
     }
   }
+
   &__bottom-row {
     padding-bottom: 4px;
     .flexCenter {
@@ -60,8 +73,14 @@
       img {
         height: 100%;
         width: 75%;
+        @media (max-width: 576px) {
+          width: 100%;
+        }
         // padding-top: 32px;
       }
+    }
+    @media (max-width: 576px) {
+      padding-bottom: 32px;
     }
   }
 

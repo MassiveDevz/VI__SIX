@@ -36,10 +36,16 @@
   img {
     width: 30%;
     margin-right: 24px;
+    @media (max-width: 576px) {
+      display: none;
+    }
   }
   p {
     padding: 24px;
     align-self: baseline;
+    @media (max-width: 576px) {
+      padding: 8px;
+    }
   }
 }
 
