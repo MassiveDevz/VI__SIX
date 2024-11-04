@@ -1,4 +1,4 @@
-import Header from "../../../components/portfolioProjects/header/Header";
+import Header from "../../../components/Home/header/Header";
 import About from "../../../components/portfolioProjects/about/About";
 import ProjectDetails from "../../../components/portfolioProjects/projectDetails/ProjectDetails";
 

@@ -20,6 +20,8 @@
     line-height: 0.9;
     @media (max-width: 576px) {
       letter-spacing: 0;
+      font-size: calc(100vw / 4);
+      line-height: 0.9;
     }
   }
   .cta {

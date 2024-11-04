@@ -14,8 +14,8 @@ export default function About() {
 
         <div className="copy">
           <div className="row">
-            <div className="col-6">Purpose</div>
-            <div className="col-6">
+            <div className="col-3 col-md-6">Purpose</div>
+            <div className="col-9 col-md-6">
               <p>
                 The goal of our short video marketing efforts is to elevate our client’s social media presence, increase brand awareness,
                 and drive engagement. In this case, we used Reels to showcase the gloves’ features and benefits. By creating captivating

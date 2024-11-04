@@ -18,5 +18,14 @@
       white-space: wrap;
       line-height: 0.9;
     }
+
+    @media (max-width: 576px) {
+      .flexBetween {
+        flex-direction: column;
+      }
+      .flexBetween > * {
+        margin-block: 2px;
+      }
+    }
   }
 }

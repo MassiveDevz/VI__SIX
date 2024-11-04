@@ -9,7 +9,6 @@ export default function ProjectDetails() {
           <h3>Introducing the New Bison Studio Website</h3>
           <div className="info">
             <p>07.17.2021</p>
-            {/* <p>Blogs, Marketing</p> */}
           </div>
         </div>
 
@@ -18,7 +17,6 @@ export default function ProjectDetails() {
             src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
           />
-          {/* <Image src={horizontal} /> */}
         </div>
 
         <div className="details">
@@ -33,7 +31,6 @@ export default function ProjectDetails() {
                   taste for contemporary experience and modern creature comforts.
                 </h4>
                 <div className="copy">
-                  {/* <h5>New Home. New Service. Bigger Team</h5> */}
                   <p>
                     Along with launching paid advertising campaigns, organic posts have been posted at least once every day, ensuring the
                     business stays active on all social media. This included a mix of static image posts, product highlights, short videos,
