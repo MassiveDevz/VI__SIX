@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <!--  -->
+    <!--  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--  -->
+    <!--  -->
+  </head>
+  <body>
+    <!-- Header -->
+    <section style="display: none" class="w-full px-2 pb-20 pt-4 bg-white">
+      <div class="flex flex-wrap">
+        <div class="w-6/12 px-2">
+          <div class="left-side flex-column items-[unset] justify-between h-full">
+            <div class="flex-between w-full">
+              <div class="self-baseline">
+                <img src="assets/images/logo-black.svg" class="w-full self-baseline object-cover" alt="Logo" />
+              </div>
+
+              <!-- Mobile Menu Placeholder -->
+              <!-- <div class="mobile-menu-container"></div> -->
+
+              <nav class="hidden md:block text-end">
+                <div>
+                  <a href="/">
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">Home</p>
+                  </a>
+                  <a href="#about">
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">About</p>
+                  </a>
+                  <a href="#services">
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">services</p>
+                  </a>
+                  <a href="#portfolio">
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">portfolio</p>
+                  </a>
+                  <a href="#team">
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">the team</p>
+                  </a>
+                  <a href="#contact">
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">contact</p>
+                  </a>
+                </div>
+              </nav>
+            </div>
+
+            <div class="flex-between items-start">
+              <div>
+                <h1 class="uppercase">Unleash the Power of Digital Storytelling</h1>
+              </div>
+
+              <div class="copy__p">
+                <p>
+                  Specialising in Content & Influencer Marketing.
+                  <span
+                    class="inline-block text-center text-xs px-1 py-2 mt-1 mb-2 text-theme-green rounded-[50px]"
+                    style="
+                      background: linear-gradient(800deg, #000 40%, #000000ba 25%, #000 60%);
+                      background-size: 300%;
+                      background-position-x: 100%;
+                      animation: shimmer 5s infinite ease-in-out;
+                    "
+                  >
+                    Unconventional by Design</span
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="flex">
+              <figure class="w-3/5">
+                <video autoplay muted loop playsinline class="w-full">
+                  <source src="https://cdn.pixabay.com/video/2023/10/20/185790-876545922_large.mp4" type="video/mp4" />
+                </video>
+              </figure>
+
+              <span class="line-container flex-center self-end ml-auto">
+                <a target="_blank" class="line" href="https://calendly.com/"> Let's Work! </a>
+                <span class="arrow flex-center text-2xl text-theme-green smooth-transition">
+                  <!-- Arrow icon replacement -->
+                  <i class="arrow-icon">→</i>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden md:block w-6/12 flex-center justify-end max-h-[95vh] px-2">
+          <img src="assets/images/hero-image.png" class="w-full h-full object-cover" alt="Hero Image" />
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section id="home" class="max-w-[2000px] mx-auto px-4">
+      <div class="w-full">
+        <div class="w-full">
+          <div class="flex flex-col h-full justify-between">
+            <div class="flex justify-between items-center">
+              <div class="logo self-baseline w-1/2">
+                <img src="assets/images/logo-black.svg" alt="Logo" class="w-full object-cover" />
+              </div>
+              <nav class="text-right">
+                <div>
+                  <a href="/" class="block">
+                    <p class="capitalize m-1 transition duration-300 ease-in-out hover:text-green-500">Home</p>
+                  </a>
+                  <a href="#about" class="block">
+                    <p class="capitalize m-1 transition duration-300 ease-in-out hover:text-green-500">About</p>
+                  </a>
+                  <a href="#services" class="block">
+                    <p class="capitalize m-1 transition duration-300 ease-in-out hover:text-green-500">Services</p>
+                  </a>
+                  <a href="#portfolio" class="block">
+                    <p class="capitalize m-1 transition duration-300 ease-in-out hover:text-green-500">Portfolio</p>
+                  </a>
+                  <a href="#team" class="block">
+                    <p class="capitalize m-1 transition duration-300 ease-in-out hover:text-green-500">The Team</p>
+                  </a>
+                  <a href="#contact" class="block">
+                    <p class="capitalize m-1 transition duration-300 ease-in-out hover:text-green-500">Contact</p>
+                  </a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="py-[100px]">
+      <!-- replace 100px with your $sectionPadding -->
+      <div class="max-w-[2000px] mx-auto px-4">
+        <!-- Heading -->
+        <div class="mb-12">
+          <div class="flex justify-evenly flex-wrap gap-4 mb-10">
+            <p>HQ</p>
+            <p>RocketParts PayFac Solution Playbook &amp; HQ Proposal</p>
+            <p>Prepared by HQ Services, April 7, 2023</p>
+            <p>(001)</p>
+          </div>
+          <h2 class="text-center mb-10 pb-12 border-b-3 border-gray-300 font-medium uppercase text-[calc(90vw/6)] leading-[0.9]">
+            About this project
+          </h2>
+        </div>
+
+        <!-- Copy -->
+        <div>
+          <div class="flex flex-wrap -mx-4">
+            <div class="w-full md:w-1/2 px-4 font-semibold">Purpose</div>
+            <div class="w-full md:w-1/2 px-4">
+              <p>
+                The goal of our short video marketing efforts is to elevate our client’s social media presence, increase brand awareness,
+                and drive engagement. In this case, we used Reels to showcase the gloves’ features and benefits. By creating captivating
+                reels that highlight key selling points such as durability and performance, and following funny trends that connect with the
+                target audience, we effectively differentiated the brand in a competitive market. Leveraging organic tactics like Reels
+                trends and user-generated content alongside targeted paid social ads has ultimately increased followers, engagement, and
+                purchases.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="bg-black text-white py-[your-section-padding]">
+      <div class="max-w-[2000px] mx-auto px-4">
+        <!-- Heading -->
+        <div class="w-1/2 mx-auto mb-10">
+          <h3 class="text-3xl font-semibold mb-6">Introducing the New Bison Studio Website</h3>
+          <div class="flex space-x-6">
+            <p class="text-xs">07.17.2021</p>
+            <!-- <p class="text-xs">Blogs, Marketing</p> -->
+          </div>
+        </div>
+
+        <!-- Main Image -->
+        <div class="max-h-[70vh] overflow-hidden px-6 my-10">
+          <img
+            src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="object-cover h-full max-h-[inherit] w-full"
+          />
+          <!-- <Image src={horizontal} /> -->
+        </div>
+
+        <!-- Details -->
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap -mx-4">
+            <div class="w-full md:w-1/4 px-4">
+              <h6 class="pt-3 text-xs w-[70%] border-t-2 border-green-500 font-semibold">Project Details</h6>
+            </div>
+            <div class="w-full md:w-3/4 px-4">
+              <h4 class="mb-6 font-normal">
+                Harbour Marriott is a 5-star hotel on the cusp of Circular Quay. A destination desired by travellers worldwide with a taste
+                for contemporary experience and modern creature comforts.
+              </h4>
+
+              <div class="mb-12 max-w-3/4">
+                <!-- <h5>New Home. New Service. Bigger Team</h5> -->
+                <p class="pb-8">
+                  Along with launching paid advertising campaigns, organic posts have been posted at least once every day, ensuring the
+                  business stays active on all social media. This included a mix of static image posts, product highlights, short videos,
+                  and trending Capcut template short videos. The Capcut template videos have had a lot of success, generating a lot of
+                  engagement.
+                </p>
+
+                <ul class="list-disc pl-6 pb-8 marker:text-green-500 space-y-2">
+                  <li>Reach Increase: +1761%</li>
+                  <li>Content Interaction: +96%</li>
+                  <li>Engagement Rate: 8.3%</li>
+                </ul>
+
+                <p class="pb-8">
+                  Our top-performing short video reel has over 1,100 likes and 25,500 video views. This is followed by another video
+                  receiving 586 likes and 11,900 video views, a video receiving 428 likes and 17,000 video views, and a video receiving 424
+                  likes and 11,000 video views. These results are from just four of our top-performing reels. These reels have been posted
+                  organically and have not had any paid ad spend behind them.
+                </p>
+                <p class="pb-8">
+                  We then ran paid social media advertising retargeting the engagement and views we’d driven organically to achieve a 44:1
+                  return on ad spend.
+                </p>
+
+                <img
+                  src="https://images.unsplash.com/photo-1498075702571-ecb018f3752d?q=80&w=2078&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                  class="w-full h-full"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-[100px] bg-black">
+      <div class="max-w-[2000px] mx-auto">
+        <h2
+          class="text-center bg-[url('assets/images/contact-bg-image.png')] bg-center bg-cover bg-no-repeat text-transparent bg-clip-text uppercase font-black leading-[0.9] text-[calc(100vw/4)] tracking-normal"
+        >
+          <!-- <h2
+            class="text-center bg-[url('assets/images/contact-bg-image.png')] bg-center bg-cover bg-no-repeat text-transparent bg-clip-text uppercase font-black tracking-[-15px] leading-[0.9] text-[calc(80vw/4.75)] sm:text-[calc(100vw/4)] sm:tracking-normal"
+          > -->
+          Let's Work
+        </h2>
+        <div class="flex justify-evenly text-white pt-8 container mx-auto">
+          <a class="underline" href="/">info@vi__six.com</a>
+          <a class="underline" href="/">212 · 555 · 1234</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white">
+      <div class="max-w-[2000px] mx-auto px-4">
+        <!-- Top Row -->
+        <div class="flex flex-wrap justify-between items-center py-4">
+          <h3 class="w-full sm:w-auto text-center sm:text-left mb-4 sm:mb-0">Follow Us</h3>
+          <ul class="flex flex-wrap gap-4 sm:gap-6">
+            <li><a target="_blank" href="https://www.instagram.com/" class="hover:text-green transition-colors duration-300">/ IG</a></li>
+            <li><a target="_blank" href="https://www.facebook.com/" class="hover:text-green transition-colors duration-300">/ FB</a></li>
+            <li><a target="_blank" href="https://x.com/" class="hover:text-green transition-colors duration-300">/ X</a></li>
+            <li>
+              <a target="_blank" href="https://www.tiktok.com/explore" class="hover:text-green transition-colors duration-300">/ TT</a>
+            </li>
+            <li><a target="_blank" href="https://www.youtube.com/" class="hover:text-green transition-colors duration-300">/ YT</a></li>
+          </ul>
+        </div>
+
+        <!-- Middle Row -->
+        <div class="flex flex-wrap justify-between py-8">
+          <div class="w-full lg:w-8/12">
+            <ul class="flex flex-wrap gap-x-8 gap-y-6">
+              <li class="w-1/2 sm:w-auto pb-2 border-b-2 border-gray-300 mr-8 mb-4 sm:mb-0">
+                <a href="#home" class="capitalize hover:text-green transition-colors duration-300 block text-center sm:text-left"> Home </a>
+              </li>
+              <li class="w-1/2 sm:w-auto pb-2 border-b-2 border-gray-300 mr-8 mb-4 sm:mb-0">
+                <a href="#about" class="capitalize hover:text-green transition-colors duration-300 block text-center sm:text-left">
+                  About
+                </a>
+              </li>
+              <li class="w-1/2 sm:w-auto pb-2 border-b-2 border-gray-300 mr-8 mb-4 sm:mb-0">
+                <a href="#services" class="capitalize hover:text-green transition-colors duration-300 block text-center sm:text-left">
+                  Services
+                </a>
+              </li>
+              <li class="w-1/2 sm:w-auto pb-2 border-b-2 border-gray-300 mr-8 mb-4 sm:mb-0">
+                <a href="#portfolio" class="capitalize hover:text-green transition-colors duration-300 block text-center sm:text-left">
+                  Portfolio
+                </a>
+              </li>
+              <li class="w-1/2 sm:w-auto pb-2 border-b-2 border-gray-300 mr-8 mb-4 sm:mb-0">
+                <a href="#team" class="capitalize hover:text-green transition-colors duration-300 block text-center sm:text-left">
+                  The Team
+                </a>
+              </li>
+              <li class="w-1/2 sm:w-auto pb-2 border-b-2 border-gray-300 mr-8 mb-4 sm:mb-0">
+                <a href="#contact" class="capitalize hover:text-green transition-colors duration-300 block text-center sm:text-left">
+                  Book a Call
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Row -->
+        <div class="flex flex-wrap justify-end items-center gap-4 pb-1 sm:pb-8">
+          <div class="w-1/2 lg:w-1/4">
+            <img src="assets/images/footer-image.png" alt="Footer Image" class="w-full h-auto" />
+          </div>
+          <div class="w-1/2 lg:w-3/4 flex justify-center lg:justify-start">
+            <img src="assets/images/logo-white.svg" alt="Logo" class="w-3/4 sm:w-full h-auto" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

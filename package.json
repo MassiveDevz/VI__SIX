@@ -1,0 +1,17 @@
+{
+  "name": "tailwind-starter",
+  "version": "1.0.0",
+  "description": "'starter'",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "watch": "tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./build/css/style.css"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.6",
+    "tailwindcss": "^4.1.6"
+  },
+  "author": "",
+  "license": "ISC"
+}

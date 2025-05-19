@@ -1,0 +1,93 @@
+@import "tailwindcss";
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"); */
+
+@theme inline {
+  --color-theme-green: #19e72f;
+  --color-theme-black: #121212;
+
+  --grid-fluid: repeat(auto-fit, minmax(33.33%, 1fr));
+}
+
+@layer components {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+  .flex-column {
+    @apply flex flex-col justify-center items-center;
+  }
+  .btn-black {
+    @apply bg-theme-black text-white tracking-widest uppercase text-[1.1rem] inline-block text-center rounded-none py-[16px] px-[40px] transition-all ease-in-out duration-300 font-bold hover:no-underline hover:bg-white hover:text-theme-black;
+  }
+
+  .three-cols {
+    @apply container grid grid-cols-1 gap-4 md:grid-cols-3 lg:gap-8 w-full mx-auto px-12;
+  }
+  .two-cols {
+    @apply container grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-8 w-full mx-auto px-12;
+  }
+
+  .smooth {
+    @apply ease-in-out duration-300;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+a:focus,
+a:focus-visible,
+button:focus,
+button:focus-visible {
+  outline: none !important;
+}
+
+.line-container {
+  width: fit-content;
+}
+
+a.line {
+  transition: all ease-in-out 0.3s;
+  position: relative;
+  padding-bottom: 2.5px;
+  font-weight: 600;
+}
+a.line::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-theme-green);
+  bottom: 0;
+  left: 0;
+  transform-origin: left;
+  transform: scalex(0.075);
+  transition: all ease-out 0.5s;
+}
+
+a.line:hover {
+  opacity: 0.9;
+}
+
+a.line:hover::after {
+  transform: scalex(1);
+}
+
+/*  */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@keyframes shimmer {
+  to {
+    background-position-x: 0%;
+  }
+}

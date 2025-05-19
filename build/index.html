@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+
+    <!--  -->
+    <!--  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--  -->
+    <!--  -->
+  </head>
+  <body>
+    <!-- Hero -->
+    <section class="w-full px-1 pb-20 pt-4 bg-white">
+      <div class="flex flex-wrap">
+        <div class="w-6/12 px-3">
+          <div class="left-side flex-column items-[unset] justify-between h-full">
+            <div class="flex-between w-full">
+              <div class="self-baseline">
+                <img src="assets/images/logo-black.svg" class="w-full self-baseline object-cover" alt="Logo" />
+              </div>
+
+              <nav class="hidden md:block text-end">
+                <div>
+                  <a href="/">
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">Home</p>
+                  </a>
+                  <a href="#about">
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">About</p>
+                  </a>
+                  <a href="#services">
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">services</p>
+                  </a>
+                  <a href="#portfolio">
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">portfolio</p>
+                  </a>
+                  <a href="#team">
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">the team</p>
+                  </a>
+                  <a href="#contact">
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">contact</p>
+                  </a>
+                </div>
+              </nav>
+
+              <!-- Mobile Menue -->
+              <nav class="relative z-30 md:hidden">
+                <!-- Hamburger Toggle -->
+                <div onclick="handleNav()" class="fixed top-5 right-5 z-40 cursor-pointer">
+                  <!-- Toggle open/close icons (use JS to show/hide) -->
+                  <img src="assets/images/menu-close.png" class="w-5 h-auto hidden" id="menuClose" />
+                  <img src="assets/images/menu-open.png" class="w-5 h-auto" id="menuOpen" />
+                </div>
+
+                <!-- Dropdown Menu -->
+                <div
+                  id="mobileMenu"
+                  class="fixed inset-0 w-full h-full bg-white overflow-hidden opacity-100 transition-all duration-1000 ease-in-out z-20 hidden"
+                >
+                  <ul class="w-full h-full pt-10 flex flex-col justify-evenly items-center transition-all duration-[3000ms] ease-in-out">
+                    <!-- Navigation Links -->
+                    <div class="flex flex-col justify-center items-start w-full text-2xl mb-4 px-4 space-y-2">
+                      <a
+                        href="https://www.nba.com/magic/tickets/suite-options/suites"
+                        class="transition-all duration-300 hover:text-theme-green"
+                        >Home</a
+                      >
+                      <a
+                        href="https://www.nba.com/magic/tickets/suite-options/suites/explore"
+                        class="transition-all duration-300 hover:text-theme-green"
+                        >Explore Suites</a
+                      >
+                      <a
+                        href="https://www.nba.com/magic/tickets/suite-options/suites/rentals"
+                        class="transition-all duration-300 hover:text-theme-green"
+                        >Rent A Suite</a
+                      >
+                      <a
+                        href="https://www.nba.com/magic/suites-lease-preview-9629305423"
+                        class="transition-all duration-300 hover:text-theme-green"
+                        >Lease A Suite</a
+                      >
+                      <a
+                        href="https://www.nba.com/magic/suites-faq-preview-9629305423"
+                        class="transition-all duration-300 hover:text-theme-green"
+                        >FAQ</a
+                      >
+                      <a
+                        href="https://www.nba.com/magic/tickets/suite-options/suites/contact"
+                        class="transition-all duration-300 hover:text-theme-green"
+                        >Contact Us</a
+                      >
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="w-full flex justify-around items-center text-xl">
+                      <a href="https://www.instagram.com/orlandomagic/" target="_blank" class="hover:text-pink-500">/IG</a>
+                      <a href="https://www.facebook.com/OrlandoMagic" target="_blank" class="hover:text-blue-600">/FB</a>
+                      <a href="https://x.com/OrlandoMagic" target="_blank" class="hover:text-black">/X</a>
+                      <a href="https://www.tiktok.com/@orlandomagic" target="_blank" class="hover:text-black">/TT</a>
+                      <a href="https://www.youtube.com/NBAOrlandoMagic" target="_blank" class="hover:text-red-600">/YT</a>
+                    </div>
+
+                    <!-- Image Section -->
+                    <div class="w-full max-w-full mt-auto">
+                      <img src="assets/images/hero-image.png" alt="Mobile menu image" class="w-full h-[230px] object-cover" />
+                    </div>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+
+            <div class="flex-between items-start">
+              <div>
+                <h1 class="uppercase font-bold text-2xl">Unleash the Power of Digital Storytelling</h1>
+              </div>
+
+              <div class="copy__p">
+                <p>
+                  Specialising in Content & Influencer Marketing.
+                  <span
+                    class="inline-block text-center text-xs py-1 px-2 mt-1 ml-2 text-theme-green rounded-[50px]"
+                    style="
+                      background: linear-gradient(800deg, #000 40%, #000000ba 25%, #000 60%);
+                      background-size: 300%;
+                      background-position-x: 100%;
+                      animation: shimmer 5s infinite ease-in-out;
+                    "
+                  >
+                    Unconventional by Design</span
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="flex">
+              <figure class="w-3/5">
+                <video autoplay muted loop playsinline class="w-full">
+                  <source src="https://cdn.pixabay.com/video/2023/10/20/185790-876545922_large.mp4" type="video/mp4" />
+                </video>
+              </figure>
+
+              <span class="line-container flex-center self-end ml-auto">
+                <a target="_blank" class="line" href="https://calendly.com/"> Let's Work! </a>
+                <span class="arrow flex-center text-2xl text-theme-green smooth-transition">
+                  <!-- Arrow icon replacement -->
+                  <i class="arrow-icon">→</i>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden md:block w-6/12 flex-center justify-end max-h-[95vh] px-3">
+          <img src="assets/images/hero-image.png" class="w-full h-full object-cover" alt="Hero Image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="max-w-2000 py-16 px-4">
+      <h2 class="w-8/12 mb-16 font-bold text-[40px] leading-tight">
+        Empowering brands to thrive in the digital age. Together, we redefine the standard. Direct and always at the forefront.
+      </h2>
+
+      <div class="flex items-start">
+        <div class="w-2/12 px-1">
+          <img src="assets/images/about-image1.png" alt="vertical Image" class="w-full h-auto" />
+        </div>
+        <div class="w-8/12 px-4">
+          <div class="flex items-baseline">
+            <p class="w-full px-4 text-justify font-medium">
+              At <span class="text-theme-green font-bold">SIX</span>, our service is unmatched in the industry. We never do ordinary. Why?
+              Simple. We're here to innovate, not just replicate. We're a global social agency, specializing in content and influencer
+              marketing, but that sounds too corporate, doesn't it?
+            </p>
+            <p class="w-full px-4 text-justify font-medium">
+              This means we know how to connect people. Content is communication, and it's our specialty. We merge market intelligence with
+              expertise to provide award-winning client services worldwide.
+            </p>
+          </div>
+        </div>
+        <div class="w-2/12 hidden md:block px-1">
+          <img src="assets/images/about-image2.png" alt="vertical Image" class="w-full h-auto" />
+        </div>
+      </div>
+
+      <div class="bottom-row">
+        <div class="my-6 max-h-[70vh] overflow-hidden">
+          <img src="assets/images/about-image3.png" alt="vertical Image" class="w-full h-auto object-cover object-top" />
+        </div>
+        <div>
+          <h3 class="indent-[20%] pb-18 text-[32px] font-bold leading-tight">
+            With a passionate team of industry specialists, we are dedicated to nurturing the careers of content creators and personal
+            brands, linking them with tailored opportunities that align with their distinctive style and personality.
+          </h3>
+
+          <div class="flex justify-center">
+            <div class="w-8/12 flex justify-between">
+              <div class="flex-column justify-between items-start h-full">
+                <p class="max-w-[70%] text-left font-medium">
+                  <span class="text-theme-green">SIX</span> Marketing specializes in social media management. Our firm provides a range of
+                  services including social media marketing, advertising, and email campaigns. We excel in creating and overseeing effective
+                  social media campaigns across platforms like Facebook, Instagram, Twitter, LinkedIn, and Pinterest.
+                </p>
+
+                <div class="flex-center items-center justify-start sm:mx-auto space-x-5">
+                  <img src="assets/images/about-image4.png" alt="vertical Image" class="w-full max-w-[20%]" />
+                  <img src="assets/images/about-image5.png" alt="vertical Image" class="w-full max-w-[20%]" />
+                  <img src="assets/images/about-image6.png" alt="vertical Image" class="w-full max-w-[20%]" />
+                </div>
+              </div>
+            </div>
+
+            <div class="hidden md:block w-1/3">
+              <div>
+                <img src="assets/images/about-image7.png" alt="vertical Image" class="w-full h-auto" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What we do  -->
+    <section id="services" class="bg-theme-black text-white py-24 px-4">
+      <div class="w-full mx-auto">
+        <div class="max-w-[2000px] mx-auto">
+          <h2 class="text-center uppercase text-[calc(12vw/4)] leading-none font-bold">
+            We make digital products and <span class="text-theme-green"> services</span>
+          </h2>
+
+          <div class="flex-center max-w-[70%] mx-auto pt-14">
+            <h5 class="text-center w-6/12 font-bold leading-tight">
+              (<span class="text-theme-green">VI</span>)__SIX <br />
+              <span class="text-theme-green">Services</span>
+            </h5>
+            <p class="w-6/12">
+              We provide comprehensive social marketing services, including creative, media, and technical expertise, all rooted in a deep
+              understanding of online culture and social behaviors. Our exceptional research skills allow us to uncover valuable social
+              insights, enabling our creative ideas to thrive on any platform or medium.
+            </p>
+          </div>
+        </div>
+
+        <div class="pt-24 md:pt-12">
+          <div class="container mx-auto max-w-[1400px]">
+            <div class="flex flex-wrap gap-y-12">
+              <!-- Influencer Campaigns -->
+              <div class="w-6/12 flex-column justify-start">
+                <div class="text-center">
+                  <h3 class="uppercase text-[32px] font-bold flex-center">
+                    <span class="text-theme-green text-[16px] mr-2">01 /</span> Influencer Campaigns
+                  </h3>
+                  <p class="pt-0 w-8/12 mx-auto">
+                    Influencer campaigns provide an effective solution to reach new audiences and boost conversions by partnering with top
+                    content creators.
+                  </p>
+                </div>
+
+                <div class="flex-center my-8">
+                  <div class="h-[400px] w-6/12 mx-2">
+                    <img src="assets/images/Influencer-Campaign-image1.png" class="w-full h-full object-cover" />
+                    <span class="inline-block mt-1 text-xs">@SerendipityShots</span>
+                  </div>
+                  <div class="h-[400px] w-6/12 mx-2">
+                    <img src="assets/images/Influencer-Campaign-image2.png" class="w-full h-full object-cover" />
+                    <span class="inline-block mt-1 text-xs">@UrbanTrailblazer</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Content Creation -->
+              <div class="w-6/12 flex-column justify-start">
+                <div class="text-center">
+                  <h3 class="uppercase text-[32px] font-bold flex-center">
+                    <span class="text-theme-green text-[16px] mr-2">02 /</span> Content Creation
+                  </h3>
+                  <p class="pt-0 w-8/12 mx-auto">
+                    Content is arguably the cornerstone of every successful digital marketing strategy, and you know what? We absolutely
+                    thrive on it!
+                  </p>
+                </div>
+
+                <div class="flex-center my-8">
+                  <div class="h-[400px] w-6/12 mx-2">
+                    <img src="assets/images/Content-Creation-image1.png" class="w-full h-full object-cover" />
+                    <span class="inline-block mt-1 text-xs">@CosmicVibes</span>
+                  </div>
+                  <div class="h-[400px] w-6/12 mx-2">
+                    <img src="assets/images/Content-Creation-image2.png" class="w-full h-full object-cover" />
+                    <span class="inline-block mt-1 text-xs">@TitanLens</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Talent Management -->
+              <div class="w-6/12 flex-column justify-start">
+                <div class="text-center">
+                  <h3 class="uppercase text-[32px] font-bold flex-center">
+                    <span class="text-theme-green text-[16px] mr-2">03 /</span> Talent Management
+                  </h3>
+
+                  <p class="pt-0 w-8/12 mx-auto">
+                    (<span class="text-theme-green">VI</span>)__SIX internal Talent Management division champions the most inspiring,
+                    hardworking, and creative influencers globally.
+                  </p>
+                </div>
+
+                <div class="flex-center my-8">
+                  <div class="h-[400px] w-6/12 mx-2">
+                    <img src="assets/images/Talent-Management-image1.png" class="w-full h-full object-cover" />
+                    <span class="inline-block mt-1 text-xs">@BoldPathfinder</span>
+                  </div>
+                  <div class="h-[400px] w-6/12 mx-2">
+                    <img src="assets/images/Talent-Management-image2.png" class="w-full h-full object-cover" />
+                    <span class="inline-block mt-1 text-xs">@DreamyDusk</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Media Management -->
+              <div class="w-6/12 flex-column justify-start">
+                <div class="text-center">
+                  <h3 class="uppercase text-[32px] font-bold flex-center">
+                    <span class="text-theme-green text-[16px] mr-2">04 /</span> Social Media Management
+                  </h3>
+
+                  <p class="pt-0 w-8/12 mx-auto">
+                    We craft & execute customized, measurable strategies to accomplish your brand objectives and connect directly with your
+                    consumers.
+                  </p>
+                </div>
+
+                <div class="flex-center my-8">
+                  <div class="h-[400px] w-6/12 mx-2">
+                    <img src="assets/images/Social-Media-image1.png" class="w-full h-full object-cover" />
+                    <span class="inline-block mt-1 text-xs">@UrbanWanderlust</span>
+                  </div>
+                  <div class="h-[400px] w-6/12 mx-2">
+                    <img src="assets/images/Social-Media-image2.png" class="w-full h-full object-cover" />
+                    <span class="inline-block mt-1 text-xs">@FearlessFocus</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="bg-black text-white py-24 px-4">
+      <div class="max-w-screen-2xl mx-auto">
+        <div class="row">
+          <div class="mb-16">
+            <h2 class="text-left text-[40px] font-bold">Our Work</h2>
+            <div class="flex">
+              <p class="w-[40%]">We help brands reach their goals.</p>
+              <p class="w-[40%]">
+                Our teams are experienced in crafting strategies and handling daily operations across various industries, including food and
+                beverage, music, travel, and more. Explore some of our case studies below!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex flex-col md:flex-row justify-between">
+            <!-- Project 1 -->
+            <div class="md:w-1/3 mb-8 md:mb-0 px-2">
+              <a href="/portfolioprojectone">
+                <p class="text-white text-base mb-2"><span class="text-green-400">/</span> 01</p>
+                <img src="assets/images/work-image1.jpeg" alt="Work 1" class="w-full h-[550px] object-cover mb-2" />
+                <div>
+                  <h5 class="text-base font-bold">Chef</h5>
+                  <p class="text-xs mt-1 text-theme-green">Sound · Meditation · Work</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="md:w-1/3 mb-8 md:mb-0 px-2">
+              <a href="/portfolioprojectone">
+                <p class="text-white text-base mb-2"><span class="text-green-400">/</span> 02</p>
+                <img src="assets/images/work-image2.png" alt="Work 2" class="w-full h-[550px] object-cover mb-2" />
+                <div>
+                  <h5 class="text-base font-bold">Traveler</h5>
+                  <p class="text-xs mt-1 text-theme-green">Sound · Meditation · Work</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="md:w-1/3 px-2">
+              <a href="/portfolioprojectone">
+                <p class="text-white text-base mb-2"><span class="text-green-400">/</span> 03</p>
+                <img src="assets/images/work-image3.png" alt="Work 3" class="w-full h-[550px] object-cover mb-2" />
+                <div>
+                  <h5 class="text-base font-bold">Music</h5>
+                  <p class="text-xs mt-1 text-theme-green">Sound · Meditation · Work</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="py-24 bg-white text-black px-4">
+      <div class="max-w-[2000px] mx-auto">
+        <div class="flex flex-wrap">
+          <!-- Left Side -->
+          <div class="w-7/12 pr-4">
+            <div class="flex flex-col items-start">
+              <h2 class="text-[144px] leading-[0.9] uppercase font-bold">
+                Meet The Team
+                <div class="font-bold text-2xl font-chakra inline">(<span class="text-theme-green">VI</span>)__SIX</div>
+              </h2>
+
+              <div class="my-6 max-h-[85vh] w-full">
+                <img src="assets/images/Team-group-img.jpeg" alt="Team" class="w-full h-full object-cover max-h-inherit" />
+              </div>
+
+              <div class="flex flex-wrap -mx-2">
+                <div class="w-full md:w-1/2 px-2 mb-4 md:mb-0">
+                  <p class="font-medium text-base leading-tight">
+                    In a world where every marketing company claims to do social media, (<span class="text-theme-green">VI</span>)__SIX
+                    Agency truly leads the way with a team of dozens of full-time staff. Operating globally from offices in New York City,
+                    Miami and Los Angeles, we provide unmatched expertise. With a leadership team together for over seven years, we bring
+                    diverse backgrounds and experiences to enhance your digital marketing campaigns.
+                  </p>
+                </div>
+                <div class="w-full md:w-1/2 px-2">
+                  <p class="font-medium text-base leading-tight">
+                    We've seen trends come and go and pioneered industry practices. As the 2016 Social Media Agency of the Year, we lead the
+                    way. With expertise in content creation, community management, influencer relations, promotions, strategy, reporting,
+                    media buying, and data analytics, we offer comprehensive social media support. At (<span class="text-theme-green"
+                      >VI</span
+                    >)__SIX, we focus on driving measurable results.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side -->
+          <div class="w-full lg:w-5/12 bg-theme-black">
+            <div class="flex flex-col text-white px-4">
+              <!-- {/* Founder */} -->
+              <div class="mb-4">
+                <img src="assets/images/Team-jaxon.jpeg" alt="Jaxon Cole" class="w-full max-h-[700px] object-cover" />
+                <div class="flex flex-col md:flex-row justify-between py-2">
+                  <h5 class="w-full md:w-[30%] text-sm font-medium">Jaxon Cole</h5>
+                  <p class="w-[70%] text-sm mt-2 font-medium">
+                    Jaxon co-founded (<span class="text-theme-green">VI</span>)__SIX Agency following a successful career in social media
+                    marketing and public relations. By combining innovative social strategies with modern creative direction, Jaxon
+                    guarantees that our clients receive the most comprehensive social campaigns.
+                  </p>
+                </div>
+              </div>
+
+              <!-- {/* Team Members */} -->
+              <div class="w-full">
+                <div class="flex flex-wrap mb-4">
+                  <div class="w-full md:w-1/2 px-2">
+                    <img src="assets/images/Team-luna.jpg" alt="Luna Jade" class="w-full max-h-[275px] object-cover" />
+                    <div class="text-xs mt-2">
+                      <h5 class="capitalize">Luna Jade</h5>
+                      <p class="capitalize">Head of Social & Design</p>
+                    </div>
+                  </div>
+                  <div class="w-full md:w-1/2 px-2">
+                    <img src="assets/images/Team-zane.jpg" alt="Zane Carter" class="w-full max-h-[275px] object-cover" />
+                    <div class="text-xs mt-2">
+                      <h5 class="capitalize">Zane Carter</h5>
+                      <p class="capitalize">Social Media Visual Expert</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap">
+                  <div class="w-full md:w-1/2 px-2 mb-4">
+                    <img src="assets/images/Team-goofballz.jpg" alt="Office Goofballz" class="w-full max-h-[275px] object-cover" />
+                    <div class="text-xs mt-2">
+                      <h5 class="capitalize">Ryder & Jett</h5>
+                      <p class="capitalize">Office Goofballz</p>
+                    </div>
+                  </div>
+                  <div class="w-full md:w-1/2 px-2">
+                    <img src="assets/images/Team-aurora.jpg" alt="Aurora Blake" class="w-full max-h-[275px] object-cover" />
+                    <div class="text-xs mt-2">
+                      <h5 class="capitalize">Aurora Blake</h5>
+                      <p class="capitalize">Marketing Manager</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brands -->
+    <section class="py-24 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <div class="w-1/4 lg:mb-0">
+            <h3 class="text-[32px] font-bold uppercase">Select Clients:</h3>
+          </div>
+          <div class="w-3/4">
+            <div class="flex flex-wrap gap-y-12">
+              <!--  -->
+              <div class="w-1/3 p-2">
+                <div class="flex items-center justify-center h-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="187" height="40" fill="none" viewBox="0 0 187 40">
+                    <path
+                      fill="#3A724F"
+                      fill-rule="evenodd"
+                      d="M19.87 4.567 22.507 0l7.476 4.317-2.636 4.566c-.463.801.23 1.775 1.138 1.6l5.052-.975 1.635 8.477-5.052.974c-8.172 1.576-14.411-7.184-10.25-14.392Z"
+                      clip-rule="evenodd"
+                    ></path>
+                    <path
+                      fill="#DC8E43"
+                      fill-rule="evenodd"
+                      d="M15.302 35.433 12.665 40l-7.477-4.316 2.637-4.567c.463-.801-.23-1.775-1.139-1.6l-5.051.974L0 22.015l5.052-.974c8.172-1.576 14.41 7.184 10.25 14.392Z"
+                      clip-rule="evenodd"
+                    ></path>
+                    <path
+                      fill="#14424C"
+                      fill-rule="evenodd"
+                      d="M15.53 4.567 12.894 0 5.417 4.317l2.637 4.566c.462.801-.23 1.775-1.139 1.6l-5.052-.975L.23 17.985l5.051.974c8.173 1.576 14.412-7.184 10.25-14.392Z"
+                      clip-rule="evenodd"
+                    ></path>
+                    <path
+                      fill="#C85D1B"
+                      fill-rule="evenodd"
+                      d="M19.65 35.433 22.285 40l7.477-4.316-2.637-4.567c-.462-.801.23-1.775 1.139-1.6l5.051.974 1.635-8.476-5.052-.974c-8.172-1.576-14.41 7.184-10.25 14.392Z"
+                      clip-rule="evenodd"
+                    ></path>
+                    <path
+                      fill="#14424C"
+                      d="M163.114 30.153v-8.5c0-1.178.271-2.235.813-3.17.561-.954 1.356-1.702 2.385-2.245 1.029-.542 2.254-.813 3.675-.813a7.23 7.23 0 0 1 1.964.252c.599.15 1.141.365 1.627.645.505.262.935.58 1.291.954h.056a5.5 5.5 0 0 1 1.29-.954 6.772 6.772 0 0 1 1.656-.645 7.541 7.541 0 0 1 1.992-.252c1.421 0 2.646.27 3.675.813 1.028.543 1.823 1.29 2.384 2.245.562.935.842 1.991.842 3.17v8.5h-4.377v-8.36c0-.467-.121-.888-.364-1.262a2.663 2.663 0 0 0-.926-.954 2.508 2.508 0 0 0-1.347-.365c-.505 0-.963.122-1.374.365a2.654 2.654 0 0 0-.926.954 2.4 2.4 0 0 0-.337 1.262v8.36h-4.348v-8.36c0-.467-.122-.888-.365-1.262a2.585 2.585 0 0 0-.954-.954 2.508 2.508 0 0 0-1.347-.365c-.505 0-.963.122-1.374.365a2.654 2.654 0 0 0-.926.954 2.41 2.41 0 0 0-.337 1.262v8.36h-4.348ZM153.603 30.49c-1.477 0-2.759-.28-3.843-.842-1.066-.58-1.889-1.356-2.469-2.328-.58-.991-.87-2.086-.87-3.283v-8.276h4.349v8.164c0 .505.121.973.364 1.403.243.411.571.748.982 1.01.43.243.917.365 1.459.365.524 0 .991-.122 1.403-.365.43-.262.767-.599 1.01-1.01.243-.43.365-.898.365-1.403v-8.164h4.348v8.276c0 1.197-.281 2.292-.842 3.283-.561.972-1.374 1.749-2.44 2.328-1.048.561-2.32.842-3.816.842ZM132.414 30.153v-3.45h6.93c.187 0 .355-.038.505-.113.149-.093.271-.215.364-.364a.93.93 0 0 0 0-.982.9.9 0 0 0-.364-.337.934.934 0 0 0-.505-.14h-2.525c-.936 0-1.787-.15-2.553-.449a4.052 4.052 0 0 1-1.796-1.459c-.43-.673-.645-1.543-.645-2.609 0-.823.196-1.571.589-2.244a4.76 4.76 0 0 1 1.655-1.628 4.568 4.568 0 0 1 2.329-.617h6.929v3.479h-6.256a.97.97 0 0 0-.673.253.841.841 0 0 0-.253.617c0 .262.085.486.253.673a.97.97 0 0 0 .673.253h2.469c1.047 0 1.945.159 2.693.476.767.3 1.356.786 1.768 1.46.43.673.645 1.542.645 2.608 0 .842-.215 1.609-.645 2.3a4.613 4.613 0 0 1-1.684 1.656c-.692.412-1.477.617-2.356.617h-7.547ZM122.94 15.425c1.216 0 2.291.196 3.226.589a6.41 6.41 0 0 1 2.413 1.627 6.993 6.993 0 0 1 1.543 2.469c.355.935.533 1.973.533 3.114 0 1.421-.299 2.684-.898 3.787a6.471 6.471 0 0 1-2.412 2.553c-1.029.617-2.226.926-3.591.926-.58 0-1.132-.075-1.656-.224a5.312 5.312 0 0 1-1.402-.646 3.9 3.9 0 0 1-1.038-1.038h-.085v7.66h-4.348V23.223c0-1.59.318-2.965.954-4.124a6.666 6.666 0 0 1 2.693-2.694c1.16-.654 2.516-.981 4.068-.981Zm0 3.759c-.673 0-1.262.168-1.767.505-.487.318-.861.767-1.123 1.347-.261.56-.392 1.197-.392 1.907 0 .711.131 1.347.392 1.908.262.561.636 1.01 1.123 1.347.505.318 1.094.477 1.767.477.673 0 1.253-.16 1.739-.477a3.297 3.297 0 0 0 1.123-1.347c.28-.561.42-1.197.42-1.908 0-.71-.14-1.346-.42-1.907-.262-.58-.636-1.03-1.123-1.347-.486-.337-1.066-.505-1.739-.505ZM108.617 30.153V15.761h4.377v14.392h-4.377Zm2.188-16.019c-.692 0-1.29-.252-1.795-.757-.505-.505-.758-1.104-.758-1.796s.253-1.29.758-1.795c.505-.524 1.103-.786 1.795-.786s1.291.262 1.796.786c.505.505.757 1.103.757 1.795s-.252 1.29-.757 1.796c-.505.505-1.104.757-1.796.757ZM99.105 30.49c-1.477 0-2.805-.327-3.984-.982a7.462 7.462 0 0 1-2.805-2.693c-.673-1.141-1.01-2.422-1.01-3.844 0-1.44.337-2.721 1.01-3.843a7.462 7.462 0 0 1 2.805-2.693c1.179-.674 2.507-1.01 3.984-1.01 1.478 0 2.796.336 3.956 1.01a7.25 7.25 0 0 1 2.777 2.693c.692 1.122 1.038 2.403 1.038 3.843 0 1.422-.346 2.703-1.038 3.844a7.25 7.25 0 0 1-2.777 2.693c-1.178.655-2.497.982-3.956.982Zm0-3.787c.692 0 1.291-.169 1.796-.505a3.424 3.424 0 0 0 1.178-1.347c.281-.561.421-1.197.421-1.908 0-.692-.14-1.318-.421-1.88a3.423 3.423 0 0 0-1.178-1.346c-.505-.337-1.104-.505-1.796-.505s-1.3.168-1.823.505a3.428 3.428 0 0 0-1.179 1.347 4.144 4.144 0 0 0-.42 1.88c0 .71.14 1.346.42 1.907a3.43 3.43 0 0 0 1.179 1.347c.523.336 1.131.505 1.823.505ZM77.174 35.849v-3.732h7.181c.281 0 .515-.093.702-.28a.83.83 0 0 0 .28-.646v-3.17h-.084a6.59 6.59 0 0 1-1.206 1.094c-.412.3-.88.524-1.403.674a6.023 6.023 0 0 1-1.711.224c-1.272 0-2.413-.3-3.423-.898-.991-.617-1.777-1.468-2.357-2.553-.56-1.084-.841-2.319-.841-3.703 0-1.365.29-2.609.87-3.731.598-1.122 1.468-2.02 2.609-2.693 1.14-.674 2.534-1.01 4.18-1.01 1.571 0 2.927.327 4.068.982a6.624 6.624 0 0 1 2.693 2.72c.636 1.16.954 2.526.954 4.097v8.416c0 1.29-.383 2.31-1.15 3.058-.748.767-1.786 1.15-3.114 1.15h-8.248Zm4.825-9.483c.673 0 1.253-.15 1.74-.449a3.18 3.18 0 0 0 1.121-1.262 3.834 3.834 0 0 0 .393-1.74c0-.673-.13-1.29-.392-1.851-.262-.561-.636-1.001-1.123-1.319-.486-.337-1.066-.505-1.74-.505-.654 0-1.234.159-1.739.477-.486.318-.86.748-1.122 1.29-.261.543-.392 1.15-.392 1.824 0 .655.13 1.253.392 1.796.262.523.636.944 1.123 1.262.504.318 1.084.477 1.739.477ZM65.473 30.49c-1.477 0-2.805-.327-3.983-.982a7.46 7.46 0 0 1-2.806-2.693c-.673-1.141-1.01-2.422-1.01-3.844 0-1.44.337-2.721 1.01-3.843a7.46 7.46 0 0 1 2.806-2.693c1.178-.674 2.506-1.01 3.983-1.01 1.478 0 2.796.336 3.956 1.01a7.252 7.252 0 0 1 2.777 2.693c.692 1.122 1.038 2.403 1.038 3.843 0 1.422-.346 2.703-1.038 3.844a7.252 7.252 0 0 1-2.777 2.693c-1.178.655-2.497.982-3.956.982Zm0-3.787c.692 0 1.29-.169 1.796-.505a3.43 3.43 0 0 0 1.178-1.347c.28-.561.42-1.197.42-1.908 0-.692-.14-1.318-.42-1.88a3.429 3.429 0 0 0-1.178-1.346c-.505-.337-1.104-.505-1.796-.505s-1.3.168-1.823.505a3.428 3.428 0 0 0-1.179 1.347 4.145 4.145 0 0 0-.42 1.88c0 .71.14 1.346.42 1.907a3.43 3.43 0 0 0 1.179 1.347c.523.336 1.131.505 1.823.505ZM51.547 30.153c-1.216 0-2.282-.27-3.198-.813a5.763 5.763 0 0 1-2.132-2.16c-.505-.898-.758-1.89-.758-2.974V10.515h4.713v14.027c0 .45.16.842.477 1.179.318.336.71.505 1.178.505h5.19v3.927h-5.47Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <!--  -->
+              <div class="w-1/3 p-2">
+                <div class="flex items-center justify-center h-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="82" height="40" fill="none" viewBox="0 0 82 40">
+                    <path
+                      fill="#FFD43D"
+                      d="M73.365 19.71c0 2.904-2.241 5.31-5.27 5.31-3.03 0-5.228-2.406-5.228-5.31 0-2.905 2.199-5.312 5.228-5.312s5.27 2.407 5.27 5.311Z"
+                    ></path>
+                    <path
+                      fill="#FF0C81"
+                      d="M48.764 19.544c0 2.946-2.323 5.145-5.27 5.145-2.904 0-5.227-2.2-5.227-5.145 0-2.947 2.323-5.104 5.228-5.104 2.946 0 5.27 2.158 5.27 5.104Z"
+                    ></path>
+                    <path
+                      fill="#11EEFC"
+                      d="M20.074 25.02c3.029 0 5.27-2.406 5.27-5.31 0-2.905-2.241-5.312-5.27-5.312-3.03 0-5.228 2.407-5.228 5.311 0 2.905 2.199 5.312 5.228 5.312Z"
+                    ></path>
+                    <path
+                      fill="#171A26"
+                      d="M68.095 30.54c-6.307 0-11.12-4.897-11.12-10.872 0-5.934 4.855-10.83 11.12-10.83 6.349 0 11.162 4.938 11.162 10.83 0 5.975-4.855 10.871-11.162 10.871Zm0-5.52c3.03 0 5.27-2.406 5.27-5.31 0-2.905-2.24-5.312-5.27-5.312-3.029 0-5.228 2.407-5.228 5.311 0 2.905 2.199 5.312 5.228 5.312ZM43.08 40c-4.813 0-8.506-2.116-10.373-5.934l4.896-2.655c.913 1.784 2.614 3.195 5.394 3.195 3.486 0 5.85-2.448 5.85-6.473v-.374c-1.12 1.411-3.111 2.49-6.016 2.49-5.768 0-10.373-4.481-10.373-10.581 0-5.934 4.813-10.788 11.12-10.788 6.431 0 11.162 4.605 11.162 10.788v8.299C54.74 35.27 49.76 40 43.08 40Zm.415-15.311c2.946 0 5.27-2.2 5.27-5.145 0-2.947-2.324-5.104-5.27-5.104-2.905 0-5.228 2.158-5.228 5.104s2.323 5.145 5.228 5.145ZM20.074 30.54c-6.307 0-11.12-4.897-11.12-10.872 0-5.934 4.854-10.83 11.12-10.83 6.348 0 11.162 4.938 11.162 10.83 0 5.975-4.855 10.871-11.162 10.871Zm0-5.52c3.029 0 5.27-2.406 5.27-5.31 0-2.905-2.241-5.312-5.27-5.312-3.03 0-5.228 2.407-5.228 5.311 0 2.905 2.199 5.312 5.228 5.312ZM0 0h5.892v30H0V0ZM82 6.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <!--  -->
+              <div class="w-1/3 p-2">
+                <div class="flex items-center justify-center h-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="54" height="41" fill="none" viewBox="0 0 54 41">
+                    <path fill="#2A2E4E" d="M54 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"></path>
+                    <path
+                      fill="#2A2E4E"
+                      fill-rule="evenodd"
+                      d="M13.75 40.794C6.156 40.794 0 34.638 0 27.044V1h5v26.044a8.75 8.75 0 0 0 8.75 8.75c4.893 0 8.75-3.771 8.75-8.544h5v7.5a1.25 1.25 0 0 0 2.5 0v-8.875a6.25 6.25 0 0 1-7.5-6.125V7.25a6.25 6.25 0 1 1 12.5 0v27.5a1.25 1.25 0 1 0 2.5 0V7.25a6.25 6.25 0 1 1 12.5 0v27.5a6.25 6.25 0 0 1-10 5A6.222 6.222 0 0 1 36.25 41a6.222 6.222 0 0 1-3.75-1.25 6.251 6.251 0 0 1-9.466-2.47c-2.456 2.197-5.723 3.514-9.284 3.514Zm30-4.794c-.69 0-1.25-.56-1.25-1.25V7.25a1.25 1.25 0 1 1 2.5 0v27.5c0 .69-.56 1.25-1.25 1.25ZM30 19.75a1.25 1.25 0 0 1-2.5 0V7.25a1.25 1.25 0 1 1 2.5 0v12.5Z"
+                      clip-rule="evenodd"
+                    ></path>
+                    <path
+                      fill="#2A2E4E"
+                      fill-rule="evenodd"
+                      d="M7.5 27.25a6.25 6.25 0 1 0 12.5 0v-20a6.25 6.25 0 1 0-12.5 0v20Zm6.25 1.25c-.69 0-1.25-.56-1.25-1.25v-20a1.25 1.25 0 1 1 2.5 0v20c0 .69-.56 1.25-1.25 1.25Z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <!--  -->
+              <div class="w-1/3 p-2">
+                <div class="flex items-center justify-center h-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="220" height="40" fill="none" viewBox="0 0 220 40">
+                    <path
+                      fill="#0E1534"
+                      d="M20 40c11.046 0 20-8.954 20-20V6a6 6 0 0 0-6-6H21v8.774c0 2.002.122 4.076 1.172 5.78a9.999 9.999 0 0 0 6.904 4.627l.383.062a.8.8 0 0 1 0 1.514l-.383.062a10 10 0 0 0-8.257 8.257l-.062.383a.8.8 0 0 1-1.514 0l-.062-.383a10 10 0 0 0-4.627-6.904C12.85 21.122 10.776 21 8.774 21H.024C.547 31.581 9.29 40 20 40Z"
+                    ></path>
+                    <path
+                      fill="#0E1534"
+                      d="M0 19h8.774c2.002 0 4.076-.122 5.78-1.172a10.018 10.018 0 0 0 3.274-3.274C18.878 12.85 19 10.776 19 8.774V0H6a6 6 0 0 0-6 6v13ZM46.455 2a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM211.711 12.104c5.591 0 8.289 3.905 8.289 8.428v8.495h-5.851V21.54c0-2.05-.748-3.742-2.893-3.742-2.145 0-2.86 1.692-2.86 3.742v7.486h-5.851V21.54c0-2.05-.715-3.742-2.861-3.742-2.145 0-2.893 1.692-2.893 3.742v7.486h-5.85v-8.495c0-4.523 2.697-8.428 8.288-8.428 3.056 0 5.266 1.204 6.274 3.189 1.072-1.985 3.413-3.19 6.208-3.19ZM180.427 23.82c1.885 0 2.698-1.725 2.698-3.776v-7.29h5.85v8.006c0 4.784-2.795 8.755-8.548 8.755-5.754 0-8.549-3.97-8.549-8.755v-8.006h5.851v7.29c0 2.05.812 3.776 2.698 3.776ZM163.275 29.547c-3.673 0-6.046-1.269-7.444-3.742l4.226-2.376c.585 1.041 1.462 1.562 2.925 1.562 1.203 0 1.755-.423 1.755-.944 0-1.985-8.581.033-8.581-6.28 0-3.06 2.6-5.533 7.021-5.533 3.868 0 5.981 1.887 6.924 3.71l-4.226 2.408c-.357-.976-1.463-1.562-2.568-1.562-.845 0-1.3.358-1.3.846 0 2.018 8.581.163 8.581 6.281 0 3.417-3.348 5.63-7.313 5.63ZM142.833 36.512h-5.851V20.858c0-4.98 3.738-8.592 8.939-8.592 5.071 0 8.939 3.873 8.939 8.592 0 5.207-3.446 8.657-8.614 8.657-1.203 0-2.405-.358-3.413-.912v7.909Zm3.088-12.497c1.853 0 3.088-1.432 3.088-3.125 0-1.724-1.235-3.124-3.088-3.124s-3.088 1.4-3.088 3.125c0 1.692 1.235 3.124 3.088 3.124ZM131.121 11.03c-1.918 0-3.51-1.595-3.51-3.515 0-1.92 1.592-3.515 3.51-3.515 1.918 0 3.511 1.595 3.511 3.515 0 1.92-1.593 3.515-3.511 3.515Zm-2.925 1.724h5.851v16.273h-5.851V12.754ZM116.97 29.515c-5.071 0-8.939-3.905-8.939-8.657 0-4.719 3.868-8.624 8.939-8.624s8.939 3.905 8.939 8.624c0 4.752-3.868 8.657-8.939 8.657Zm0-5.5c1.853 0 3.088-1.432 3.088-3.125 0-1.724-1.235-3.156-3.088-3.156s-3.088 1.432-3.088 3.156c0 1.693 1.235 3.125 3.088 3.125ZM96.983 37c-4.03 0-6.956-1.79-8.451-4.98l4.843-2.603c.52 1.107 1.495 2.246 3.51 2.246 2.114 0 3.511-1.335 3.674-3.678-.78.684-2.016 1.204-3.868 1.204-4.519 0-8.16-3.482-8.16-8.364 0-4.718 3.869-8.559 8.94-8.559 5.201 0 8.939 3.613 8.939 8.592v6.444c0 5.858-4.064 9.698-9.427 9.698Zm.39-13.31c1.755 0 3.088-1.205 3.088-2.995 0-1.757-1.332-2.929-3.088-2.929-1.723 0-3.088 1.172-3.088 2.93 0 1.79 1.365 2.993 3.088 2.993ZM78.607 29.515c-5.071 0-8.94-3.905-8.94-8.657 0-4.719 3.869-8.624 8.94-8.624 5.07 0 8.939 3.905 8.939 8.624 0 4.752-3.869 8.657-8.94 8.657Zm0-5.5c1.853 0 3.088-1.432 3.088-3.125 0-1.724-1.235-3.156-3.088-3.156s-3.088 1.432-3.088 3.156c0 1.693 1.235 3.125 3.088 3.125ZM59.013 7.06v16.434H68.7v5.533H58.2c-3.705 0-5.2-1.953-5.2-5.045V7.06h6.013Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <!--  -->
+              <div class="w-1/3 p-2">
+                <div class="flex items-center justify-center h-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100" height="40" fill="none" viewBox="0 0 100 40">
+                    <path
+                      fill="#1D2633"
+                      d="M4.77 4.235C5.03 3.001 6.26 2 7.513 2h6.812L8.66 28.823H1.848c-1.254 0-2.06-1-1.799-2.235L4.77 4.235ZM27.477 4.235C27.738 3.001 28.967 2 30.22 2h6.812l-5.665 26.823h-6.812c-1.254 0-2.06-1-1.799-2.235l4.721-22.353ZM72.892 4.235C73.152 3.001 74.38 2 75.635 2h6.812l-5.665 26.823h-6.813c-1.254 0-2.059-1-1.798-2.235l4.72-22.353ZM39.303 2h6.812c1.254 0 2.06 1 1.799 2.235l-4.721 22.353c-.26 1.235-1.489 2.235-2.743 2.235h-6.812L39.303 2ZM84.718 2h6.812c1.254 0 2.06 1 1.799 2.235l-4.722 22.353c-.26 1.235-1.488 2.235-2.742 2.235h-6.813L84.718 2ZM50.185 4.235C50.445 3.001 51.673 2 52.927 2h6.813l-5.666 26.823h-6.812c-1.254 0-2.06-1-1.798-2.235l4.72-22.353ZM62.01 2h6.813c1.254 0 2.059 1 1.798 2.235l-7.081 33.53C63.278 38.999 62.05 40 60.796 40h-6.813L62.01 2ZM12.819 19.882h9.083l-1.416 6.706c-.261 1.235-1.49 2.235-2.743 2.235H10.93l1.888-8.94ZM44.52 31.059h9.082L51.714 40h-6.812c-1.255 0-2.06-1-1.799-2.235l1.416-6.706ZM69.174 33.138l-1.15 5.446c-.05.234-.128.298-.366.298h-.523c-.238 0-.29-.064-.24-.298l1.15-5.446c.05-.233.128-.298.366-.298h.523c.238 0 .29.065.24.298ZM70.686 36.812h-.107c-.114 0-.154.032-.177.145l-.344 1.627c-.05.234-.129.298-.366.298h-.524c-.237 0-.289-.064-.24-.298l1.15-5.446c.05-.233.13-.298.367-.298h1.08c1.244 0 1.715.443 1.485 1.53l-.192.911c-.23 1.088-.888 1.53-2.132 1.53Zm.316-2.699-.3 1.426c-.025.113.001.145.116.145h.172c.4 0 .615-.161.702-.572l.12-.572c.087-.41-.059-.572-.46-.572h-.172c-.114 0-.154.032-.178.145ZM74.74 34.991l.85.935c.446.483.508.773.394 1.313l-.03.145c-.215 1.015-.727 1.579-1.914 1.579-1.186 0-1.479-.475-1.205-1.773l.034-.16c.05-.234.129-.299.366-.299h.556c.238 0 .29.065.24.298l-.075.355c-.068.322.036.451.322.451.287 0 .443-.12.505-.41l.032-.154c.048-.226.022-.338-.224-.604l-.8-.862c-.448-.475-.505-.75-.391-1.29l.037-.176c.215-1.015.727-1.58 1.913-1.58 1.187 0 1.48.476 1.206 1.773l-.034.161c-.05.234-.129.298-.366.298h-.557c-.237 0-.289-.064-.24-.298l.075-.354c.068-.323-.035-.451-.322-.451-.286 0-.443.12-.504.41l-.029.137c-.05.234-.024.347.161.556ZM79.532 33.138c.05-.233.128-.298.366-.298h.523c.238 0 .29.065.24.298l-.856 4.053c-.274 1.297-.767 1.772-1.954 1.772-1.186 0-1.479-.475-1.205-1.773l.856-4.052c.05-.233.129-.298.366-.298h.524c.237 0 .289.065.24.298l-.897 4.246c-.068.322.044.451.355.451.302 0 .477-.129.545-.451l.897-4.246ZM82.938 36.417c.003.065.024.08.065.08.04 0 .069-.015.099-.08l1.414-3.367c.069-.17.151-.21.356-.21h.794c.237 0 .289.065.24.298l-1.15 5.446c-.05.234-.13.298-.367.298h-.376c-.237 0-.29-.064-.24-.298l.552-2.61c.015-.072.002-.089-.047-.089-.033 0-.07.017-.09.073l-1.142 2.659c-.082.193-.187.265-.424.265H82.4c-.246 0-.32-.072-.32-.265l-.028-2.66c-.005-.056-.018-.072-.059-.072-.049 0-.069.017-.084.089l-.551 2.61c-.05.234-.128.298-.366.298h-.376c-.238 0-.29-.064-.24-.298l1.15-5.446c.05-.233.129-.298.366-.298h.68c.286 0 .378.065.376.347l-.011 3.23ZM100 2c0 1.105-.89 2-1.987 2a1.993 1.993 0 0 1-1.987-2c0-1.105.89-2 1.987-2S100 .895 100 2Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <!--  -->
+              <div class="w-1/3 p-2">
+                <div class="flex items-center justify-center h-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="176" height="40" fill="none" viewBox="0 0 176 40">
+                    <path
+                      fill="#283841"
+                      fill-rule="evenodd"
+                      d="M15 28a5 5 0 0 1-5-5V0H0v23c0 8.284 6.716 15 15 15h11V28H15ZM45 10a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm-19 9C26 8.507 34.507 0 45 0s19 8.507 19 19-8.507 19-19 19-19-8.507-19-19ZM153 10a9 9 0 0 0-9 9 9 9 0 0 0 9 9 9 9 0 0 0 9-9 9 9 0 0 0-9-9Zm-19 9c0-10.493 8.507-19 19-19s19 8.507 19 19-8.507 19-19 19-19-8.507-19-19ZM85 0C74.507 0 66 8.507 66 19s8.507 19 19 19h28c1.969 0 3.868-.3 5.654-.856L124 40l5.768-10.804A19.007 19.007 0 0 0 132 20.261V19c0-10.493-8.507-19-19-19H85Zm37 19a9 9 0 0 0-9-9H85a9 9 0 1 0 0 18h28a9 9 0 0 0 9-8.93V19Z"
+                      clip-rule="evenodd"
+                    ></path>
+                    <path fill="#283841" d="M176 2.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"></path>
+                  </svg>
+                </div>
+              </div>
+              <!--  -->
+              <div class="w-1/3 p-2">
+                <div class="flex items-center justify-center h-full">
+                  <svg id="logo-23" width="130" height="47" viewBox="0 0 130 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.9517 20.2335C12.9152 21.0903 12.897 22.1751 12.897 23.4877C12.897 24.8003 12.9152 25.8941 12.9517 26.7692C12.9881 27.6261 13.061 28.3097 13.1704 28.8202C13.298 29.3306 13.4712 29.6861 13.69 29.8867C13.927 30.0872 14.2369 30.1875 14.6198 30.1875C15.0026 30.1875 15.3034 30.0872 15.5222 29.8867C15.7592 29.6861 15.9324 29.3306 16.0418 28.8202C16.1694 28.3097 16.2514 27.6261 16.2879 26.7692C16.3244 25.8941 16.3426 24.8003 16.3426 23.4877C16.3426 22.1751 16.3244 21.0903 16.2879 20.2335C16.2514 19.3584 16.1694 18.6656 16.0418 18.1552C15.9324 17.6447 15.7592 17.2892 15.5222 17.0887C15.3034 16.8881 15.0026 16.7878 14.6198 16.7878C14.2369 16.7878 13.927 16.8881 13.69 17.0887C13.4712 17.2892 13.298 17.6447 13.1704 18.1552C13.061 18.6656 12.9881 19.3584 12.9517 20.2335Z"
+                      class="ccustom"
+                      fill="#394149"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.9205 3.1733C7.3267 3.3144 2.0855 8.7556 2.1913 15.35L2.3213 23.4524L2.1913 31.5548C2.0855 38.1493 7.3267 43.5905 13.9205 43.7315L22.0241 43.9049L30.1277 43.7315C36.7215 43.5905 41.9628 38.1493 41.857 31.5548L41.727 23.4524L41.857 15.35C41.9628 8.7556 36.7215 3.3144 30.1277 3.1733L22.0241 3L13.9205 3.1733ZM22.3041 33.7698L19.2413 36.4224L16.452 33.4143C16.2332 33.4508 16.0144 33.4782 15.7957 33.4964C15.5951 33.5328 15.3672 33.5511 15.112 33.5511H14.6198C13.3254 33.5511 12.2315 33.3779 11.3382 33.0315C10.4449 32.6851 9.7248 32.1108 9.1779 31.3087C8.631 30.4883 8.239 29.44 8.002 28.1639C7.765 26.8695 7.6465 25.3107 7.6465 23.4877C7.6465 21.6646 7.765 20.115 8.002 18.8388C8.239 17.5444 8.631 16.4962 9.1779 15.694C9.7248 14.8736 10.4449 14.2811 11.3382 13.9165C12.2315 13.5336 13.3254 13.3422 14.6198 13.3422C15.9142 13.3422 17.008 13.5336 17.9013 13.9165C18.7946 14.2811 19.5148 14.8736 20.0617 15.694C20.6086 16.4962 21.0006 17.5444 21.2376 18.8388C21.4746 20.115 21.5931 21.6646 21.5931 23.4877C21.5931 25.3654 21.4655 26.9515 21.2102 28.2459C20.955 29.5403 20.5357 30.5977 19.9523 31.4181L22.3041 33.7698ZM30.9363 20.753V19.6592C30.9363 18.5471 30.8269 17.7905 30.6081 17.3895C30.3894 16.9884 30.0339 16.7878 29.5416 16.7878C29.1588 16.7878 28.8489 16.8881 28.6119 17.0887C28.3931 17.2892 28.2199 17.6447 28.0923 18.1552C27.9829 18.6656 27.91 19.3584 27.8735 20.2335C27.837 21.0903 27.8188 22.1751 27.8188 23.4877C27.8188 24.8003 27.837 25.8941 27.8735 26.7692C27.91 27.6261 27.9829 28.3097 28.0923 28.8202C28.2199 29.3306 28.3931 29.6861 28.6119 29.8867C28.8489 30.0872 29.1588 30.1875 29.5416 30.1875C29.8515 30.1875 30.1068 30.1146 30.3073 29.9687C30.5079 29.8046 30.6628 29.5403 30.7722 29.1757C30.8816 28.8111 30.9545 28.3279 30.991 27.7263C31.0457 27.1065 31.073 26.3317 31.073 25.4019H35.9953V26.8513C35.9953 28.2186 35.813 29.3398 35.4484 30.2148C35.0838 31.0899 34.6007 31.7827 33.9991 32.2931C33.3974 32.7854 32.7047 33.1135 31.9207 33.2776C31.1551 33.4599 30.362 33.5511 29.5416 33.5511C28.1196 33.5511 26.9529 33.3779 26.0413 33.0315C25.1298 32.6851 24.4188 32.1108 23.9083 31.3087C23.3978 30.4883 23.0423 29.44 22.8418 28.1639C22.6595 26.8695 22.5683 25.3107 22.5683 23.4877C22.5683 21.6281 22.6777 20.0512 22.8965 18.7568C23.1335 17.4624 23.5255 16.4141 24.0724 15.612C24.6193 14.8098 25.3394 14.2355 26.2327 13.8891C27.126 13.5245 28.229 13.3422 29.5416 13.3422C30.6902 13.3422 31.6655 13.4881 32.4677 13.7798C33.2698 14.0715 33.917 14.4908 34.4093 15.0377C34.9197 15.5664 35.2843 16.2136 35.5031 16.9793C35.7401 17.7267 35.8586 18.5745 35.8586 19.5225V20.753H30.9363Z"
+                      class="ccustom"
+                      fill="#394149"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M65.7549 16.9364L70.2131 21.5629L74.6713 16.9364H82.417L74.0801 24.8676L82.417 32.7987H74.6713L70.2131 28.1604L65.7549 32.7987H57.9974L66.3344 24.8676L57.9974 16.9364H65.7549ZM65.3251 24.8676L56.2576 16.2415H66.0513L70.2131 20.5604L74.3749 16.2415H83.819V16.2297H99.825C103.485 16.1923 106.583 19.2529 106.533 22.9252C106.532 24.2461 106.175 25.4637 105.46 26.5474C104.922 27.3677 104.24 28.0426 103.423 28.5558L106.836 32.9379V30.096C106.836 27.8694 108.5 26.4499 110.414 25.5085C112.347 24.5581 114.786 23.9643 116.817 23.4839L116.82 23.4832L116.843 23.4774C118.095 23.1695 119.161 22.9074 119.92 22.6247C120.304 22.4814 120.556 22.3517 120.7 22.2415C120.718 22.2275 120.733 22.2151 120.746 22.2044C120.702 22.164 120.612 22.1037 120.435 22.0342C120.022 21.8725 119.317 21.7507 118.249 21.7504C117.108 21.7622 116.138 21.855 115.476 22.0872C115.15 22.2017 114.953 22.3321 114.842 22.4545C114.748 22.5596 114.692 22.6843 114.697 22.8799L114.714 23.5915H107.084V22.8966C107.084 21.47 107.364 20.2772 107.924 19.2999C108.487 18.3182 109.307 17.6014 110.307 17.0873C112.269 16.0786 114.972 15.8284 117.986 15.8284C121.072 15.8284 123.634 16.1845 125.448 17.1013C126.366 17.5659 127.112 18.1842 127.625 18.9883C128.139 19.7945 128.391 20.7435 128.391 21.8226C128.391 23.8195 127.186 25.0914 125.709 25.9204C124.275 26.7253 122.47 27.1824 120.971 27.5481H128.131V33.4701H107.25L107.259 33.4819H98.895L95.903 29.6107H91.408V33.4819H84.144L84.157 33.4937H74.3744L70.2131 29.1643L66.0518 33.4937H56.2576L65.3251 24.8676ZM83.819 33.1719V16.5632L75.0893 24.8676L83.819 33.1719ZM96.246 28.9158L99.238 32.7869H105.836L102.371 28.3374C102.588 28.2369 102.795 28.1257 102.994 28.0041C103.752 27.5399 104.382 26.9232 104.878 26.1658C105.517 25.198 105.836 24.1122 105.836 22.9202C105.884 19.6391 103.105 16.8892 99.829 16.9246H84.515V32.7869H90.711V28.9158H96.246ZM117.324 28.243C117.541 27.9777 117.934 27.7521 118.456 27.5481C119.071 27.3073 119.863 27.0965 120.753 26.8858C123.804 26.1422 127.695 25.1272 127.695 21.8226C127.695 17.9514 124.1 16.5233 117.986 16.5233C112.237 16.5233 108.16 17.4599 107.806 22.2016C107.789 22.4248 107.78 22.6563 107.78 22.8966H114.001C114 22.8704 114 22.8446 114.001 22.8192C114.035 21.4093 115.981 21.0786 118.246 21.0554C120.457 21.0554 121.474 21.5511 121.474 22.2239C121.474 23.0543 119.512 23.537 117.048 24.1429L116.981 24.1594C112.889 25.1272 107.532 26.4727 107.532 30.096V32.7751H127.434V28.243H117.324ZM120.785 22.2577C120.785 22.2577 120.781 22.2533 120.779 22.2431C120.785 22.2523 120.785 22.2577 120.785 22.2577ZM98.932 22.9202C98.932 22.5487 98.64 22.2579 98.268 22.2579H91.408V23.5707H98.268C98.468 23.5707 98.608 23.51 98.733 23.3848C98.876 23.2422 98.932 23.0996 98.932 22.9202ZM99.628 22.9202C99.628 22.1648 99.025 21.5629 98.268 21.5629H90.711V24.2656H98.268C98.646 24.2656 98.966 24.1358 99.226 23.8762C99.498 23.6047 99.628 23.2861 99.628 22.9202Z"
+                      class="ccustom"
+                      fill="#394149"
+                    ></path>
+
+                    <path
+                      d="M58.5709 44.2423H61.5388V40.1786L64.5122 44.2423H65.9961L68.9696 40.1786V44.2423H71.9375V36.6249H68.2277L65.2542 40.4336L62.2864 36.6249H58.5709V44.2423Z"
+                      class="ccustom"
+                      fill="#394149"
+                    ></path>
+
+                    <path
+                      d="M78.19 36.4379C75.3244 36.4436 72.9796 37.271 72.9909 40.1559V40.7113C72.9796 43.5905 75.3244 44.4237 78.19 44.4293C81.05 44.4237 83.395 43.5905 83.384 40.7113V40.1559C83.384 37.2767 81.056 36.4379 78.19 36.4379ZM80.416 40.5243C80.433 41.7712 79.402 41.9979 78.19 42.0149C76.9726 41.9979 75.9417 41.7712 75.9587 40.5243V40.3373C75.9417 39.096 76.9726 38.8693 78.19 38.8523C79.402 38.8693 80.433 39.096 80.416 40.3373V40.5243Z"
+                      class="ccustom"
+                      fill="#394149"
+                    ></path>
+
+                    <path
+                      d="M91.698 40.445C91.698 41.2101 91.262 41.8392 90.492 41.8392H87.241V39.0507H90.492C91.262 39.0507 91.698 39.6741 91.698 40.445ZM84.273 36.6363V44.2536H91.047C93.137 44.282 94.689 42.5137 94.672 40.445C94.689 38.3649 93.137 36.6079 91.047 36.6363H84.273Z"
+                      class="ccustom"
+                      fill="#394149"
+                    ></path>
+
+                    <path
+                      d="M102.935 40.53C102.952 41.7825 101.922 41.9979 100.709 42.0149C99.492 41.9979 98.467 41.7825 98.478 40.53V36.6249H95.51V40.717C95.499 43.5962 97.855 44.4237 100.709 44.4293C103.564 44.4237 105.92 43.5962 105.909 40.717V36.6249H102.935V40.53Z"
+                      class="ccustom"
+                      fill="#394149"
+                    ></path>
+
+                    <path d="M107.245 36.6249V44.2423H116.155V41.8279H110.213V36.6249H107.245Z" class="ccustom" fill="#394149"></path>
+
+                    <path
+                      d="M117.168 44.2536H126.078V42.2983H120.136V41.3234H126.078V39.5608H120.136V38.5859H126.078V36.6363H117.168V44.2536Z"
+                      class="ccustom"
+                      fill="#394149"
+                    ></path>
+
+                    <path
+                      d="M60.2797 7.6056V6.0003H64.6786C64.8917 6.0003 65.0772 6.0774 65.2284 6.2386C65.3865 6.3929 65.4621 6.5821 65.4621 6.8064C65.4621 7.0238 65.3865 7.213 65.2284 7.3743C65.0772 7.5285 64.8917 7.6056 64.6786 7.6056H60.2797ZM56.6782 3.2454V12.6668H60.2797V10.3675H65.579C67.4829 10.3956 69.0981 8.7482 69.0706 6.8064C69.0981 4.8577 67.4829 3.2243 65.579 3.2454H56.6782Z"
+                      class="ccustom"
+                      fill="#394149"
+                    ></path>
+
+                    <path
+                      d="M76.2393 3C72.7615 3.007 69.916 4.0305 69.9297 7.5986V8.2856C69.916 11.8467 72.7615 12.8771 76.2393 12.8841C79.71 12.8771 82.556 11.8467 82.542 8.2856V7.5986C82.542 4.0375 79.717 3 76.2393 3ZM78.94 8.0542C78.961 9.5964 77.71 9.8768 76.2393 9.8979C74.7616 9.8768 73.5107 9.5964 73.5313 8.0542V7.8229C73.5107 6.2877 74.7616 6.0073 76.2393 5.9863C77.71 6.0073 78.961 6.2877 78.94 7.8229V8.0542Z"
+                      class="ccustom"
+                      fill="#394149"
+                    ></path>
+
+                    <path
+                      d="M96.584 9.2109L94.446 3.2454H90.391L88.247 9.2109L86.109 3.2454H82.054L86.109 12.6668H90.391L92.419 7.9561L94.446 12.6668H98.728L102.784 3.2454H98.728L96.584 9.2109Z"
+                      class="ccustom"
+                      fill="#394149"
+                    ></path>
+
+                    <path
+                      d="M103.059 12.6668H113.87V10.2484H106.66V9.0426H113.87V6.8625H106.66V5.6568H113.87V3.2454H103.059V12.6668Z"
+                      class="ccustom"
+                      fill="#394149"
+                    ></path>
+
+                    <path
+                      d="M115.788 3.2383V12.6598H119.389V10.3605H122.606L124.345 12.6598H128.18L126.166 10.017C126.771 9.7296 127.259 9.295 127.623 8.7272C127.995 8.1524 128.18 7.5075 128.18 6.7994C128.208 4.8506 126.592 3.2173 124.689 3.2383H115.788ZM123.781 5.9933C124.221 5.9933 124.572 6.3508 124.572 6.7994C124.572 7.0167 124.496 7.206 124.338 7.3672C124.187 7.5215 124.001 7.5986 123.781 7.5986H119.389V5.9933H123.781Z"
+                      class="ccustom"
+                      fill="#394149"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <!--  -->
+              <div class="w-1/3 p-2">
+                <div class="flex items-center justify-center h-full">
+                  <svg id="logo-78" width="175" height="40" viewBox="0 0 175 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      class="ccustom"
+                      d="M170.394 7.66415L174.568 11.8668C174.714 11.9829 174.822 12.1396 174.878 12.3171C174.963 13.3515 174.18 13.4081 173.38 13.4659C173.034 13.4909 172.685 13.5162 172.402 13.621C170.998 14.0009 169.746 14.8033 168.815 15.9193C167.883 17.0353 167.318 18.4109 167.195 19.8593C167.105 20.0266 166.969 20.1643 166.802 20.2558C166.636 20.3474 166.447 20.3888 166.257 20.3753C166.037 20.3558 165.831 20.2595 165.675 20.1032L164.305 18.7238C164.315 18.8182 164.315 18.9117 164.315 18.9869V19.8968C164.315 19.9543 164.317 20.0097 164.31 20.065C164.301 20.127 164.28 20.1888 164.231 20.2532V20.3377C164.231 20.3808 164.236 20.4209 164.241 20.4616C164.251 20.5449 164.262 20.6307 164.231 20.7505C164.201 20.8622 164.198 20.9925 164.194 21.1088C164.193 21.1779 164.191 21.2421 164.184 21.2945C164.174 21.3672 164.174 21.4448 164.168 21.5223C164.162 21.5949 164.15 21.6674 164.118 21.7354C164.074 21.8306 164.059 21.9215 164.055 22.0139C164.052 22.0581 164.052 22.1026 164.052 22.1482L163.996 22.439L161.867 32.5891L161.698 33.3489L161.632 34.4559L160.694 39.2495L160.544 40H84.6248L84.2589 39.6341L84.1932 39.9531H76.0694L71.5478 35.4034L71.9793 33.3489H69.4277L67.8424 31.7448C65.8749 33.1775 63.4934 33.9285 61.06 33.8837C58.4442 33.9866 55.8941 33.0488 53.9681 31.2758L51.5009 28.7899L50.9662 31.2851C50.9006 31.6416 50.8161 31.9794 50.7223 32.3077L50.6379 32.6173L50.4972 33.0675C50.4856 33.1066 50.4699 33.1444 50.4503 33.1801C50.3106 33.5937 50.1446 33.9979 49.9531 34.3902C49.9581 34.4054 49.9581 34.4219 49.9531 34.4371C49.9285 34.4891 49.9003 34.5392 49.8686 34.5872C49.727 34.8675 49.5705 35.1399 49.3996 35.4034C49.3679 35.4513 49.3397 35.5015 49.3152 35.5535L49.212 35.666C48.9827 35.9949 48.732 36.3082 48.4615 36.6041C48.3873 36.6783 48.3131 36.748 48.2377 36.8164C48.1607 36.8864 48.0825 36.9551 48.0018 37.0262L47.7955 37.2232C47.6654 37.3313 47.5323 37.4356 47.3964 37.5361C47.2843 37.619 47.1703 37.6992 47.0544 37.7767C45.1211 38.9222 42.891 39.4674 40.6473 39.3433C37.5516 39.3433 35.075 38.4427 33.5084 36.8668L29.0994 32.4296C27.3383 33.4262 25.3442 33.9377 23.3208 33.9118C20.7129 33.9925 18.1782 33.042 16.2664 31.2664L13.7993 28.7805L13.0019 32.6173L12.8424 33.3771H4.54036L0 28.7992L0.234521 27.6923L5.22515 3.72418L5.37521 2.97372H13.7054L13.9212 3.18013V2.97372H70.0469L70.2533 3.18013V2.97372H78.3771L82.9174 7.55158L82.6923 8.64913L82.4484 9.8499H84.7842L85.1501 10.2158C86.1779 9.61344 87.3453 9.29005 88.5366 9.27769C89.4126 9.26039 90.2825 9.42678 91.0903 9.76608C91.8982 10.1054 92.626 10.61 93.227 11.2476L93.105 11.1069L95.3095 13.3302C96.651 10.8068 99.6622 9.27769 103.752 9.27769C106.923 9.27769 109.259 10.0844 110.675 11.5478L112.27 13.152L112.805 10.5722L112.964 9.82173H121.097L123.424 12.1576L123.752 10.5816L123.912 9.83112H139.916L140.347 10.2627C141.431 9.62306 142.672 9.29818 143.931 9.32458C144.688 9.29503 145.442 9.43365 146.14 9.73047C146.837 10.0273 147.46 10.475 147.964 11.0413C147.938 11.0118 147.913 10.9823 147.888 10.9533C147.843 10.8995 147.798 10.847 147.75 10.7984L148.565 11.6135C149.275 10.8782 150.129 10.2959 151.072 9.90235C152.016 9.50877 153.03 9.3121 154.052 9.32458C154.595 9.2912 155.137 9.3374 155.663 9.46033L154.775 8.56473C154.654 8.43528 154.572 8.27421 154.539 8.10021C154.506 7.92621 154.523 7.74631 154.587 7.58147C154.652 7.41657 154.762 7.27343 154.905 7.16854C155.048 7.06365 155.217 7.00129 155.394 6.98875H156.107C156.299 6.97043 156.49 6.94226 156.679 6.9043C157.676 6.69474 158.614 6.26624 159.425 5.6497C160.237 5.03323 160.901 4.24418 161.37 3.33959C161.411 3.26962 161.448 3.19765 161.482 3.12384V3.07695C161.805 2.38215 162.001 1.63581 162.064 0.872416C162.08 0.635203 162.187 0.413106 162.361 0.251186C162.535 0.0892079 162.764 -0.00056984 163.002 2.72188e-06H163.077C163.219 0.0135152 163.357 0.0594347 163.479 0.134211C163.601 0.209045 163.704 0.310732 163.781 0.431543C164.456 1.08821 168.208 4.90617 168.208 4.90617C168.521 5.24238 168.498 5.67885 168.474 6.12046C168.459 6.39352 168.444 6.66858 168.508 6.92308C168.679 6.95371 168.852 6.9769 169.024 6.99259C169.19 7.00753 169.356 7.01566 169.522 7.01687C169.716 7.02093 169.905 7.0854 170.061 7.2014C170.217 7.31735 170.334 7.4791 170.394 7.66415Z"
+                      fill="black"
+                    ></path>
+                    <path
+                      d="M42.9361 10.7505H48.8648L45.544 26.5009C44.9343 29.484 43.771 31.1914 42.0074 32.4015C40.2236 33.4366 38.1753 33.9258 36.1163 33.8086C32.1951 33.8086 28.4333 32.167 28.0581 28.1801H34.0243C34.2119 29.1182 35.075 29.6529 36.3883 29.6529C38.1613 29.6529 38.9774 28.5835 39.3433 26.9043L39.6997 25.1688H39.5684C39.0449 25.7443 38.4099 26.2073 37.702 26.5298C36.994 26.8523 36.228 27.0276 35.4502 27.045C31.9981 27.045 29.2588 24.2964 29.3151 20.272C29.3902 15.5816 32.4483 10.2533 37.5797 10.2533C38.5521 10.1878 39.5229 10.4021 40.3774 10.8709C41.2319 11.3396 41.9342 12.0433 42.4014 12.8987H42.5046L42.9361 10.7505ZM37.8423 22.6454C40.1219 22.6454 41.3883 20.0188 41.4258 17.758C41.4258 16.2477 40.8348 14.6998 39.09 14.6998C36.7072 14.6998 35.4971 17.3546 35.4596 19.6341C35.4596 21.1726 36.0506 22.6454 37.7954 22.6454M104.4 23.152C104.4 24.1557 103.536 24.5591 102.401 24.5591C100.525 24.5591 99.8967 23.621 99.8873 22.3077H93.9868C93.8836 27.2045 98.2551 28.4146 102.139 28.4146C107.101 28.4146 110.319 26.2664 110.385 21.9794C110.385 18.5553 107.467 17.5141 104.597 16.848C102.392 16.3415 101.426 15.9756 101.435 15.1407C101.445 14.3058 102.43 13.9681 103.396 13.9681C104.606 13.9681 105.431 14.3996 105.516 15.5066H111.248C111.182 11.4165 107.495 10.2158 103.743 10.2158C99.1838 10.2158 95.6284 12.2889 95.5721 16.2101C95.5721 19.2964 97.6547 20.4315 100.797 21.2383C102.814 21.773 104.418 21.9418 104.4 23.152ZM148.236 13.2927H148.133C147.878 12.3689 147.314 11.5602 146.536 11.0005C145.758 10.4409 144.812 10.164 143.855 10.2158C141.304 10.2158 139.747 11.4822 138.274 13.3959H138.171L138.715 10.7505H132.748L129.174 27.8424H135.413L137.289 18.621C137.72 16.6135 138.743 15.2064 140.291 15.2064C141.839 15.2064 142.045 16.4446 141.726 17.955L139.662 27.8424H145.9L147.777 18.621C148.208 16.4822 149.231 15.2064 150.778 15.2064C152.326 15.2064 152.533 16.379 152.214 17.955L150.15 27.8424H156.388L158.621 17.6829C159.559 13.3959 158.124 10.1782 154.006 10.1782C152.86 10.1735 151.732 10.4561 150.724 11.0002C149.716 11.5443 148.861 12.3325 148.236 13.2927ZM1.14441 27.8424H7.58906L12.5703 3.8743H6.13503L1.14441 27.8424ZM20.544 10.2439C24.8967 10.2439 29.0525 12.6266 28.9868 18.0206C28.9305 23.9212 24.9155 28.3396 18.7804 28.3396C14.559 28.3396 10.3377 25.9944 10.4127 20.6285C10.5159 14.8687 14.4746 10.2439 20.544 10.2439ZM18.9587 24.1557C21.7073 24.1557 22.711 20.1688 22.711 17.8236C22.711 16.1445 22.1951 14.5028 20.3845 14.5028C17.6641 14.5028 16.7354 18.7242 16.7354 20.9006C16.7354 22.6454 17.2232 24.1557 18.9962 24.1557M14.7185 3.8743L13.7804 8.66792H67.8986L68.8367 3.8743H14.7185ZM58.2457 10.2439C62.5984 10.2439 66.7541 12.6266 66.6885 18.0206C66.6322 23.9212 62.6078 28.3396 56.4727 28.3396C52.2513 28.3396 48.0299 25.9944 48.1144 20.6285C48.2457 14.8687 52.2044 10.2439 58.2457 10.2439ZM56.6885 24.1557C59.4371 24.1557 60.4408 20.1688 60.4408 17.8236C60.4408 16.1445 59.9155 14.5028 58.105 14.5028C55.3939 14.5028 54.4558 18.7242 54.4558 20.9006C54.4558 22.6454 54.9436 24.1557 56.726 24.1557M71.0506 3.8743L70.1125 8.66792H76.3414L77.2795 3.8743H71.0506ZM66.06 27.8424H72.2982L75.8723 10.7505H69.5965L66.06 27.8424ZM85.9661 28.4146C84.9733 28.4851 83.9804 28.2776 83.0988 27.8153C82.2173 27.353 81.482 26.6542 80.9755 25.7974H80.8723L78.9962 34.4465H72.6828L77.7485 10.7505H83.6772L83.2082 13.03C83.8273 12.188 84.6293 11.4973 85.5538 11.0098C86.4783 10.5224 87.5013 10.2509 88.5459 10.2158C92.2982 10.2158 94.5027 13.4334 94.4371 17.6173C94.3526 22.8799 91.6228 28.4146 85.9286 28.4146H85.9661ZM85.7222 15.0563C83.3114 15.0563 81.8292 18.1426 81.7917 20.516C81.7917 22.167 82.3733 24.0056 84.3526 24.0056C86.9324 24.0056 87.9924 20.591 88.0205 18.3114C88.0205 16.7636 87.5703 15.0563 85.7222 15.0563ZM121.792 25.1501H121.895L121.351 27.8612H127.279L130.854 10.7692H124.625L122.636 20.3189C122.233 22.2983 121.013 23.3396 119.475 23.3396C117.936 23.3396 117.598 21.8949 117.908 20.3846L119.925 10.7692H113.696L111.491 21.3227C110.553 25.9193 112.692 28.3959 116.276 28.3959C117.401 28.3849 118.504 28.0774 119.472 27.5042C120.44 26.931 121.241 26.1125 121.792 25.1313V25.1501ZM155.253 34.531L156.191 29.7373H82.2138L81.2757 34.531H155.253Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      d="M161.96 15.4409C161.899 15.4362 161.839 15.4193 161.784 15.3912C161.728 15.3632 161.679 15.3245 161.639 15.2774C161.599 15.2303 161.569 15.1758 161.55 15.1169C161.531 15.058 161.524 14.996 161.529 14.9343C161.607 14.0989 161.508 13.2563 161.238 12.4619C160.968 11.6675 160.533 10.939 159.961 10.3244C159.39 9.70976 158.695 9.22274 157.923 8.89524C157.15 8.56775 156.317 8.40717 155.478 8.42403C155.354 8.42403 155.235 8.37462 155.147 8.28665C155.059 8.19869 155.009 8.07938 155.009 7.95498C155.009 7.83058 155.059 7.71129 155.147 7.62333C155.235 7.53536 155.354 7.48594 155.478 7.48594C155.703 7.50048 155.929 7.50048 156.154 7.48594C157.82 7.30843 159.372 6.55564 160.543 5.35711C161.715 4.15858 162.431 2.58928 162.57 0.919337C162.58 0.801554 162.633 0.691688 162.72 0.611685C162.807 0.531683 162.921 0.487447 163.039 0.487826C163.101 0.492561 163.161 0.509449 163.216 0.53751C163.271 0.565571 163.32 0.604254 163.36 0.651335C163.401 0.698417 163.431 0.752963 163.45 0.811839C163.469 0.870715 163.476 0.932751 163.471 0.994386C163.393 1.82905 163.492 2.6708 163.761 3.46458C164.031 4.25835 164.465 4.98628 165.035 5.60078C165.606 6.21527 166.299 6.70249 167.07 7.03058C167.842 7.35867 168.674 7.52023 169.512 7.5047C169.636 7.5047 169.756 7.55413 169.844 7.64209C169.932 7.73005 169.981 7.84935 169.981 7.97375C169.981 8.09815 169.932 8.21746 169.844 8.30542C169.756 8.39338 169.636 8.44279 169.512 8.44279C167.73 8.47223 166.021 9.15877 164.714 10.3707C163.407 11.5826 162.593 13.2345 162.43 15.0094C162.42 15.1272 162.367 15.2371 162.28 15.3171C162.193 15.3971 162.079 15.4413 161.96 15.4409Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <!--  -->
+              <div class="w-1/3 p-2">
+                <div class="flex items-center justify-center h-full">
+                  <svg
+                    id="logo-79"
+                    class="gradient"
+                    width="125"
+                    height="40"
+                    viewBox="0 0 125 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="ccustom"
+                      d="M88.861 37.225c.759 0 1.208-.575 1.208-1.474 0-.932-.482-1.474-1.192-1.474-.406 0-.688.18-.899.466h-.01V33.27h-.44v3.873h.44v-.368h.01c.228.314.504.45.883.45Zm-.032-.369c-.596 0-.889-.471-.889-1.1 0-.606.282-1.105.894-1.105.531 0 .786.477.786 1.105 0 .634-.255 1.1-.791 1.1Zm1.983 1.214c.341 0 .558-.12.785-.7l1.198-3.028h-.466l-.64 1.745c-.086.233-.184.547-.184.547h-.01s-.104-.314-.19-.547l-.661-1.745h-.477l1.094 2.72-.108.276c-.108.271-.233.342-.417.342a.616.616 0 0 1-.298-.06h-.022v.39c.12.049.228.06.396.06Zm3.106-.927h.737V33.27h-.737v3.873Zm2.539.082c.861 0 1.452-.64 1.452-1.469 0-.829-.59-1.468-1.452-1.468-.861 0-1.452.64-1.452 1.468 0 .83.59 1.469 1.452 1.469Zm0-.564c-.455 0-.704-.363-.704-.905 0-.541.249-.91.704-.91.45 0 .704.369.704.91 0 .542-.254.905-.704.905Zm3.019 1.43c.412 0 .769-.097 1.002-.314.206-.19.331-.455.331-.845v-2.568h-.71v.293h-.011c-.168-.233-.422-.369-.77-.369-.703 0-1.202.531-1.202 1.36 0 .84.607 1.327 1.225 1.327.352 0 .563-.14.725-.325h.017v.304c0 .379-.2.58-.618.58-.341 0-.498-.136-.558-.31h-.731c.075.542.541.867 1.3.867Zm-.01-1.706c-.38 0-.63-.276-.63-.748 0-.466.25-.758.624-.758.444 0 .661.346.661.753 0 .412-.19.753-.656.753Zm3.134.84c.861 0 1.452-.64 1.452-1.469 0-.829-.591-1.468-1.452-1.468-.862 0-1.452.64-1.452 1.468 0 .83.59 1.469 1.452 1.469Zm0-.564c-.455 0-.705-.363-.705-.905 0-.541.25-.91.705-.91.449 0 .704.369.704.91 0 .542-.255.905-.704.905Zm1.794.482h.737v-2.779h-.737v2.78Zm0-3.212h.737v-.661h-.737v.66Zm1.212 4.122h.737V36.83h.01c.158.239.412.396.802.396.715 0 1.203-.57 1.203-1.469 0-.867-.471-1.468-1.208-1.468a.972.972 0 0 0-.818.423h-.016v-.347h-.71v3.69Zm1.392-1.44c-.439 0-.672-.331-.672-.835 0-.498.185-.894.645-.894.455 0 .639.368.639.894s-.238.834-.612.834Zm2.83.612c.693 0 1.17-.336 1.17-.894 0-.65-.515-.78-.981-.878-.395-.081-.763-.103-.763-.341 0-.2.189-.31.476-.31.315 0 .504.11.537.407h.666c-.054-.558-.46-.92-1.192-.92-.634 0-1.132.286-1.132.888 0 .606.487.742.986.84.379.075.731.102.731.368 0 .195-.184.32-.509.32-.33 0-.558-.141-.607-.461h-.682c.043.59.493.98 1.3.98Zm3.968-.082v-2.779h-.737v1.604c0 .368-.212.628-.558.628-.314 0-.461-.179-.461-.504v-1.728h-.731v1.853c0 .607.347 1.002.964 1.002.39 0 .607-.146.797-.4h.016v.324h.71Zm.476 0h.737V35.53c0-.369.2-.607.498-.607.271 0 .428.163.428.477v1.744h.737V35.53c0-.369.19-.607.499-.607.271 0 .428.163.428.477v1.744h.737v-1.869c0-.607-.331-.986-.916-.986-.352 0-.645.184-.834.488h-.011a.83.83 0 0 0-.77-.488.908.908 0 0 0-.807.45h-.016v-.374h-.71v2.78Z"
+                      fill="#E5708C"
+                    ></path>
+
+                    <path
+                      d="M118.481 2.149c0-1.183.959-2.143 2.142-2.143h1.429a2.142 2.142 0 0 1 0 4.286h-1.429a2.142 2.142 0 0 1-2.142-2.143ZM58.49 14.29c0 7.888-6.394 14.283-14.283 14.283-7.888 0-14.283-6.395-14.283-14.283C29.924 6.4 36.319.007 44.207.007 52.096.007 58.49 6.4 58.49 14.29Zm-31.352-.071c.79 0 1.436.64 1.357 1.426A14.283 14.283 0 1 1 12.857.007c.785-.08 1.426.568 1.426 1.356V12.79c0 .79.64 1.429 1.429 1.429h11.426ZM78.487 31.43a4.285 4.285 0 1 1 0 8.57h-7.141a4.285 4.285 0 0 1 0-8.57h7.141Zm-4.285-2.857c7.889 0 14.284-6.395 14.284-14.283a14.22 14.22 0 0 0-1.789-6.925l2.36-2.36a2.928 2.928 0 1 0-4.142-4.14l-2.06 2.06A14.22 14.22 0 0 0 74.201.006C66.314.007 59.92 6.4 59.92 14.29c0 7.888 6.395 14.283 14.283 14.283Zm44.279-14.283c0 7.888-6.395 14.283-14.284 14.283-7.888 0-14.283-6.395-14.283-14.283 0-7.89 6.395-14.283 14.283-14.283 7.889 0 14.284 6.394 14.284 14.283Z"
+                      fill="url(#gradient_a1234)"
+                    ></path>
+                    <defs>
+                      <linearGradient id="gradient_a1234" x1="0" y1="16" x2="119" y2="16" gradient-units="userSpaceOnUse">
+                        <stop class="ccompli1" stop-color="#64C2DB"></stop>
+
+                        <stop class="ccompli2" offset=".307" stop-color="#7476ED"></stop>
+
+                        <stop class="ccustom" offset=".604" stop-color="#C994DF"></stop>
+
+                        <stop class="ccompli1" offset="1" stop-color="#E56F8C"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 md:py-14">
+      <div class="max-w-screen-2xl mx-auto px-4">
+        <div class="mb-8 border-b-2 border-gray-100 pb-8">
+          <h2 class="text-[40px] font-bold">Testimonials</h2>
+        </div>
+
+        <div class="flex flex-wrap -mx-4">
+          <!-- First Testimonial -->
+          <div class="w-1/2 px-16 mb-12">
+            <p class="mb-8 text-justify text-base font-medium leading-tight">
+              The entire (<span class="text-theme-green font-semibold">VI</span>)__SIX team went above and beyond, surpassing all
+              expectations on our activation. Every detail, no matter how small, was meticulously handled with precision and care. Your
+              team's dedication and thoroughness ensured that every aspect of the project was executed flawlessly. We always felt confident
+              in your ability to deliver, and you truly made the event a resounding success.
+            </p>
+
+            <div class="flex justify-between items-start flex-wrap md:flex-nowrap">
+              <div class="flex items-start max-w-[65%] md:max-w-[65%] w-full md:w-auto">
+                <img src="assets/images/testimonial-img1.png" alt="Sophia Nguyen" class="w-[125px] h-auto object-cover mr-3" />
+                <p class="font-medium">
+                  Sophia Nguyen <br />
+                  Digital Brand Activation Specialist <br />
+                  <span class="text-sm font-normal">UrbanFlux</span>
+                </p>
+              </div>
+              <a href="#" class="mt-3 md:mt-0 hover:text-theme-green smooth font-medium"> View Case Study </a>
+            </div>
+          </div>
+
+          <!-- Second Testimonial -->
+          <div class="w-1/2 px-16 mb-12">
+            <p class="mb-8 text-justify text-base font-medium leading-tight">
+              The team demonstrated exceptional efficiency in their operations and meticulous attention to itinerary management on the
+              ground. Their overall performance was impressive, and the content they produced not only met but significantly exceeded our
+              expectations. The dedication and attention to detail were evident in every aspect of their work, ensuring a smooth and
+              successful execution.
+            </p>
+
+            <div class="flex justify-between items-start flex-wrap md:flex-nowrap">
+              <div class="flex items-start max-w-[65%] md:max-w-[65%] w-full md:w-auto">
+                <img src="assets/images/testimonial-img2.png" alt="Sophia Nguyen" class="w-[125px] h-auto object-cover mr-3" />
+                <p class="font-medium">
+                  Liam Davis <br />
+                  Brand Marketing Manager
+                  <span class="text-sm font-normal">ThriveCraft</span>
+                </p>
+              </div>
+              <a href="#" class="mt-3 md:mt-0 hover:text-theme-green smooth font-medium"> View Case Study </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="hidden">
+      <!-- Contact -->
+      <section id="contact" class="py-[100px] bg-black">
+        <div class="max-w-[2000px] mx-auto">
+          <h2
+            class="text-center bg-[url('assets/images/contact-bg-image.png')] bg-center bg-cover bg-no-repeat text-transparent bg-clip-text uppercase font-black leading-[0.9] text-[calc(100vw/4)] tracking-normal"
+          >
+            <!-- <h2
+          class="text-center bg-[url('assets/images/contact-bg-image.png')] bg-center bg-cover bg-no-repeat text-transparent bg-clip-text uppercase font-black tracking-[-15px] leading-[0.9] text-[calc(80vw/4.75)] sm:text-[calc(100vw/4)] sm:tracking-normal"
+        > -->
+            Let's Work
+          </h2>
+          <div class="flex justify-evenly text-white pt-8 container mx-auto">
+            <a class="underline" href="/">info@vi__six.com</a>
+            <a class="underline" href="/">212 · 555 · 1234</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="display: none" class="bg-black text-white">
+      <div class="max-w-[2000px] mx-auto px-4">
+        <!-- Top Row -->
+        <div class="flex flex-wrap justify-between items-center py-4">
+          <h3 class="w-full sm:w-auto text-center sm:text-left mb-4 sm:mb-0">Follow Us</h3>
+          <ul class="flex flex-wrap gap-4 sm:gap-6">
+            <li><a target="_blank" href="https://www.instagram.com/" class="hover:text-green transition-colors duration-300">/ IG</a></li>
+            <li><a target="_blank" href="https://www.facebook.com/" class="hover:text-green transition-colors duration-300">/ FB</a></li>
+            <li><a target="_blank" href="https://x.com/" class="hover:text-green transition-colors duration-300">/ X</a></li>
+            <li>
+              <a target="_blank" href="https://www.tiktok.com/explore" class="hover:text-green transition-colors duration-300">/ TT</a>
+            </li>
+            <li><a target="_blank" href="https://www.youtube.com/" class="hover:text-green transition-colors duration-300">/ YT</a></li>
+          </ul>
+        </div>
+
+        <!-- Middle Row -->
+        <div class="flex flex-wrap justify-between py-8">
+          <div class="w-full lg:w-8/12">
+            <ul class="flex flex-wrap gap-x-8 gap-y-6">
+              <li class="w-1/2 sm:w-auto pb-2 border-b-2 border-gray-300 mr-8 mb-4 sm:mb-0">
+                <a href="#home" class="capitalize hover:text-green transition-colors duration-300 block text-center sm:text-left"> Home </a>
+              </li>
+              <li class="w-1/2 sm:w-auto pb-2 border-b-2 border-gray-300 mr-8 mb-4 sm:mb-0">
+                <a href="#about" class="capitalize hover:text-green transition-colors duration-300 block text-center sm:text-left">
+                  About
+                </a>
+              </li>
+              <li class="w-1/2 sm:w-auto pb-2 border-b-2 border-gray-300 mr-8 mb-4 sm:mb-0">
+                <a href="#services" class="capitalize hover:text-green transition-colors duration-300 block text-center sm:text-left">
+                  Services
+                </a>
+              </li>
+              <li class="w-1/2 sm:w-auto pb-2 border-b-2 border-gray-300 mr-8 mb-4 sm:mb-0">
+                <a href="#portfolio" class="capitalize hover:text-green transition-colors duration-300 block text-center sm:text-left">
+                  Portfolio
+                </a>
+              </li>
+              <li class="w-1/2 sm:w-auto pb-2 border-b-2 border-gray-300 mr-8 mb-4 sm:mb-0">
+                <a href="#team" class="capitalize hover:text-green transition-colors duration-300 block text-center sm:text-left">
+                  The Team
+                </a>
+              </li>
+              <li class="w-1/2 sm:w-auto pb-2 border-b-2 border-gray-300 mr-8 mb-4 sm:mb-0">
+                <a href="#contact" class="capitalize hover:text-green transition-colors duration-300 block text-center sm:text-left">
+                  Book a Call
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Row -->
+        <div class="flex flex-wrap justify-end items-center gap-4 pb-1 sm:pb-8">
+          <div class="w-1/2 lg:w-1/4">
+            <img src="assets/images/footer-image.png" alt="Footer Image" class="w-full h-auto" />
+          </div>
+          <div class="w-1/2 lg:w-3/4 flex justify-center lg:justify-start">
+            <img src="assets/images/logo-white.svg" alt="Logo" class="w-3/4 sm:w-full h-auto" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function handleNav() {
+        const menu = document.getElementById("mobileMenu");
+        const openIcon = document.getElementById("menuOpen");
+        const closeIcon = document.getElementById("menuClose");
+
+        const isHidden = menu.classList.contains("hidden");
+
+        menu.classList.toggle("hidden");
+        openIcon.classList.toggle("hidden");
+        closeIcon.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
