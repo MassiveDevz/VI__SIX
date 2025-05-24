@@ -16,117 +16,34 @@
   </head>
   <body>
     <!-- Header -->
-    <section style="display: none" class="w-full px-2 pb-20 pt-4 bg-white">
-      <div class="flex flex-wrap">
-        <div class="w-6/12 px-2">
-          <div class="left-side flex-column items-[unset] justify-between h-full">
-            <div class="flex-between w-full">
-              <div class="self-baseline">
-                <img src="assets/images/logo-black.svg" class="w-full self-baseline object-cover" alt="Logo" />
-              </div>
-
-              <!-- Mobile Menu Placeholder -->
-              <!-- <div class="mobile-menu-container"></div> -->
-
-              <nav class="hidden md:block text-end">
-                <div>
-                  <a href="/">
-                    <p class="uppercase font-semibold smooth hover:text-theme-green">Home</p>
-                  </a>
-                  <a href="#about">
-                    <p class="uppercase font-semibold smooth hover:text-theme-green">About</p>
-                  </a>
-                  <a href="#services">
-                    <p class="uppercase font-semibold smooth hover:text-theme-green">services</p>
-                  </a>
-                  <a href="#portfolio">
-                    <p class="uppercase font-semibold smooth hover:text-theme-green">portfolio</p>
-                  </a>
-                  <a href="#team">
-                    <p class="uppercase font-semibold smooth hover:text-theme-green">the team</p>
-                  </a>
-                  <a href="#contact">
-                    <p class="uppercase font-semibold smooth hover:text-theme-green">contact</p>
-                  </a>
-                </div>
-              </nav>
-            </div>
-
-            <div class="flex-between items-start">
-              <div>
-                <h1 class="uppercase">Unleash the Power of Digital Storytelling</h1>
-              </div>
-
-              <div class="copy__p">
-                <p>
-                  Specialising in Content & Influencer Marketing.
-                  <span
-                    class="inline-block text-center text-xs px-1 py-2 mt-1 mb-2 text-theme-green rounded-[50px]"
-                    style="
-                      background: linear-gradient(800deg, #000 40%, #000000ba 25%, #000 60%);
-                      background-size: 300%;
-                      background-position-x: 100%;
-                      animation: shimmer 5s infinite ease-in-out;
-                    "
-                  >
-                    Unconventional by Design</span
-                  >
-                </p>
-              </div>
-            </div>
-
-            <div class="flex">
-              <figure class="w-3/5">
-                <video autoplay muted loop playsinline class="w-full">
-                  <source src="https://cdn.pixabay.com/video/2023/10/20/185790-876545922_large.mp4" type="video/mp4" />
-                </video>
-              </figure>
-
-              <span class="line-container flex-center self-end ml-auto">
-                <a target="_blank" class="line" href="https://calendly.com/"> Let's Work! </a>
-                <span class="arrow flex-center text-2xl text-theme-green smooth-transition">
-                  <!-- Arrow icon replacement -->
-                  <i class="arrow-icon">→</i>
-                </span>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hidden md:block w-6/12 flex-center justify-end max-h-[95vh] px-2">
-          <img src="assets/images/hero-image.png" class="w-full h-full object-cover" alt="Hero Image" />
-        </div>
-      </div>
-    </section>
-
-    <!--  -->
-    <section id="home" class="max-w-[2000px] mx-auto px-4">
+    <section id="home" class="max-w-[2000px] mx-auto pt-4 px-4 pb-24">
       <div class="w-full">
         <div class="w-full">
           <div class="flex flex-col h-full justify-between">
             <div class="flex justify-between items-center">
-              <div class="logo self-baseline w-1/2">
+              <div class="self-baseline">
+                <!-- <div class="logo self-baseline w-1/2"> -->
                 <img src="assets/images/logo-black.svg" alt="Logo" class="w-full object-cover" />
               </div>
               <nav class="text-right">
                 <div>
                   <a href="/" class="block">
-                    <p class="capitalize m-1 transition duration-300 ease-in-out hover:text-green-500">Home</p>
+                    <p class="capitalize leading-snug font-medium smooth hover:text-green-500">Home</p>
                   </a>
                   <a href="#about" class="block">
-                    <p class="capitalize m-1 transition duration-300 ease-in-out hover:text-green-500">About</p>
+                    <p class="capitalize leading-snug font-medium smooth hover:text-green-500">About</p>
                   </a>
                   <a href="#services" class="block">
-                    <p class="capitalize m-1 transition duration-300 ease-in-out hover:text-green-500">Services</p>
+                    <p class="capitalize leading-snug font-medium smooth hover:text-green-500">Services</p>
                   </a>
                   <a href="#portfolio" class="block">
-                    <p class="capitalize m-1 transition duration-300 ease-in-out hover:text-green-500">Portfolio</p>
+                    <p class="capitalize leading-snug font-medium smooth hover:text-green-500">Portfolio</p>
                   </a>
                   <a href="#team" class="block">
-                    <p class="capitalize m-1 transition duration-300 ease-in-out hover:text-green-500">The Team</p>
+                    <p class="capitalize leading-snug font-medium smooth hover:text-green-500">The Team</p>
                   </a>
                   <a href="#contact" class="block">
-                    <p class="capitalize m-1 transition duration-300 ease-in-out hover:text-green-500">Contact</p>
+                    <p class="capitalize leading-snug font-medium smooth hover:text-green-500">Contact</p>
                   </a>
                 </div>
               </nav>
@@ -137,7 +54,7 @@
     </section>
 
     <!-- About -->
-    <section class="py-[100px]">
+    <section class="pb-[100px]">
       <!-- replace 100px with your $sectionPadding -->
       <div class="max-w-[2000px] mx-auto px-4">
         <!-- Heading -->
@@ -245,69 +162,77 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="py-[100px] bg-black">
+    <section id="contact" class="py-24 bg-theme-black">
       <div class="max-w-[2000px] mx-auto">
         <h2
-          class="text-center bg-[url('assets/images/contact-bg-image.png')] bg-center bg-cover bg-no-repeat text-transparent bg-clip-text uppercase font-black leading-[0.9] text-[calc(100vw/4)] tracking-normal"
+          class="text-center bg-[url('assets/images/contact-bg-image.png')] bg-center bg-cover bg-no-repeat text-transparent bg-clip-text uppercase font-black leading-[0.9] text-[calc(80vw/4)] tracking-[-8px]"
         >
-          <!-- <h2
-            class="text-center bg-[url('assets/images/contact-bg-image.png')] bg-center bg-cover bg-no-repeat text-transparent bg-clip-text uppercase font-black tracking-[-15px] leading-[0.9] text-[calc(80vw/4.75)] sm:text-[calc(100vw/4)] sm:tracking-normal"
-          > -->
           Let's Work
         </h2>
         <div class="flex justify-evenly text-white pt-8 container mx-auto">
-          <a class="underline" href="/">info@vi__six.com</a>
-          <a class="underline" href="/">212 · 555 · 1234</a>
+          <a class="line" href="/">info@vi__six.com</a>
+          <a class="line" href="/">212 · 555 · 1234</a>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black text-white">
-      <div class="max-w-[2000px] mx-auto px-4">
+    <footer class="bg-theme-black text-white pt-20">
+      <div class="max-w-[2000px] mx-auto px-4 space-y-40">
         <!-- Top Row -->
-        <div class="flex flex-wrap justify-between items-center py-4">
-          <h3 class="w-full sm:w-auto text-center sm:text-left mb-4 sm:mb-0">Follow Us</h3>
-          <ul class="flex flex-wrap gap-4 sm:gap-6">
-            <li><a target="_blank" href="https://www.instagram.com/" class="hover:text-green transition-colors duration-300">/ IG</a></li>
-            <li><a target="_blank" href="https://www.facebook.com/" class="hover:text-green transition-colors duration-300">/ FB</a></li>
-            <li><a target="_blank" href="https://x.com/" class="hover:text-green transition-colors duration-300">/ X</a></li>
+        <div class="flex justify-between items-center gap-x-8">
+          <h3 class="text-left font-bold w-auto text-[32px] flex-none">Follow Us</h3>
+          <ul class="flex items-center justify-around gap-4 w-full">
             <li>
-              <a target="_blank" href="https://www.tiktok.com/explore" class="hover:text-green transition-colors duration-300">/ TT</a>
+              <a target="_blank" href="https://www.instagram.com/" class="hover:text-theme-green smooth">/ IG</a>
             </li>
-            <li><a target="_blank" href="https://www.youtube.com/" class="hover:text-green transition-colors duration-300">/ YT</a></li>
+            <li>
+              <a target="_blank" href="https://www.facebook.com/" class="hover:text-theme-green smooth">/ FB</a>
+            </li>
+            <li><a target="_blank" href="https://x.com/" class="hover:text-theme-green smooth">/ X</a></li>
+            <li>
+              <a target="_blank" href="https://www.tiktok.com/explore" class="hover:text-theme-green smooth">/ TT</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.youtube.com/" class="hover:text-theme-green smooth">/ YT</a>
+            </li>
           </ul>
         </div>
 
         <!-- Middle Row -->
-        <div class="flex flex-wrap justify-between py-8">
-          <div class="w-full lg:w-8/12">
-            <ul class="flex flex-wrap gap-x-8 gap-y-6">
-              <li class="w-1/2 sm:w-auto pb-2 border-b-2 border-gray-300 mr-8 mb-4 sm:mb-0">
-                <a href="#home" class="capitalize hover:text-green transition-colors duration-300 block text-center sm:text-left"> Home </a>
+        <div class="flex flex-wrap justify-between">
+          <div class="w-8/12">
+            <ul class="flex-between w-full gap-y-8 flex-wrap">
+              <li class="w-[30%] border-b-2 border-gray-300 pb-2">
+                <a href="#home" class="capitalize hover:text-theme-green transition-colors duration-300 block text-center sm:text-left">
+                  Home
+                </a>
               </li>
-              <li class="w-1/2 sm:w-auto pb-2 border-b-2 border-gray-300 mr-8 mb-4 sm:mb-0">
-                <a href="#about" class="capitalize hover:text-green transition-colors duration-300 block text-center sm:text-left">
+              <li class="w-[30%] border-b-2 border-gray-300 pb-2">
+                <a href="#about" class="capitalize hover:text-theme-green transition-colors duration-300 block text-center sm:text-left">
                   About
                 </a>
               </li>
-              <li class="w-1/2 sm:w-auto pb-2 border-b-2 border-gray-300 mr-8 mb-4 sm:mb-0">
-                <a href="#services" class="capitalize hover:text-green transition-colors duration-300 block text-center sm:text-left">
+              <li class="w-[30%] border-b-2 border-gray-300 pb-2">
+                <a href="#services" class="capitalize hover:text-theme-green transition-colors duration-300 block text-center sm:text-left">
                   Services
                 </a>
               </li>
-              <li class="w-1/2 sm:w-auto pb-2 border-b-2 border-gray-300 mr-8 mb-4 sm:mb-0">
-                <a href="#portfolio" class="capitalize hover:text-green transition-colors duration-300 block text-center sm:text-left">
+              <li class="w-[30%] border-b-2 border-gray-300 pb-2">
+                <a
+                  href="#portfolio"
+                  class="capitalize hover:text-theme-green transition-colors duration-300 block text-center sm:text-left"
+                >
                   Portfolio
                 </a>
               </li>
-              <li class="w-1/2 sm:w-auto pb-2 border-b-2 border-gray-300 mr-8 mb-4 sm:mb-0">
-                <a href="#team" class="capitalize hover:text-green transition-colors duration-300 block text-center sm:text-left">
+              <li class="w-[30%] border-b-2 border-gray-300 pb-2">
+                <a href="#team" class="capitalize hover:text-theme-green transition-colors duration-300 block text-center sm:text-left">
                   The Team
                 </a>
               </li>
-              <li class="w-1/2 sm:w-auto pb-2 border-b-2 border-gray-300 mr-8 mb-4 sm:mb-0">
-                <a href="#contact" class="capitalize hover:text-green transition-colors duration-300 block text-center sm:text-left">
+              <li class="w-[30%] border-b-2 border-gray-300 pb-2">
+                <a href="#contact" class="capitalize hover:text-theme-green transition-colors duration-300 block text-center sm:text-left">
                   Book a Call
                 </a>
               </li>
@@ -316,12 +241,12 @@
         </div>
 
         <!-- Bottom Row -->
-        <div class="flex flex-wrap justify-end items-center gap-4 pb-1 sm:pb-8">
-          <div class="w-1/2 lg:w-1/4">
+        <div class="flex flex-wrap justify-end items-center">
+          <div class="w-3/12">
             <img src="assets/images/footer-image.png" alt="Footer Image" class="w-full h-auto" />
           </div>
-          <div class="w-1/2 lg:w-3/4 flex justify-center lg:justify-start">
-            <img src="assets/images/logo-white.svg" alt="Logo" class="w-3/4 sm:w-full h-auto" />
+          <div class="w-9/12 flex justify-end">
+            <img src="assets/images/logo-white.svg" alt="Logo" class="w-9/12 h-auto" />
           </div>
         </div>
       </div>
