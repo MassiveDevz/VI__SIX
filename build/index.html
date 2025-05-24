@@ -4,15 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SIX Agency</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/images/favicon.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
-    <link rel="icon" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/main.js"></script>
 
     <!--  -->
     <!--  -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <!--  -->
     <!--  -->
   </head>
@@ -959,95 +961,5 @@
 
     <!-- TW ELEMENTS -->
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
-
-    <!-- Accordion JS -->
-    <!-- <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Get all accordion buttons
-        const accordionButtons = document.querySelectorAll("[data-twe-collapse-init]");
-
-        // Add click event listener to each button
-        accordionButtons.forEach((button) => {
-          button.addEventListener("click", function () {
-            // Get the target element ID from the data attribute
-            const targetId = this.getAttribute("data-twe-target");
-            const targetElement = document.querySelector(targetId);
-
-            // Check if the button is collapsed
-            const isCollapsed = this.getAttribute("data-twe-collapse-collapsed") !== null;
-
-            // If we're opening this accordion item, close all others first
-            if (isCollapsed) {
-              const parent = this.getAttribute("data-twe-parent");
-              if (parent) {
-                // Get all open items in this accordion
-                const openItems = document.querySelectorAll(`${parent} [data-twe-collapse-item]:not(.hidden)`);
-
-                // Close all open items
-                openItems.forEach((item) => {
-                  item.classList.add("hidden");
-
-                  // Find the button that controls this item
-                  const itemId = item.getAttribute("id");
-                  const controlButton = document.querySelector(`[data-twe-target="#${itemId}"]`);
-                  if (controlButton) {
-                    controlButton.setAttribute("data-twe-collapse-collapsed", "");
-                    controlButton.setAttribute("aria-expanded", "false");
-                  }
-                });
-              }
-            }
-
-            // Toggle the target element's visibility
-            if (targetElement) {
-              if (isCollapsed) {
-                // Open the accordion item
-                targetElement.classList.remove("hidden");
-                this.removeAttribute("data-twe-collapse-collapsed");
-                this.setAttribute("aria-expanded", "true");
-              } else {
-                // Close the accordion item
-                targetElement.classList.add("hidden");
-                this.setAttribute("data-twe-collapse-collapsed", "");
-                this.setAttribute("aria-expanded", "false");
-              }
-            }
-          });
-        });
-
-        // Initialize all accordion items as closed
-        const accordionItems = document.querySelectorAll("[data-twe-collapse-item]");
-        accordionItems.forEach((item) => {
-          item.classList.add("hidden");
-        });
-      });
-    </script> -->
-    <!-- Accordion JS -->
-
-    <!-- Move Later -->
-
-    <script>
-      function handleNav() {
-        const menu = document.getElementById("mobileMenu");
-        const openIcon = document.getElementById("menuOpen");
-        const closeIcon = document.getElementById("menuClose");
-
-        const isOpen = menu.classList.contains("top-0");
-
-        if (isOpen) {
-          // Close menu - move to top: -200%
-          menu.classList.remove("top-0");
-          menu.classList.add("-top-[200%]");
-        } else {
-          // Open menu - move to top: 0
-          menu.classList.remove("-top-[200%]");
-          menu.classList.add("top-0");
-        }
-
-        // Toggle icons
-        openIcon.classList.toggle("hidden");
-        closeIcon.classList.toggle("hidden");
-      }
-    </script>
   </body>
 </html>
