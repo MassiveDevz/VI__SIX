@@ -15,7 +15,6 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --breakpoint-2xl: 96rem;
     --container-4xl: 56rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
@@ -41,7 +40,6 @@
     --leading-tight: 1.25;
     --leading-snug: 1.375;
     --leading-normal: 1.5;
-    --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
@@ -397,9 +395,6 @@
   .w-2\/12 {
     width: calc(2/12 * 100%);
   }
-  .w-3\/12 {
-    width: calc(3/12 * 100%);
-  }
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
@@ -412,8 +407,8 @@
   .w-8\/12 {
     width: calc(8/12 * 100%);
   }
-  .w-9\/12 {
-    width: calc(9/12 * 100%);
+  .w-30 {
+    width: calc(var(--spacing) * 30);
   }
   .w-\[30\%\] {
     width: 30%;
@@ -432,9 +427,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .max-w-3\/4 {
-    max-width: calc(3/4 * 100%);
   }
   .max-w-4\/12 {
     max-width: calc(4/12 * 100%);
@@ -526,13 +518,6 @@
       margin-block-end: calc(calc(var(--spacing) * 28) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
-  .space-y-40 {
-    :where(& > :not(:last-child)) {
-      --tw-space-y-reverse: 0;
-      margin-block-start: calc(calc(var(--spacing) * 40) * var(--tw-space-y-reverse));
-      margin-block-end: calc(calc(var(--spacing) * 40) * calc(1 - var(--tw-space-y-reverse)));
-    }
-  }
   .gap-x-8 {
     column-gap: calc(var(--spacing) * 8);
   }
@@ -602,9 +587,6 @@
   }
   .border-gray-300 {
     border-color: var(--color-gray-300);
-  }
-  .border-green-500 {
-    border-color: var(--color-green-500);
   }
   .border-theme-green {
     border-color: #19e72f;
@@ -678,12 +660,6 @@
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
   }
-  .py-24 {
-    padding-block: calc(var(--spacing) * 24);
-  }
-  .py-\[your-section-padding\] {
-    padding-block: your-section-padding;
-  }
   .pt-0 {
     padding-top: calc(var(--spacing) * 0);
   }
@@ -750,9 +726,6 @@
   .text-left {
     text-align: left;
   }
-  .text-right {
-    text-align: right;
-  }
   .indent-\[20\%\] {
     text-indent: 20%;
   }
@@ -793,9 +766,6 @@
   .text-\[40px\] {
     font-size: 40px;
   }
-  .text-\[calc\(80vw\/4\)\] {
-    font-size: calc(80vw / 4);
-  }
   .text-\[calc\(90vw\/6\)\] {
     font-size: calc(90vw / 6);
   }
@@ -814,32 +784,14 @@
   .text-\[clamp\(40px\,_5vw\,_48px\)\] {
     font-size: clamp(40px, 5vw, 48px);
   }
-  .text-\[clamp\(56px\,calc\(90vw\/6\)\,_300px\)\] {
-    font-size: clamp(56px, calc(90vw / 6), 300px);
-  }
   .text-\[clamp\(64px\,calc\(90vw\/6\)\,_300px\)\] {
     font-size: clamp(64px, calc(90vw / 6), 300px);
   }
   .text-\[clamp\(72px\,_10vw\,_144px\)\] {
     font-size: clamp(72px, 10vw, 144px);
   }
-  .text-\[clamp\(72px\,calc\(90vw\/6\)\,_300px\)\] {
-    font-size: clamp(72px, calc(90vw / 6), 300px);
-  }
-  .text-\[clamp\(80px\,calc\(90vw\/6\)\,_300px\)\] {
-    font-size: clamp(80px, calc(90vw / 6), 300px);
-  }
   .text-\[clamp\(104px\,calc\(80vw\/4\)\,_500px\)\] {
     font-size: clamp(104px, calc(80vw / 4), 500px);
-  }
-  .text-\[clamp\(104px\,calc\(90vw\/6\)\,_300px\)\] {
-    font-size: clamp(104px, calc(90vw / 6), 300px);
-  }
-  .text-\[clamp\(104px\,calc\(90vw\/6\)\,_400px\)\] {
-    font-size: clamp(104px, calc(90vw / 6), 400px);
-  }
-  .text-\[clamp\(104px\,calc\(90vw\/6\)\,_500px\)\] {
-    font-size: clamp(104px, calc(90vw / 6), 500px);
   }
   .leading-\[0\.9\] {
     --tw-leading: 0.9;
@@ -1080,13 +1032,6 @@
     &:hover {
       @media (hover: hover) {
         color: #19e72f !important;
-      }
-    }
-  }
-  .hover\:text-green-500 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-green-500);
       }
     }
   }
