@@ -19,349 +19,498 @@
     <!--  -->
   </head>
   <body>
-    <div class="hidden">
-      <!-- Hero -->
-      <section class="w-full px-1 pb-20 pt-4 bg-white">
-        <div class="flex flex-wrap">
-          <div class="md:w-6/12 px-3">
-            <div class="left-side flex-column items-[unset] justify-between h-full">
-              <div class="flex-between w-full">
-                <div class="self-baseline">
+    <!-- Hero -->
+    <section class="w-full px-1 pb-20 pt-4 bg-white max-w-[2000px] mx-auto">
+      <div class="flex flex-wrap">
+        <div class="md:w-6/12 px-3">
+          <div class="left-side flex-column items-[unset] justify-between h-full">
+            <div class="flex-between w-full">
+              <div class="self-baseline">
+                <a href="#">
+                  <img src="assets/images/logo-black.svg" class="w-full self-baseline object-cover" alt="Logo" />
+                </a>
+              </div>
+
+              <!-- Desktop Nav -->
+              <nav class="hidden md:block text-end">
+                <div>
                   <a href="#">
-                    <img src="assets/images/logo-black.svg" class="w-full self-baseline object-cover" alt="Logo" />
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">Home</p>
+                  </a>
+                  <a href="#about">
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">About</p>
+                  </a>
+                  <a href="#services">
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">services</p>
+                  </a>
+                  <a href="#portfolio">
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">portfolio</p>
+                  </a>
+                  <a href="#team">
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">the team</p>
+                  </a>
+                  <a href="#contact">
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">contact</p>
                   </a>
                 </div>
+              </nav>
 
-                <!-- Desktop Nav -->
-                <nav class="hidden md:block text-end">
-                  <div>
-                    <a href="#">
-                      <p class="uppercase font-semibold smooth hover:text-theme-green">Home</p>
-                    </a>
-                    <a href="#about">
-                      <p class="uppercase font-semibold smooth hover:text-theme-green">About</p>
-                    </a>
-                    <a href="#services">
-                      <p class="uppercase font-semibold smooth hover:text-theme-green">services</p>
-                    </a>
-                    <a href="#portfolio">
-                      <p class="uppercase font-semibold smooth hover:text-theme-green">portfolio</p>
-                    </a>
-                    <a href="#team">
-                      <p class="uppercase font-semibold smooth hover:text-theme-green">the team</p>
-                    </a>
-                    <a href="#contact">
-                      <p class="uppercase font-semibold smooth hover:text-theme-green">contact</p>
-                    </a>
-                  </div>
-                </nav>
+              <!-- Mobile Nav -->
+              <nav class="relative z-30 md:hidden">
+                <!-- Hamburger Toggle -->
+                <div onclick="handleNav()" class="sticky top-5 right-5 z-40 cursor-pointer">
+                  <!-- Toggle open/close icons (use JS to show/hide) -->
+                  <img src="assets/images/menu-close.png" class="w-6 h-auto hidden" id="menuClose" />
+                  <img src="assets/images/menu-open.png" class="w-6 h-auto" id="menuOpen" />
+                </div>
 
-                <!-- Mobile Nav -->
-                <nav class="relative z-30 md:hidden smooth">
-                  <!-- Hamburger Toggle -->
-                  <div onclick="handleNav()" class="fixed top-5 right-5 z-40 cursor-pointer">
-                    <!-- Toggle open/close icons (use JS to show/hide) -->
-                    <img src="assets/images/menu-close.png" class="w-5 h-auto hidden" id="menuClose" />
-                    <img src="assets/images/menu-open.png" class="w-5 h-auto" id="menuOpen" />
-                  </div>
+                <!-- Dropdown Menu -->
+                <div
+                  id="mobileMenu"
+                  class="fixed left-0 -top-[200%] w-full h-full bg-white overflow-hidden opacity-100 z-20 transition-all duration-700 ease-linear"
+                >
+                  <ul class="w-full h-full pt-[40px] flex-column justify-evenly smooth">
+                    <!-- Navigation Links -->
+                    <div class="flex flex-col justify-center items-start w-full text-[32px] px-[8px]">
+                      <a
+                        href="https://www.nba.com/magic/tickets/suite-options/suites"
+                        class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
+                        >Home</a
+                      >
+                      <a
+                        href="https://www.nba.com/magic/tickets/suite-options/suites/explore"
+                        class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
+                        >Explore Suites</a
+                      >
+                      <a
+                        href="https://www.nba.com/magic/tickets/suite-options/suites/rentals"
+                        class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
+                        >Rent A Suite</a
+                      >
+                      <a
+                        href="https://www.nba.com/magic/suites-lease-preview-9629305423"
+                        class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
+                        >Lease A Suite</a
+                      >
+                      <a
+                        href="https://www.nba.com/magic/suites-faq-preview-9629305423"
+                        class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
+                        >FAQ</a
+                      >
+                      <a
+                        href="https://www.nba.com/magic/tickets/suite-options/suites/contact"
+                        class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
+                        >Contact Us</a
+                      >
+                    </div>
 
-                  <!-- Dropdown Menu -->
-                  <div
-                    id="mobileMenu"
-                    class="fixed left-0 -top-[200%] w-full h-full bg-white overflow-hidden opacity-100 z-20 transition-all duration-1000 ease-in-out"
-                  >
-                    <ul class="w-full h-full pt-[40px] flex-column justify-evenly smooth">
-                      <!-- Navigation Links -->
-                      <div class="flex flex-col justify-center items-start w-full text-[32px] px-[8px]">
-                        <a
-                          href="https://www.nba.com/magic/tickets/suite-options/suites"
-                          class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
-                          >Home</a
-                        >
-                        <a
-                          href="https://www.nba.com/magic/tickets/suite-options/suites/explore"
-                          class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
-                          >Explore Suites</a
-                        >
-                        <a
-                          href="https://www.nba.com/magic/tickets/suite-options/suites/rentals"
-                          class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
-                          >Rent A Suite</a
-                        >
-                        <a
-                          href="https://www.nba.com/magic/suites-lease-preview-9629305423"
-                          class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
-                          >Lease A Suite</a
-                        >
-                        <a
-                          href="https://www.nba.com/magic/suites-faq-preview-9629305423"
-                          class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
-                          >FAQ</a
-                        >
-                        <a
-                          href="https://www.nba.com/magic/tickets/suite-options/suites/contact"
-                          class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
-                          >Contact Us</a
-                        >
-                      </div>
+                    <!-- Social Links -->
+                    <div class="w-full flex justify-around items-center text-xl">
+                      <a href="https://www.instagram.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green">/ IG</a>
+                      <a href="https://www.facebook.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green">/ FB</a>
+                      <a href="https://x.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green">/ X</a>
+                      <a href="https://www.tiktok.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green">/ TT</a>
+                      <a href="https://www.youtube.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green">/ YT</a>
+                    </div>
 
-                      <!-- Social Links -->
-                      <div class="w-full flex justify-around items-center text-xl">
-                        <a href="https://www.instagram.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green"
-                          >/ IG</a
-                        >
-                        <a href="https://www.facebook.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green"
-                          >/ FB</a
-                        >
-                        <a href="https://x.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green">/ X</a>
-                        <a href="https://www.tiktok.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green">/ TT</a>
-                        <a href="https://www.youtube.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green">/ YT</a>
-                      </div>
+                    <!-- Image Section -->
+                    <div class="w-full max-w-full h-2/5">
+                      <!-- <div class="w-full max-w-full mt-auto"> -->
+                      <img src="assets/images/hero-image.png" alt="Mobile menu image" class="w-full h-full object-cover" />
+                      <!-- <img src="assets/images/hero-image.png" alt="Mobile menu image" class="w-full h-[230px] object-cover" /> -->
+                    </div>
+                  </ul>
+                </div>
+              </nav>
+            </div>
 
-                      <!-- Image Section -->
-                      <div class="w-full max-w-full h-2/5">
-                        <!-- <div class="w-full max-w-full mt-auto"> -->
-                        <img src="assets/images/hero-image.png" alt="Mobile menu image" class="w-full h-full object-cover" />
-                        <!-- <img src="assets/images/hero-image.png" alt="Mobile menu image" class="w-full h-[230px] object-cover" /> -->
-                      </div>
-                    </ul>
-                  </div>
-                </nav>
-              </div>
-
+            <!--  -->
+            <div class="text-center py-20 space-y-4 md:flex md:justify-between md:items-start md:gap-x-8 md:text-start md:py-0">
               <!--  -->
-              <div class="text-center py-20 space-y-4 md:flex md:justify-between md:items-start md:gap-x-8 md:text-start md:py-0">
-                <!--  -->
-                <div>
-                  <h1 class="uppercase font-bold text-2xl">Unleash the Power of Digital Storytelling</h1>
-                </div>
-
-                <div class="copy__p">
-                  <p>
-                    Specializing in Content & Influencer Marketing.
-                    <span
-                      class="inline-block text-center text-xs py-1 px-2 mt-1 ml-2 text-theme-green rounded-[50px]"
-                      style="
-                        background: linear-gradient(800deg, #000 40%, #000000ba 25%, #000 60%);
-                        background-size: 300%;
-                        background-position-x: 100%;
-                        animation: shimmer 5s infinite ease-in-out;
-                      "
-                    >
-                      Unconventional by Design</span
-                    >
-                  </p>
-                </div>
+              <div>
+                <h1 class="uppercase font-bold text-2xl">Unleash the Power of Digital Storytelling</h1>
               </div>
 
-              <div class="flex">
-                <figure class="md:w-3/5 w-8/12">
-                  <video autoplay muted loop playsinline class="w-full">
-                    <source src="https://cdn.pixabay.com/video/2023/10/20/185790-876545922_large.mp4" type="video/mp4" />
-                  </video>
-                </figure>
-
-                <span class="w-fit flex-center self-end ml-auto">
-                  <a
-                    target="_blank"
-                    class="relative pb-0.5 font-semibold after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[3px] after:bg-theme-green after:origin-left after:scale-x-[0.075] after:transition-all after:duration-500 after:ease-out hover:opacity-[0.9] hover:after:scale-x-100"
-                    href="https://calendly.com/"
+              <div class="copy__p">
+                <p>
+                  Specializing in Content & Influencer Marketing.
+                  <span
+                    class="inline-block text-center text-xs py-1 px-2 mt-1 ml-2 text-theme-green rounded-[50px]"
+                    style="
+                      background: linear-gradient(800deg, #000 40%, #000000ba 25%, #000 60%);
+                      background-size: 300%;
+                      background-position-x: 100%;
+                      animation: shimmer 5s infinite ease-in-out;
+                    "
                   >
-                    Let's Work!
-                  </a>
-                </span>
+                    Unconventional by Design</span
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="flex">
+              <figure class="md:w-3/5 w-8/12">
+                <video autoplay muted loop playsinline class="w-full">
+                  <source src="https://cdn.pixabay.com/video/2023/10/20/185790-876545922_large.mp4" type="video/mp4" />
+                </video>
+              </figure>
+
+              <span class="w-fit flex-center self-end ml-auto">
+                <a
+                  target="_blank"
+                  class="relative pb-0.5 font-semibold after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[3px] after:bg-theme-green after:origin-left after:scale-x-[0.075] after:transition-all after:duration-500 after:ease-out hover:opacity-[0.9] hover:after:scale-x-100"
+                  href="https://calendly.com/"
+                >
+                  Let's Work!
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden md:block w-6/12 flex-center justify-end max-h-[95vh] px-3">
+          <img src="assets/images/hero-image.png" class="w-full h-full object-cover" alt="Hero Image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="max-w-[2000px] mx-auto py-10 md:py-24 px-4 bg-white">
+      <h2 class="md:w-8/12 mb-16 font-bold text-[clamp(32px,_5vw,_40px)] leading-tight">
+        Empowering brands to thrive in the digital age. Together, we redefine the standard. Direct and always at the forefront.
+      </h2>
+
+      <div class="md:flex md:items-start">
+        <div class="md:w-2/12 md:px-1">
+          <img src="assets/images/about-image1.png" alt="vertical Image" class="w-full h-auto" />
+        </div>
+        <div class="md:w-8/12 md:px-4">
+          <div class="md:flex items-baseline space-y-4 md:space-y-0 pt-8 md:pt-0">
+            <p class="w-full px-4 md:text-justify font-semibold leading-snug">
+              At (<span class="text-theme-green font-bold">VI</span>)__SIX, our service is unmatched in the industry. We never do ordinary.
+              Why? Simple. We're here to innovate, not just replicate. We're a global social agency, specializing in content and influencer
+              marketing, but that sounds too corporate, doesn't it?
+            </p>
+            <p class="w-full px-4 md:text-justify font-semibold leading-snug">
+              This means we know how to connect people. Content is communication, and it's our specialty. We merge market intelligence with
+              expertise to provide award-winning client services worldwide.
+            </p>
+          </div>
+        </div>
+        <div class="w-2/12 hidden md:block px-1">
+          <img src="assets/images/about-image2.png" alt="vertical Image" class="w-full h-auto" />
+        </div>
+      </div>
+
+      <div class="bottom-row">
+        <div class="my-6 max-h-[70vh] overflow-hidden object-cover">
+          <img src="assets/images/about-image3.png" alt="vertical Image" class="w-full h-auto object-cover object-top" />
+        </div>
+        <div>
+          <h3 class="indent-[20%] pb-8 md:pb-18 text-[clamp(20px,_5vw,_32px)] font-bold leading-tight">
+            With a passionate team of industry specialists, we are dedicated to nurturing the careers of content creators and personal
+            brands, linking them with tailored opportunities that align with their distinctive style and personality.
+          </h3>
+
+          <div class="flex justify-center">
+            <div class="md:w-8/12 flex justify-between">
+              <div class="flex-column justify-between items-start h-full">
+                <p class="md:max-w-[70%] text-left font-medium">
+                  (<span class="text-theme-green">VI</span>)__SIX Marketing specializes in social media management. Our firm provides a
+                  range of services including social media marketing, advertising, and email campaigns. We excel in creating and overseeing
+                  effective social media campaigns across platforms like Facebook, Instagram, Twitter, LinkedIn, and Pinterest.
+                </p>
+
+                <div class="flex-center md:justify-start md:space-x-5 max-w-screen mx-auto pt-4 md:pt-0">
+                  <img src="assets/images/about-image4.png" alt="vertical Image" class="md:max-w-[20%] max-w-4/12 px-1" />
+                  <img src="assets/images/about-image5.png" alt="vertical Image" class="md:max-w-[20%] max-w-4/12 px-1" />
+                  <img src="assets/images/about-image6.png" alt="vertical Image" class="md:max-w-[20%] max-w-4/12 px-1" />
+                </div>
+              </div>
+            </div>
+
+            <div class="hidden md:block w-1/3">
+              <div>
+                <img src="assets/images/about-image7.png" alt="vertical Image" class="w-full h-auto" />
               </div>
             </div>
           </div>
-
-          <div class="hidden md:block w-6/12 flex-center justify-end max-h-[95vh] px-3">
-            <img src="assets/images/hero-image.png" class="w-full h-full object-cover" alt="Hero Image" />
-          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- About -->
-      <section id="about" class="max-w-2000 py-16 px-4">
-        <h2 class="md:w-8/12 mb-16 font-bold text-[clamp(32px,_5vw,_40px)] leading-tight">
-          Empowering brands to thrive in the digital age. Together, we redefine the standard. Direct and always at the forefront.
-        </h2>
+    <!-- What we do  -->
+    <section id="services" class="bg-theme-black text-white py-10 md:py-24 px-4">
+      <div class="w-full mx-auto">
+        <div class="max-w-[2000px] mx-auto">
+          <h2 class="text-center uppercase text-[clamp(28px,_5vw,_48px)] leading-none font-bold">
+            We make digital products and <span class="text-theme-green"> services</span>
+          </h2>
 
-        <div class="md:flex md:items-start">
-          <div class="md:w-2/12 md:px-1">
-            <img src="assets/images/about-image1.png" alt="vertical Image" class="w-full h-auto" />
-          </div>
-          <div class="md:w-8/12 md:px-4">
-            <div class="md:flex items-baseline space-y-4 md:space-y-0 pt-8 md:pt-0">
-              <p class="w-full px-4 md:text-justify font-semibold leading-snug">
-                At (<span class="text-theme-green font-bold">VI</span>)__SIX, our service is unmatched in the industry. We never do
-                ordinary. Why? Simple. We're here to innovate, not just replicate. We're a global social agency, specializing in content and
-                influencer marketing, but that sounds too corporate, doesn't it?
-              </p>
-              <p class="w-full px-4 md:text-justify font-semibold leading-snug">
-                This means we know how to connect people. Content is communication, and it's our specialty. We merge market intelligence
-                with expertise to provide award-winning client services worldwide.
-              </p>
-            </div>
-          </div>
-          <div class="w-2/12 hidden md:block px-1">
-            <img src="assets/images/about-image2.png" alt="vertical Image" class="w-full h-auto" />
+          <div class="flex-column md:flex-row md:max-w-[70%] mx-auto pt-14">
+            <h5 class="text-center w-6/12 font-bold leading-tight hidden md:block">
+              (<span class="text-theme-green">VI</span>)__SIX <br />
+              <span class="text-theme-green">Services</span>
+            </h5>
+
+            <p class="md:w-6/12">
+              We provide comprehensive social marketing services, including creative, media, and technical expertise, all rooted in a deep
+              understanding of online culture and social behaviors. Our exceptional research skills allow us to uncover valuable social
+              insights, enabling our creative ideas to thrive on any platform or medium.
+            </p>
           </div>
         </div>
 
-        <div class="bottom-row">
-          <div class="my-6 max-h-[70vh] overflow-hidden object-cover">
-            <img src="assets/images/about-image3.png" alt="vertical Image" class="w-full h-auto object-cover object-top" />
-          </div>
-          <div>
-            <h3 class="indent-[20%] pb-8 md:pb-18 text-[clamp(20px,_5vw,_32px)] font-bold leading-tight">
-              With a passionate team of industry specialists, we are dedicated to nurturing the careers of content creators and personal
-              brands, linking them with tailored opportunities that align with their distinctive style and personality.
-            </h3>
-
-            <div class="flex justify-center">
-              <div class="md:w-8/12 flex justify-between">
-                <div class="flex-column justify-between items-start h-full">
-                  <p class="md:max-w-[70%] text-left font-medium">
-                    (<span class="text-theme-green">VI</span>)__SIX Marketing specializes in social media management. Our firm provides a
-                    range of services including social media marketing, advertising, and email campaigns. We excel in creating and
-                    overseeing effective social media campaigns across platforms like Facebook, Instagram, Twitter, LinkedIn, and Pinterest.
+        <div class="pt-24 md:pt-12">
+          <div class="container mx-auto max-w-[1400px]">
+            <div class="flex flex-wrap gap-y-12">
+              <!-- Influencer Campaigns -->
+              <div class="md:w-6/12 flex-column justify-start">
+                <div class="text-center">
+                  <h3 class="uppercase text-[clamp(24px,_5vw,_32px)] font-bold md:flex justify-center items-center">
+                    <span class="text-theme-green text-[16px] mr-2 hidden md:block">01 /</span> Influencer Campaigns
+                  </h3>
+                  <p class="pt-0 md:w-8/12 mx-auto">
+                    Influencer campaigns provide an effective solution to reach new audiences and boost conversions by partnering with top
+                    content creators.
                   </p>
+                </div>
 
-                  <div class="flex-center md:justify-start md:space-x-5 max-w-screen mx-auto pt-4 md:pt-0">
-                    <img src="assets/images/about-image4.png" alt="vertical Image" class="md:max-w-[20%] max-w-4/12 px-1" />
-                    <img src="assets/images/about-image5.png" alt="vertical Image" class="md:max-w-[20%] max-w-4/12 px-1" />
-                    <img src="assets/images/about-image6.png" alt="vertical Image" class="md:max-w-[20%] max-w-4/12 px-1" />
+                <div class="flex-center my-8 max-h-[300px] md:max-h-[400px]">
+                  <div class="h-full w-6/12 mx-2">
+                    <img src="assets/images/Influencer-Campaign-image1.png" class="w-full h-full object-cover" />
+                    <span class="inline-block mt-1 text-xs">@SerendipityShots</span>
+                  </div>
+                  <div class="h-full w-6/12 mx-2">
+                    <img src="assets/images/Influencer-Campaign-image2.png" class="w-full h-full object-cover" />
+                    <span class="inline-block mt-1 text-xs">@UrbanTrailblazer</span>
                   </div>
                 </div>
               </div>
 
-              <div class="hidden md:block w-1/3">
-                <div>
-                  <img src="assets/images/about-image7.png" alt="vertical Image" class="w-full h-auto" />
+              <!-- Content Creation -->
+              <div class="md:w-6/12 flex-column justify-start">
+                <div class="text-center">
+                  <h3 class="uppercase text-[clamp(24px,_5vw,_32px)] font-bold md:flex justify-center items-center">
+                    <span class="text-theme-green text-[16px] mr-2 hidden md:block">02 /</span> Content Creation
+                  </h3>
+                  <p class="pt-0 md:w-8/12 mx-auto">
+                    Content is arguably the cornerstone of every successful digital marketing strategy, and you know what? We absolutely
+                    thrive on it!
+                  </p>
+                </div>
+
+                <div class="flex-center my-8 max-h-[300px] md:max-h-[400px]">
+                  <div class="h-full w-6/12 mx-2">
+                    <img src="assets/images/Content-Creation-image1.png" class="w-full h-full object-cover" />
+                    <span class="inline-block mt-1 text-xs">@CosmicVibes</span>
+                  </div>
+                  <div class="h-full w-6/12 mx-2">
+                    <img src="assets/images/Content-Creation-image2.png" class="w-full h-full object-cover" />
+                    <span class="inline-block mt-1 text-xs">@TitanLens</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Talent Management -->
+              <div class="md:w-6/12 flex-column justify-start">
+                <div class="text-center">
+                  <h3 class="uppercase text-[clamp(24px,_5vw,_32px)] font-bold md:flex justify-center items-center">
+                    <span class="text-theme-green text-[16px] mr-2 hidden md:block">03 /</span> Talent Management
+                  </h3>
+                  <p class="pt-0 md:w-8/12 mx-auto">
+                    (<span class="text-theme-green">VI</span>)__SIX internal Talent Management division champions the most inspiring,
+                    hardworking, and creative influencers globally.
+                  </p>
+                </div>
+
+                <div class="flex-center my-8 max-h-[300px] md:max-h-[400px]">
+                  <div class="h-full w-6/12 mx-2">
+                    <img src="assets/images/Talent-Management-image1.png" class="w-full h-full object-cover" />
+                    <span class="inline-block mt-1 text-xs">@BoldPathfinder</span>
+                  </div>
+                  <div class="h-full w-6/12 mx-2">
+                    <img src="assets/images/Talent-Management-image2.png" class="w-full h-full object-cover" />
+                    <span class="inline-block mt-1 text-xs">@DreamyDusk</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Media Management -->
+              <div class="md:w-6/12 flex-column justify-start">
+                <div class="text-center">
+                  <h3 class="uppercase text-[clamp(24px,_5vw,_32px)] font-bold md:flex justify-center items-center">
+                    <span class="text-theme-green text-[16px] mr-2 hidden md:block">04 /</span> Social Media Management
+                  </h3>
+                  <p class="pt-0 md:w-8/12 mx-auto">
+                    We craft & execute customized, measurable strategies to accomplish your brand objectives and connect directly with your
+                    consumers.
+                  </p>
+                </div>
+
+                <div class="flex-center my-8 max-h-[300px] md:max-h-[400px]">
+                  <div class="h-full w-6/12 mx-2">
+                    <img src="assets/images/Social-Media-image1.png" class="w-full h-full object-cover" />
+                    <span class="inline-block mt-1 text-xs">@UrbanWanderlust</span>
+                  </div>
+                  <div class="h-full w-6/12 mx-2">
+                    <img src="assets/images/Social-Media-image2.png" class="w-full h-full object-cover" />
+                    <span class="inline-block mt-1 text-xs">@FearlessFocus</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- What we do  -->
-      <section id="services" class="bg-theme-black text-white py-24 px-4">
-        <div class="w-full mx-auto">
-          <div class="max-w-[2000px] mx-auto">
-            <h2 class="text-center uppercase text-[clamp(28px,_5vw,_48px)] leading-none font-bold">
-              We make digital products and <span class="text-theme-green"> services</span>
-            </h2>
-
-            <div class="flex-column md:flex-row md:max-w-[70%] mx-auto pt-14">
-              <h5 class="text-center w-6/12 font-bold leading-tight hidden md:block">
-                (<span class="text-theme-green">VI</span>)__SIX <br />
-                <span class="text-theme-green">Services</span>
-              </h5>
-
-              <p class="md:w-6/12">
-                We provide comprehensive social marketing services, including creative, media, and technical expertise, all rooted in a deep
-                understanding of online culture and social behaviors. Our exceptional research skills allow us to uncover valuable social
-                insights, enabling our creative ideas to thrive on any platform or medium.
+    <!-- Portfolio -->
+    <section id="portfolio" class="bg-black text-white py-10 md:py-24 px-4">
+      <div class="max-w-[2000px] mx-auto">
+        <div class="row">
+          <div class="mb-16">
+            <h2 class="text-center md:text-left text-[40px] font-bold leading-[1] md:leading-normal">Our Work</h2>
+            <div class="md:flex text-center md:text-start">
+              <p class="md:w-[40%]">We help brands reach their goals.</p>
+              <p class="md:w-[40%] pt-4 md:pt-0">
+                Our teams are experienced in crafting strategies and handling daily operations across various industries, including food and
+                beverage, music, travel, and more. Explore some of our case studies below!
               </p>
             </div>
           </div>
+        </div>
 
-          <div class="pt-24 md:pt-12">
-            <div class="container mx-auto max-w-[1400px]">
-              <div class="flex flex-wrap gap-y-12">
-                <!-- Influencer Campaigns -->
-                <div class="md:w-6/12 flex-column justify-start">
-                  <div class="text-center">
-                    <h3 class="uppercase text-[clamp(24px,_5vw,_32px)] font-bold md:flex justify-center items-center">
-                      <span class="text-theme-green text-[16px] mr-2 hidden md:block">01 /</span> Influencer Campaigns
-                    </h3>
-                    <p class="pt-0 md:w-8/12 mx-auto">
-                      Influencer campaigns provide an effective solution to reach new audiences and boost conversions by partnering with top
-                      content creators.
-                    </p>
-                  </div>
+        <div>
+          <div class="flex flex-col md:flex-row justify-between">
+            <!-- Project 1 -->
+            <div class="md:w-1/3 mb-8 md:mb-0 px-2">
+              <a href="/build/project-1.html" class="group">
+                <p class="text-white text-base mb-2 group-hover:text-theme-green smooth">/ 01</p>
+                <img src="assets/images/work-image1.jpeg" alt="Work 1" class="w-full h-[550px] object-cover mb-2" />
+                <div>
+                  <h5 class="text-base font-bold">Chef</h5>
+                  <p class="text-xs mt-1 group-hover:text-theme-green smooth">Sound · Meditation · Work</p>
+                </div>
+              </a>
+            </div>
 
-                  <div class="flex-center my-8 max-h-[300px] md:max-h-[400px]">
-                    <div class="h-full w-6/12 mx-2">
-                      <img src="assets/images/Influencer-Campaign-image1.png" class="w-full h-full object-cover" />
-                      <span class="inline-block mt-1 text-xs">@SerendipityShots</span>
+            <!-- Project 2 -->
+            <div class="md:w-1/3 mb-8 md:mb-0 px-2">
+              <a href="/portfolioprojectone" class="group">
+                <p class="text-white text-base mb-2 group-hover:text-theme-green smooth">/ 02</p>
+                <img src="assets/images/work-image2.png" alt="Work 2" class="w-full h-[550px] object-cover mb-2" />
+                <div>
+                  <h5 class="text-base font-bold">Traveler</h5>
+                  <p class="text-xs mt-1 group-hover:text-theme-green smooth">Sound · Meditation · Work</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="md:w-1/3 px-2">
+              <a href="/portfolioprojectone" class="group">
+                <p class="text-white text-base mb-2 group-hover:text-theme-green smooth">/ 03</p>
+                <img src="assets/images/work-image3.png" alt="Work 3" class="w-full h-[550px] object-cover mb-2" />
+                <div>
+                  <h5 class="text-base font-bold">Music</h5>
+                  <p class="text-xs mt-1 group-hover:text-theme-green smooth">Sound · Meditation · Work</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="py-10 md:py-24 bg-white text-black">
+      <div class="max-w-[2000px] mx-auto">
+        <div class="flex flex-wrap">
+          <!-- Left Side -->
+          <div class="md:w-7/12 pr-4 pb-4 md:pb-0 px-2">
+            <div class="flex flex-col items-start">
+              <h2 class="text-[clamp(72px,_10vw,_144px)] leading-[0.9] uppercase font-bold">
+                Meet The Team
+                <div class="font-bold text-2xl font-chakra inline">(<span class="text-theme-green">VI</span>)__SIX</div>
+              </h2>
+
+              <div class="my-6 max-h-[85vh] w-full">
+                <img src="assets/images/Team-group-img.jpeg" alt="Team" class="w-full h-full object-cover max-h-inherit" />
+              </div>
+
+              <div class="flex flex-wrap -mx-2">
+                <div class="w-full md:w-1/2 px-2 mb-4 md:mb-0">
+                  <p class="font-semibold text-base leading-tight">
+                    In a world where every marketing company claims to do social media, (<span class="text-theme-green">VI</span>)__SIX
+                    Agency truly leads the way with a team of dozens of full-time staff. Operating globally from offices in New York City,
+                    Miami and Los Angeles, we provide unmatched expertise. With a leadership team together for over seven years, we bring
+                    diverse backgrounds and experiences to enhance your digital marketing campaigns.
+                  </p>
+                </div>
+                <div class="w-full md:w-1/2 px-2">
+                  <p class="font-semibold text-base leading-tight">
+                    We've seen trends come and go and pioneered industry practices. As the 2016 Social Media Agency of the Year, we lead the
+                    way. With expertise in content creation, community management, influencer relations, promotions, strategy, reporting,
+                    media buying, and data analytics, we offer comprehensive social media support. At (<span class="text-theme-green"
+                      >VI</span
+                    >)__SIX, we focus on driving measurable results.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side -->
+          <div class="w-full lg:w-5/12 bg-theme-black">
+            <div class="flex flex-col text-white p-2">
+              <!-- {/* Founder */} -->
+              <div class="mb-4">
+                <img src="assets/images/Team-jaxon.jpeg" alt="Jaxon Cole" class="w-full max-h-[700px] object-cover" />
+                <div class="flex flex-col md:flex-row justify-between py-4">
+                  <h5 class="w-full md:w-[30%] text-md font-extrabold">Jaxon Cole</h5>
+                  <p class="md:w-[70%] text-sm font-medium">
+                    Jaxon co-founded (<span class="text-theme-green">VI</span>)__SIX Agency following a successful career in social media
+                    marketing and public relations. By combining innovative social strategies with modern creative direction, Jaxon
+                    guarantees that our clients receive the most comprehensive social campaigns.
+                  </p>
+                </div>
+              </div>
+
+              <!-- {/* Team Members */} -->
+              <div class="w-full">
+                <div class="flex flex-wrap mb-4 space-y-4 md:space-y-0">
+                  <div class="w-full md:w-1/2 px-2">
+                    <img src="assets/images/Team-luna.jpg" alt="Luna Jade" class="w-full max-h-[275px] object-cover" />
+                    <div class="text-sm mt-2">
+                      <h5 class="w-full text-md font-extrabold">Luna Jade</h5>
+                      <p class="capitalize">Head of Social & Design</p>
                     </div>
-                    <div class="h-full w-6/12 mx-2">
-                      <img src="assets/images/Influencer-Campaign-image2.png" class="w-full h-full object-cover" />
-                      <span class="inline-block mt-1 text-xs">@UrbanTrailblazer</span>
+                  </div>
+                  <div class="w-full md:w-1/2 px-2">
+                    <img src="assets/images/Team-zane.jpg" alt="Zane Carter" class="w-full max-h-[275px] object-cover" />
+                    <div class="text-sm mt-2">
+                      <h5 class="w-full text-md font-extrabold">Zane Carter</h5>
+                      <p class="capitalize">Social Media Visual Expert</p>
                     </div>
                   </div>
                 </div>
+                <!-- Last Row -->
+                <div class="flex flex-wrap pb-24 md:pb-4">
+                  <div class="w-full md:w-1/2 px-2 mb-4">
+                    <img src="assets/images/Team-goofballz.jpg" alt="Office Goofballz" class="w-full max-h-[275px] object-cover" />
+                    <div class="text-sm mt-2">
+                      <h5 class="w-full text-md font-extrabold">Ryder & Jett</h5>
 
-                <!-- Content Creation -->
-                <div class="md:w-6/12 flex-column justify-start">
-                  <div class="text-center">
-                    <h3 class="uppercase text-[clamp(24px,_5vw,_32px)] font-bold md:flex justify-center items-center">
-                      <span class="text-theme-green text-[16px] mr-2 hidden md:block">02 /</span> Content Creation
-                    </h3>
-                    <p class="pt-0 md:w-8/12 mx-auto">
-                      Content is arguably the cornerstone of every successful digital marketing strategy, and you know what? We absolutely
-                      thrive on it!
-                    </p>
-                  </div>
-
-                  <div class="flex-center my-8 max-h-[300px] md:max-h-[400px]">
-                    <div class="h-full w-6/12 mx-2">
-                      <img src="assets/images/Content-Creation-image1.png" class="w-full h-full object-cover" />
-                      <span class="inline-block mt-1 text-xs">@CosmicVibes</span>
-                    </div>
-                    <div class="h-full w-6/12 mx-2">
-                      <img src="assets/images/Content-Creation-image2.png" class="w-full h-full object-cover" />
-                      <span class="inline-block mt-1 text-xs">@TitanLens</span>
+                      <p class="capitalize">Office Goofballz</p>
                     </div>
                   </div>
-                </div>
-
-                <!-- Talent Management -->
-                <div class="md:w-6/12 flex-column justify-start">
-                  <div class="text-center">
-                    <h3 class="uppercase text-[clamp(24px,_5vw,_32px)] font-bold md:flex justify-center items-center">
-                      <span class="text-theme-green text-[16px] mr-2 hidden md:block">03 /</span> Talent Management
-                    </h3>
-                    <p class="pt-0 md:w-8/12 mx-auto">
-                      (<span class="text-theme-green">VI</span>)__SIX internal Talent Management division champions the most inspiring,
-                      hardworking, and creative influencers globally.
-                    </p>
-                  </div>
-
-                  <div class="flex-center my-8 max-h-[300px] md:max-h-[400px]">
-                    <div class="h-full w-6/12 mx-2">
-                      <img src="assets/images/Talent-Management-image1.png" class="w-full h-full object-cover" />
-                      <span class="inline-block mt-1 text-xs">@BoldPathfinder</span>
-                    </div>
-                    <div class="h-full w-6/12 mx-2">
-                      <img src="assets/images/Talent-Management-image2.png" class="w-full h-full object-cover" />
-                      <span class="inline-block mt-1 text-xs">@DreamyDusk</span>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Social Media Management -->
-                <div class="md:w-6/12 flex-column justify-start">
-                  <div class="text-center">
-                    <h3 class="uppercase text-[clamp(24px,_5vw,_32px)] font-bold md:flex justify-center items-center">
-                      <span class="text-theme-green text-[16px] mr-2 hidden md:block">04 /</span> Social Media Management
-                    </h3>
-                    <p class="pt-0 md:w-8/12 mx-auto">
-                      We craft & execute customized, measurable strategies to accomplish your brand objectives and connect directly with
-                      your consumers.
-                    </p>
-                  </div>
-
-                  <div class="flex-center my-8 max-h-[300px] md:max-h-[400px]">
-                    <div class="h-full w-6/12 mx-2">
-                      <img src="assets/images/Social-Media-image1.png" class="w-full h-full object-cover" />
-                      <span class="inline-block mt-1 text-xs">@UrbanWanderlust</span>
-                    </div>
-                    <div class="h-full w-6/12 mx-2">
-                      <img src="assets/images/Social-Media-image2.png" class="w-full h-full object-cover" />
-                      <span class="inline-block mt-1 text-xs">@FearlessFocus</span>
+                  <div class="w-full md:w-1/2 px-2">
+                    <img src="assets/images/Team-aurora.jpg" alt="Aurora Blake" class="w-full max-h-[275px] object-cover" />
+                    <div class="text-sm mt-2">
+                      <h5 class="w-full text-md font-extrabold">Aurora Blake</h5>
+                      <p class="capitalize">Marketing Manager</p>
                     </div>
                   </div>
                 </div>
@@ -369,272 +518,116 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Portfolio -->
-      <section id="portfolio" class="bg-black text-white py-24 px-4">
-        <div class="max-w-screen-2xl mx-auto">
-          <div class="row">
-            <div class="mb-16">
-              <h2 class="text-center md:text-left text-[40px] font-bold leading-[1] md:leading-normal">Our Work</h2>
-              <div class="md:flex text-center md:text-start">
-                <p class="md:w-[40%]">We help brands reach their goals.</p>
-                <p class="md:w-[40%] pt-4 md:pt-0">
-                  Our teams are experienced in crafting strategies and handling daily operations across various industries, including food
-                  and beverage, music, travel, and more. Explore some of our case studies below!
+    <!-- Brands -->
+    <section class="py-10 md:py-24 bg-white">
+      <div class="max-w-[2000px] mx-auto px-2">
+        <div class="md:flex flex-wrap">
+          <div class="md:w-1/4">
+            <h3 class="text-[32px] text-center md:text-start font-bold uppercase text-black">Select Clients</h3>
+          </div>
+
+          <div class="md:w-3/4 pt-8 md:pt-0">
+            <div class="flex flex-wrap gap-y-12 md:gap-y-32">
+              <!--  -->
+              <div class="w-1/3 md:px-12 flex-center px-6">
+                <img class="md:w-8/12 h-auto" src="assets/images/logoipsum-1.png" alt="" />
+              </div>
+              <!--  -->
+              <div class="w-1/3 md:px-12 flex-center px-4">
+                <img class="md:w-8/12 h-auto" src="assets/images/logoipsum-2.png" alt="" />
+              </div>
+              <!--  -->
+              <div class="w-1/3 md:px-12 flex-center px-4">
+                <img class="md:w-8/12 h-auto" src="assets/images/logoipsum-3.png" alt="" />
+              </div>
+              <!--  -->
+              <div class="w-1/3 md:px-12 flex-center px-4">
+                <img class="md:w-8/12 h-auto" src="assets/images/logoipsum-4.png" alt="" />
+              </div>
+              <!--  -->
+              <div class="w-1/3 md:px-12 flex-center px-4">
+                <img class="md:w-8/12 h-auto" src="assets/images/logoipsum-5.png" alt="" />
+              </div>
+              <!--  -->
+              <div class="w-1/3 md:px-12 flex-center px-4">
+                <img class="md:w-8/12 h-auto" src="assets/images/logoipsum-6.png" alt="" />
+              </div>
+              <!--  -->
+              <div class="w-1/3 md:px-12 flex-center px-4">
+                <img class="md:w-8/12 h-auto" src="assets/images/logoipsum-7.png" alt="" />
+              </div>
+              <!--  -->
+              <div class="w-1/3 md:px-12 flex-center px-4">
+                <img class="md:w-8/12 h-auto" src="assets/images/logoipsum-8.png" alt="" />
+              </div>
+              <!--  -->
+              <div class="w-1/3 md:px-12 flex-center px-4">
+                <img class="md:w-8/12 h-auto" src="assets/images/logoipsum-9.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-10 md:py-24 bg-white">
+      <div class="max-w-[2000px] mx-auto px-4">
+        <div class="mb-8 border-b-2 border-gray-100 pb-8">
+          <h2 class="text-[32px] font-bold uppercase text-black">Testimonials</h2>
+        </div>
+
+        <div class="flex flex-wrap -mx-4">
+          <!-- First Testimonial -->
+          <div class="md:w-1/2 px-4 md:px-16 mb-12 text-black">
+            <p class="mb-8 text-base font-medium leading-tight">
+              The entire (<span class="text-theme-green font-semibold">VI</span>)__SIX team went above and beyond, surpassing all
+              expectations on our activation. Every detail, no matter how small, was meticulously handled with precision and care. Your
+              team's dedication and thoroughness ensured that every aspect of the project was executed flawlessly. We always felt confident
+              in your ability to deliver, and you truly made the event a resounding success.
+            </p>
+
+            <div class="flex justify-between items-start flex-wrap md:flex-nowrap">
+              <div class="flex items-start md:max-w-[65%] w-full md:w-auto">
+                <img src="assets/images/testimonial-img1.png" alt="Sophia Nguyen" class="w-[125px] h-auto object-cover mr-3" />
+                <p class="font-medium">
+                  Sophia Nguyen <br />
+                  Digital Brand Activation Specialist <br />
+                  <span class="text-sm font-normal block">UrbanFlux</span>
                 </p>
               </div>
             </div>
           </div>
 
-          <div>
-            <div class="flex flex-col md:flex-row justify-between">
-              <!-- Project 1 -->
-              <div class="md:w-1/3 mb-8 md:mb-0 px-2">
-                <a href="/build/project-1.html" class="group">
-                  <p class="text-white text-base mb-2 group-hover:text-theme-green smooth">/ 01</p>
-                  <img src="assets/images/work-image1.jpeg" alt="Work 1" class="w-full h-[550px] object-cover mb-2" />
-                  <div>
-                    <h5 class="text-base font-bold">Chef</h5>
-                    <p class="text-xs mt-1 group-hover:text-theme-green smooth">Sound · Meditation · Work</p>
-                  </div>
-                </a>
-              </div>
+          <!-- Second Testimonial -->
+          <div class="md:w-1/2 px-4 md:px-16 mb-12 text-black">
+            <p class="mb-8 text-base font-medium leading-tight">
+              The team demonstrated exceptional efficiency in their operations and meticulous attention to itinerary management on the
+              ground. Their overall performance was impressive, and the content they produced not only met but significantly exceeded our
+              expectations. The dedication and attention to detail were evident in every aspect of their work, ensuring a smooth and
+              successful execution.
+            </p>
 
-              <!-- Project 2 -->
-              <div class="md:w-1/3 mb-8 md:mb-0 px-2">
-                <a href="/portfolioprojectone" class="group">
-                  <p class="text-white text-base mb-2 group-hover:text-theme-green smooth">/ 02</p>
-                  <img src="assets/images/work-image2.png" alt="Work 2" class="w-full h-[550px] object-cover mb-2" />
-                  <div>
-                    <h5 class="text-base font-bold">Traveler</h5>
-                    <p class="text-xs mt-1 group-hover:text-theme-green smooth">Sound · Meditation · Work</p>
-                  </div>
-                </a>
-              </div>
-
-              <!-- Project 3 -->
-              <div class="md:w-1/3 px-2">
-                <a href="/portfolioprojectone" class="group">
-                  <p class="text-white text-base mb-2 group-hover:text-theme-green smooth">/ 03</p>
-                  <img src="assets/images/work-image3.png" alt="Work 3" class="w-full h-[550px] object-cover mb-2" />
-                  <div>
-                    <h5 class="text-base font-bold">Music</h5>
-                    <p class="text-xs mt-1 group-hover:text-theme-green smooth">Sound · Meditation · Work</p>
-                  </div>
-                </a>
+            <div class="flex justify-between items-start flex-wrap md:flex-nowrap">
+              <div class="flex items-start md:max-w-[65%] w-full md:w-auto">
+                <img src="assets/images/testimonial-img2.png" alt="Sophia Nguyen" class="w-[125px] h-auto object-cover mr-3" />
+                <p class="font-medium">
+                  Liam Davis <br />
+                  Brand Marketing Manager
+                  <span class="text-sm font-normal block">ThriveCraft</span>
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- Team -->
-      <section id="team" class="py-24 bg-white text-black">
-        <div class="max-w-[2000px] mx-auto">
-          <div class="flex flex-wrap">
-            <!-- Left Side -->
-            <div class="md:w-7/12 pr-4 pb-4 md:pb-0 px-2">
-              <div class="flex flex-col items-start">
-                <h2 class="text-[clamp(72px,_10vw,_144px)] leading-[0.9] uppercase font-bold">
-                  Meet The Team
-                  <div class="font-bold text-2xl font-chakra inline">(<span class="text-theme-green">VI</span>)__SIX</div>
-                </h2>
-
-                <div class="my-6 max-h-[85vh] w-full">
-                  <img src="assets/images/Team-group-img.jpeg" alt="Team" class="w-full h-full object-cover max-h-inherit" />
-                </div>
-
-                <div class="flex flex-wrap -mx-2">
-                  <div class="w-full md:w-1/2 px-2 mb-4 md:mb-0">
-                    <p class="font-semibold text-base leading-tight">
-                      In a world where every marketing company claims to do social media, (<span class="text-theme-green">VI</span>)__SIX
-                      Agency truly leads the way with a team of dozens of full-time staff. Operating globally from offices in New York City,
-                      Miami and Los Angeles, we provide unmatched expertise. With a leadership team together for over seven years, we bring
-                      diverse backgrounds and experiences to enhance your digital marketing campaigns.
-                    </p>
-                  </div>
-                  <div class="w-full md:w-1/2 px-2">
-                    <p class="font-semibold text-base leading-tight">
-                      We've seen trends come and go and pioneered industry practices. As the 2016 Social Media Agency of the Year, we lead
-                      the way. With expertise in content creation, community management, influencer relations, promotions, strategy,
-                      reporting, media buying, and data analytics, we offer comprehensive social media support. At (<span
-                        class="text-theme-green"
-                        >VI</span
-                      >)__SIX, we focus on driving measurable results.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Right Side -->
-            <div class="w-full lg:w-5/12 bg-theme-black">
-              <div class="flex flex-col text-white p-2">
-                <!-- {/* Founder */} -->
-                <div class="mb-4">
-                  <img src="assets/images/Team-jaxon.jpeg" alt="Jaxon Cole" class="w-full max-h-[700px] object-cover" />
-                  <div class="flex flex-col md:flex-row justify-between py-4">
-                    <h5 class="w-full md:w-[30%] text-md font-extrabold">Jaxon Cole</h5>
-                    <p class="md:w-[70%] text-sm font-medium">
-                      Jaxon co-founded (<span class="text-theme-green">VI</span>)__SIX Agency following a successful career in social media
-                      marketing and public relations. By combining innovative social strategies with modern creative direction, Jaxon
-                      guarantees that our clients receive the most comprehensive social campaigns.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- {/* Team Members */} -->
-                <div class="w-full">
-                  <div class="flex flex-wrap mb-4 space-y-4 md:space-y-0">
-                    <div class="w-full md:w-1/2 px-2">
-                      <img src="assets/images/Team-luna.jpg" alt="Luna Jade" class="w-full max-h-[275px] object-cover" />
-                      <div class="text-sm mt-2">
-                        <h5 class="w-full md:w-[30%] text-md font-extrabold">Luna Jade</h5>
-                        <p class="capitalize">Head of Social & Design</p>
-                      </div>
-                    </div>
-                    <div class="w-full md:w-1/2 px-2">
-                      <img src="assets/images/Team-zane.jpg" alt="Zane Carter" class="w-full max-h-[275px] object-cover" />
-                      <div class="text-sm mt-2">
-                        <h5 class="w-full md:w-[30%] text-md font-extrabold">Zane Carter</h5>
-                        <p class="capitalize">Social Media Visual Expert</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="flex flex-wrap">
-                    <div class="w-full md:w-1/2 px-2 mb-4">
-                      <img src="assets/images/Team-goofballz.jpg" alt="Office Goofballz" class="w-full max-h-[275px] object-cover" />
-                      <div class="text-sm mt-2">
-                        <h5 class="w-full md:w-[30%] text-md font-extrabold">Ryder & Jett</h5>
-
-                        <p class="capitalize">Office Goofballz</p>
-                      </div>
-                    </div>
-                    <div class="w-full md:w-1/2 px-2">
-                      <img src="assets/images/Team-aurora.jpg" alt="Aurora Blake" class="w-full max-h-[275px] object-cover" />
-                      <div class="text-sm mt-2">
-                        <h5 class="w-full md:w-[30%] text-md font-extrabold">Aurora Blake</h5>
-                        <p class="capitalize">Marketing Manager</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Brands -->
-      <section class="py-24 bg-white">
-        <div class="max-w-[2000px] mx-auto px-4">
-          <div class="md:flex flex-wrap">
-            <div class="md:w-1/4">
-              <h3 class="text-[32px] text-center md:text-start font-bold uppercase text-black">Select Clients</h3>
-            </div>
-
-            <div class="md:w-3/4 pt-8 md:pt-0">
-              <div class="flex flex-wrap gap-y-12 md:gap-y-32">
-                <!--  -->
-                <div class="w-1/3 md:px-12 flex-center px-6">
-                  <img class="md:w-8/12 h-auto" src="assets/images/logoipsum-1.png" alt="" />
-                </div>
-                <!--  -->
-                <div class="w-1/3 md:px-12 flex-center px-4">
-                  <img class="md:w-8/12 h-auto" src="assets/images/logoipsum-2.png" alt="" />
-                </div>
-                <!--  -->
-                <div class="w-1/3 md:px-12 flex-center px-4">
-                  <img class="md:w-8/12 h-auto" src="assets/images/logoipsum-3.png" alt="" />
-                </div>
-                <!--  -->
-                <div class="w-1/3 md:px-12 flex-center px-4">
-                  <img class="md:w-8/12 h-auto" src="assets/images/logoipsum-4.png" alt="" />
-                </div>
-                <!--  -->
-                <div class="w-1/3 md:px-12 flex-center px-4">
-                  <img class="md:w-8/12 h-auto" src="assets/images/logoipsum-5.png" alt="" />
-                </div>
-                <!--  -->
-                <div class="w-1/3 md:px-12 flex-center px-4">
-                  <img class="md:w-8/12 h-auto" src="assets/images/logoipsum-6.png" alt="" />
-                </div>
-                <!--  -->
-                <div class="w-1/3 md:px-12 flex-center px-4">
-                  <img class="md:w-8/12 h-auto" src="assets/images/logoipsum-7.png" alt="" />
-                </div>
-                <!--  -->
-                <div class="w-1/3 md:px-12 flex-center px-4">
-                  <img class="md:w-8/12 h-auto" src="assets/images/logoipsum-8.png" alt="" />
-                </div>
-                <!--  -->
-                <div class="w-1/3 md:px-12 flex-center px-4">
-                  <img class="md:w-8/12 h-auto" src="assets/images/logoipsum-9.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Testimonials -->
-      <section class="py-24">
-        <div class="max-w-[2000px] mx-auto px-4">
-          <div class="mb-8 border-b-2 border-gray-100 pb-8">
-            <h2 class="text-[32px] font-bold uppercase text-black">Testimonials</h2>
-          </div>
-
-          <div class="flex flex-wrap -mx-4">
-            <!-- First Testimonial -->
-            <div class="md:w-1/2 px-4 md:px-16 mb-12 text-black">
-              <p class="mb-8 text-base font-medium leading-tight">
-                The entire (<span class="text-theme-green font-semibold">VI</span>)__SIX team went above and beyond, surpassing all
-                expectations on our activation. Every detail, no matter how small, was meticulously handled with precision and care. Your
-                team's dedication and thoroughness ensured that every aspect of the project was executed flawlessly. We always felt
-                confident in your ability to deliver, and you truly made the event a resounding success.
-              </p>
-
-              <div class="flex justify-between items-start flex-wrap md:flex-nowrap">
-                <div class="flex items-start md:max-w-[65%] w-full md:w-auto">
-                  <img src="assets/images/testimonial-img1.png" alt="Sophia Nguyen" class="w-[125px] h-auto object-cover mr-3" />
-                  <p class="font-medium">
-                    Sophia Nguyen <br />
-                    Digital Brand Activation Specialist <br />
-                    <span class="text-sm font-normal block">UrbanFlux</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Second Testimonial -->
-            <div class="md:w-1/2 px-4 md:px-16 mb-12 text-black">
-              <p class="mb-8 text-base font-medium leading-tight">
-                The team demonstrated exceptional efficiency in their operations and meticulous attention to itinerary management on the
-                ground. Their overall performance was impressive, and the content they produced not only met but significantly exceeded our
-                expectations. The dedication and attention to detail were evident in every aspect of their work, ensuring a smooth and
-                successful execution.
-              </p>
-
-              <div class="flex justify-between items-start flex-wrap md:flex-nowrap">
-                <div class="flex items-start md:max-w-[65%] w-full md:w-auto">
-                  <img src="assets/images/testimonial-img2.png" alt="Sophia Nguyen" class="w-[125px] h-auto object-cover mr-3" />
-                  <p class="font-medium">
-                    Liam Davis <br />
-                    Brand Marketing Manager
-                    <span class="text-sm font-normal block">ThriveCraft</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <!-- FAQ -->
-    <section class="bg-theme-black py-24">
+    <section class="bg-theme-black py-10 md:py-24">
       <div class="max-w-[2000px] px-4 py-12 mx-auto">
         <h2 class="text-[clamp(40px,_5vw,_48px)] font-bold capitalize text-white text-center mb-8 leading-tight">
           Frequently <span class="text-gray-300/50">asked questions</span>
@@ -643,9 +636,9 @@
         <div id="accordionFlushExample" class="mt-6 divide-y divide-gray-900/50 max-w-4xl mx-auto">
           <!-- Q1 -->
           <div>
-            <h2 id="flush-headingOne" class="font-body">
+            <h2 id="flush-headingOne" class="px-2">
               <button
-                class="group relative cursor-pointer flex w-full items-center rounded-none border-0 py-4 text-left text-xl text-white smooth [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none font-semibold hover:!text-theme-green"
+                class="group relative cursor-pointer flex w-full items-center rounded-none border-0 py-4 text-left text-lg text-white smooth [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none font-semibold hover:!text-theme-green"
                 type="button"
                 data-twe-collapse-init=""
                 data-twe-collapse-collapsed=""
@@ -653,8 +646,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseOne"
               >
-                01 / What is digital marketing?
-
+                <span class="pr-1 md:pr-0"> 01 / What is digital marketing?</span>
                 <span
                   class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&amp;>svg]:h-6 [&amp;>svg]:w-6"
                 >
@@ -671,9 +663,9 @@
               aria-labelledby="flush-headingOne"
               data-twe-parent="#accordionFlushExample"
             >
-              <div class="py-4 text-lg text-gray-200 flex max-w-full space-x-4">
+              <div class="py-4 text-lg text-gray-200 md:flex max-w-full md:space-x-4">
                 <img
-                  class="w-4/12"
+                  class="w-full md:w-4/12 mb-2 md:mb-0"
                   src="https://images.unsplash.com/photo-1583336663277-620dc1996580?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt=""
                 />
@@ -691,9 +683,9 @@
           </div>
           <!-- Q2 -->
           <div>
-            <h2 id="flush-headingTwo" class="font-body">
+            <h2 id="flush-headingTwo" class="px-2">
               <button
-                class="group relative cursor-pointer flex w-full items-center rounded-none border-0 py-4 text-left text-xl text-white smooth [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none font-semibold hover:!text-theme-green"
+                class="group relative cursor-pointer flex w-full items-center rounded-none border-0 py-4 text-left text-lg text-white smooth [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none font-semibold hover:!text-theme-green"
                 type="button"
                 data-twe-collapse-init=""
                 data-twe-collapse-collapsed=""
@@ -701,7 +693,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo"
               >
-                02 / What is a digital marketing agency?
+                <span class="pr-1 md:pr-0">02 / What is a digital marketing agency?</span>
 
                 <span
                   class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&amp;>svg]:h-6 [&amp;>svg]:w-6"
@@ -719,9 +711,9 @@
               aria-labelledby="flush-headingTwo"
               data-twe-parent="#accordionFlushExample"
             >
-              <div class="py-4 text-lg text-gray-200 flex max-w-full space-x-4">
+              <div class="py-4 text-lg text-gray-200 md:flex max-w-full md:space-x-4">
                 <img
-                  class="w-4/12"
+                  class="w-full md:w-4/12 mb-2 md:mb-0"
                   src="https://images.unsplash.com/photo-1608096281339-5bcae1ec2f12?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt=""
                 />
@@ -735,9 +727,9 @@
           </div>
           <!-- Q3 -->
           <div>
-            <h2 id="flush-headingThree" class="font-body">
+            <h2 id="flush-headingThree" class="px-2">
               <button
-                class="group relative cursor-pointer flex w-full items-center rounded-none border-0 py-4 text-left text-xl text-white smooth [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none font-semibold hover:!text-theme-green"
+                class="group relative cursor-pointer flex w-full items-center rounded-none border-0 py-4 text-left text-lg text-white smooth [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none font-semibold hover:!text-theme-green"
                 type="button"
                 data-twe-collapse-init=""
                 data-twe-collapse-collapsed=""
@@ -745,7 +737,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseThree"
               >
-                03 / Why is digital marketing important?
+                <span class="pr-1 md:pr-0"> 03 / Why is digital marketing important?</span>
 
                 <span
                   class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&amp;>svg]:h-6 [&amp;>svg]:w-6"
@@ -763,9 +755,9 @@
               aria-labelledby="flush-headingThree"
               data-twe-parent="#accordionFlushExample"
             >
-              <div class="py-4 text-lg text-gray-200 flex max-w-full space-x-4">
+              <div class="py-4 text-lg text-gray-200 md:flex max-w-full md:space-x-4">
                 <img
-                  class="w-4/12"
+                  class="w-full md:w-4/12 mb-2 md:mb-0"
                   src="https://images.unsplash.com/photo-1583511655805-3d0a917bd436?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt=""
                 />
@@ -779,9 +771,9 @@
           </div>
           <!-- Q4 -->
           <div>
-            <h2 id="flush-headingFour" class="font-body">
+            <h2 id="flush-headingFour" class="px-2">
               <button
-                class="group relative cursor-pointer flex w-full items-center rounded-none border-0 py-4 text-left text-xl text-white smooth [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none font-semibold hover:!text-theme-green"
+                class="group relative cursor-pointer flex w-full items-center rounded-none border-0 py-4 text-left text-lg text-white smooth [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none font-semibold hover:!text-theme-green"
                 type="button"
                 data-twe-collapse-init=""
                 data-twe-collapse-collapsed=""
@@ -789,7 +781,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseFour"
               >
-                04 / Can you increase my follower count?
+                <span class="pr-1 md:pr-0">04 / Can you increase my follower count?</span>
 
                 <span
                   class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&amp;>svg]:h-6 [&amp;>svg]:w-6"
@@ -807,9 +799,9 @@
               aria-labelledby="flush-headingFour"
               data-twe-parent="#accordionFlushExample"
             >
-              <div class="py-4 text-lg text-gray-200 flex max-w-full space-x-4">
+              <div class="py-4 text-lg text-gray-200 md:flex max-w-full md:space-x-4">
                 <img
-                  class="w-4/12"
+                  class="w-full md:w-4/12 mb-2 md:mb-0"
                   src="https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt=""
                 />
@@ -824,9 +816,9 @@
           </div>
           <!-- Q5 -->
           <div>
-            <h2 id="flush-headingFive" class="font-body">
+            <h2 id="flush-headingFive" class="px-2">
               <button
-                class="group relative cursor-pointer flex w-full items-center rounded-none border-0 py-4 text-left text-xl text-white smooth [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none font-semibold hover:!text-theme-green"
+                class="group relative cursor-pointer flex w-full items-center rounded-none border-0 py-4 text-left text-lg text-white smooth [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none font-semibold hover:!text-theme-green"
                 type="button"
                 data-twe-collapse-init=""
                 data-twe-collapse-collapsed=""
@@ -834,7 +826,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseFive"
               >
-                05 / What platforms do you create ads and content for?
+                <span class="pr-1 md:pr-0">05 / What platforms do you create ads and content for?</span>
 
                 <span
                   class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&amp;>svg]:h-6 [&amp;>svg]:w-6"
@@ -852,9 +844,9 @@
               aria-labelledby="flush-headingFive"
               data-twe-parent="#accordionFlushExample"
             >
-              <div class="py-4 text-lg text-gray-200 flex max-w-full space-x-4">
+              <div class="py-4 text-lg text-gray-200 md:flex max-w-full md:space-x-4">
                 <img
-                  class="w-4/12"
+                  class="w-full md:w-4/12 mb-2 md:mb-0"
                   src="https://images.unsplash.com/photo-1704402838523-f3acf8f7ce61?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt=""
                 />
@@ -867,10 +859,10 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="py-24 bg-theme-black">
+    <section id="contact" class="py-10 md:py-24 bg-theme-black">
       <div class="max-w-[2000px] mx-auto">
         <h2
-          class="text-center bg-[url('assets/images/contact-bg-image.png')] bg-center bg-cover bg-no-repeat text-transparent bg-clip-text uppercase font-black leading-[0.9] text-[calc(80vw/4)] tracking-[-8px] wrap-break-word"
+          class="text-center bg-[url('../assets/images/contact-bg-image.png')] bg-center bg-cover bg-no-repeat text-transparent bg-clip-text uppercase font-black leading-[0.9] text-[clamp(104px,calc(80vw/4),_500px)] tracking-[-8px] wrap-break-word"
         >
           Let's Work
         </h2>
@@ -895,10 +887,10 @@
 
     <!-- Footer -->
     <footer class="bg-theme-black text-white pt-20">
-      <div class="max-w-[2000px] mx-auto px-4 space-y-40">
+      <div class="max-w-[2000px] mx-auto px-4 space-y-28 md:space-y-40">
         <!-- Top Row -->
-        <div class="flex justify-between items-center gap-x-8">
-          <h3 class="text-left font-bold w-auto text-[32px] flex-none">Follow Us</h3>
+        <div class="flex flex-col md:flex-row justify-between items-center gap-x-8">
+          <h3 class="text-left font-bold w-auto text-[clamp(32px,_5vw,_40px)] mb-3 md:mb-0 flex-none">Follow Us</h3>
           <ul class="flex items-center justify-around gap-4 w-full">
             <li>
               <a target="_blank" href="https://www.instagram.com/" class="hover:text-theme-green smooth">/ IG</a>
@@ -918,7 +910,7 @@
 
         <!-- Middle Row -->
         <div class="flex flex-wrap justify-between">
-          <div class="w-8/12">
+          <div class="md:w-8/12 w-full">
             <ul class="flex-between w-full gap-y-8 flex-wrap">
               <li class="w-[30%] border-b-2 border-gray-300 pb-2">
                 <a href="#home" class="capitalize hover:text-theme-green transition-colors duration-300 block text-center sm:text-left">
@@ -959,11 +951,11 @@
 
         <!-- Bottom Row -->
         <div class="flex flex-wrap justify-end items-center">
-          <div class="w-3/12">
+          <div class="md:w-3/12 w-full">
             <img src="assets/images/footer-image.png" alt="Footer Image" class="w-full h-auto" />
           </div>
-          <div class="w-9/12 flex justify-end">
-            <img src="assets/images/logo-white.svg" alt="Logo" class="w-9/12 h-auto" />
+          <div class="md:w-9/12 flex justify-end w-full mt-8 md:mt-0 pb-2 md:pb-0">
+            <img src="assets/images/logo-white.svg" alt="Logo" class="md:w-9/12 h-auto w-full" />
           </div>
         </div>
       </div>
