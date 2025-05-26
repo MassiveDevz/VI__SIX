@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>SIX Agency | Portfolio Project</title>
+    <link rel="icon" href="assets/images/favicon.png" />
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
@@ -16,7 +18,7 @@
   </head>
   <body>
     <!-- Header -->
-    <section id="home" class="max-w-[2000px] mx-auto pt-4 px-4 pb-24">
+    <header id="home" class="max-w-[2000px] mx-auto pt-4 px-4 pb-24">
       <div class="w-full">
         <div class="w-full">
           <div class="flex flex-col h-full justify-between">
@@ -25,47 +27,104 @@
                 <!-- <div class="logo self-baseline w-1/2"> -->
                 <img src="assets/images/logo-black.svg" alt="Logo" class="w-full object-cover" />
               </div>
-              <nav class="text-right">
+
+              <!-- Desktop Nav -->
+              <nav class="hidden md:block text-end">
                 <div>
-                  <a href="/" class="block">
-                    <p class="capitalize leading-snug font-medium smooth hover:text-green-500">Home</p>
+                  <a href="index.html">
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">Home</p>
                   </a>
-                  <a href="#about" class="block">
-                    <p class="capitalize leading-snug font-medium smooth hover:text-green-500">About</p>
+                  <a href="index.html#about">
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">About</p>
                   </a>
-                  <a href="#services" class="block">
-                    <p class="capitalize leading-snug font-medium smooth hover:text-green-500">Services</p>
+                  <a href="index.html#services">
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">services</p>
                   </a>
-                  <a href="#portfolio" class="block">
-                    <p class="capitalize leading-snug font-medium smooth hover:text-green-500">Portfolio</p>
+                  <a href="index.html#portfolio">
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">portfolio</p>
                   </a>
-                  <a href="#team" class="block">
-                    <p class="capitalize leading-snug font-medium smooth hover:text-green-500">The Team</p>
+                  <a href="index.html#team">
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">the team</p>
                   </a>
-                  <a href="#contact" class="block">
-                    <p class="capitalize leading-snug font-medium smooth hover:text-green-500">Contact</p>
+                  <a href="index.html#contact">
+                    <p class="uppercase font-semibold smooth hover:text-theme-green">contact</p>
                   </a>
+                </div>
+              </nav>
+
+              <!-- Mobile Nav -->
+              <nav class="relative z-30 md:hidden">
+                <!-- Hamburger Toggle -->
+                <div onclick="handleNav()" class="sticky top-5 right-5 z-40 cursor-pointer">
+                  <!-- Toggle open/close icons (use JS to show/hide) -->
+                  <img src="assets/images/menu-close.png" class="w-6 h-auto hidden" id="menuClose" />
+                  <img src="assets/images/menu-open.png" class="w-6 h-auto" id="menuOpen" />
+                </div>
+
+                <!-- Dropdown Menu -->
+                <div
+                  id="mobileMenu"
+                  class="fixed left-0 -top-[200%] w-full h-full bg-white overflow-hidden opacity-100 z-20 transition-all duration-700 ease-linear"
+                >
+                  <ul class="w-full h-full pt-[40px] flex-column justify-evenly smooth">
+                    <!-- Navigation Links -->
+                    <div class="flex flex-col justify-center items-start w-full text-[32px] px-[8px]">
+                      <a href="index.html" class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium">Home</a>
+                      <a href="index.html#about" class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
+                        >About</a
+                      >
+                      <a href="index.html#services" class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
+                        >Services</a
+                      >
+                      <a href="index.html#portfolio" class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
+                        >Portfolio</a
+                      >
+                      <a href="index.html#team" class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
+                        >The Team</a
+                      >
+                      <a href="index.html#contact" class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
+                        >Contact</a
+                      >
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="w-full flex justify-around items-center text-xl">
+                      <a href="https://www.instagram.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green">/ IG</a>
+                      <a href="https://www.facebook.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green">/ FB</a>
+                      <a href="https://x.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green">/ X</a>
+                      <a href="https://www.tiktok.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green">/ TT</a>
+                      <a href="https://www.youtube.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green">/ YT</a>
+                    </div>
+
+                    <!-- Image Section -->
+                    <div class="w-full max-w-full h-2/5">
+                      <!-- <div class="w-full max-w-full mt-auto"> -->
+                      <img src="assets/images/hero-image.png" alt="Mobile menu image" class="w-full h-full object-cover" />
+                      <!-- <img src="assets/images/hero-image.png" alt="Mobile menu image" class="w-full h-[230px] object-cover" /> -->
+                    </div>
+                  </ul>
                 </div>
               </nav>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </header>
 
     <!-- About -->
     <section class="pb-[100px]">
-      <!-- replace 100px with your $sectionPadding -->
       <div class="max-w-[2000px] mx-auto px-4">
         <!-- Heading -->
         <div class="mb-12">
-          <div class="flex justify-evenly flex-wrap gap-4 mb-10">
-            <p>HQ</p>
-            <p>RocketParts PayFac Solution Playbook &amp; HQ Proposal</p>
-            <p>Prepared by HQ Services, April 7, 2023</p>
+          <div class="md:flex justify-evenly flex-wrap gap-4 mb-10 text-center space-y-2 md:space-y-0">
             <p>(001)</p>
+            <p>RocketParts PayFac Solution Playbook</p>
+            <p>Prepared by (<span class="text-theme-green font-bold">VI</span>)__SIX, April 7, 2025</p>
           </div>
-          <h2 class="text-center mb-10 pb-12 border-b-3 border-gray-300 font-medium uppercase text-[calc(90vw/6)] leading-[0.9]">
+          <h2
+            class="text-center mb-10 pb-12 border-b-3 border-gray-300 font-medium uppercase text-[clamp(64px,calc(90vw/6),_300px)] leading-[0.9]"
+          >
+            <!-- <h2 class="text-center mb-10 pb-12 border-b-3 border-gray-300 font-medium uppercase text-[calc(90vw/6)] leading-[0.9]"> -->
             About this project
           </h2>
         </div>
@@ -75,7 +134,7 @@
           <div class="flex flex-wrap -mx-4">
             <div class="w-full md:w-1/2 px-4 font-semibold">Purpose</div>
             <div class="w-full md:w-1/2 px-4">
-              <p>
+              <p class="font-semibold mt-4 md:mt-0">
                 The goal of our short video marketing efforts is to elevate our client’s social media presence, increase brand awareness,
                 and drive engagement. In this case, we used Reels to showcase the gloves’ features and benefits. By creating captivating
                 reels that highlight key selling points such as durability and performance, and following funny trends that connect with the
@@ -90,32 +149,30 @@
     </section>
 
     <!-- Project Details -->
-    <section class="bg-black text-white py-[your-section-padding]">
+    <section class="bg-black text-white py-10 md:py-24">
       <div class="max-w-[2000px] mx-auto px-4">
         <!-- Heading -->
-        <div class="w-1/2 mx-auto mb-10">
+        <div class="md:w-1/2 mx-auto mb-10">
           <h3 class="text-3xl font-semibold mb-6">Introducing the New Bison Studio Website</h3>
           <div class="flex space-x-6">
-            <p class="text-xs">07.17.2021</p>
-            <!-- <p class="text-xs">Blogs, Marketing</p> -->
+            <p class="text-xs">05.01.2025</p>
           </div>
         </div>
 
         <!-- Main Image -->
-        <div class="max-h-[70vh] overflow-hidden px-6 my-10">
+        <div class="md:max-h-[70vh] overflow-hidden my-10 object-cover">
           <img
             src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
             class="object-cover h-full max-h-[inherit] w-full"
           />
-          <!-- <Image src={horizontal} /> -->
         </div>
 
         <!-- Details -->
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap -mx-4">
-            <div class="w-full md:w-1/4 px-4">
-              <h6 class="pt-3 text-xs w-[70%] border-t-2 border-green-500 font-semibold">Project Details</h6>
+            <div class="w-full md:w-1/4 px-4 pb-4 md:pb-0">
+              <h6 class="pt-3 text-xl w-[70%] border-t-2 border-theme-green font-semibold">Project Details</h6>
             </div>
             <div class="w-full md:w-3/4 px-4">
               <h4 class="mb-6 font-normal">
@@ -123,8 +180,7 @@
                 for contemporary experience and modern creature comforts.
               </h4>
 
-              <div class="mb-12 max-w-3/4">
-                <!-- <h5>New Home. New Service. Bigger Team</h5> -->
+              <div class="mb-12">
                 <p class="pb-8">
                   Along with launching paid advertising campaigns, organic posts have been posted at least once every day, ensuring the
                   business stays active on all social media. This included a mix of static image posts, product highlights, short videos,
@@ -162,26 +218,38 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="py-24 bg-theme-black">
+    <section id="contact" class="py-10 md:py-24 bg-theme-black">
       <div class="max-w-[2000px] mx-auto">
         <h2
-          class="text-center bg-[url('assets/images/contact-bg-image.png')] bg-center bg-cover bg-no-repeat text-transparent bg-clip-text uppercase font-black leading-[0.9] text-[calc(80vw/4)] tracking-[-8px]"
+          class="text-center bg-[url('assets/images/contact-bg-image.png')] bg-center bg-cover bg-no-repeat text-transparent bg-clip-text uppercase font-black leading-[0.9] text-[clamp(104px,calc(80vw/4),_500px)] tracking-[-8px] wrap-break-word"
         >
           Let's Work
         </h2>
         <div class="flex justify-evenly text-white pt-8 container mx-auto">
-          <a class="line" href="/">info@vi__six.com</a>
-          <a class="line" href="/">212 · 555 · 1234</a>
+          <a
+            target="_blank"
+            class="relative pb-0.5 font-semibold after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[3px] after:bg-theme-green after:origin-left after:scale-x-[0.075] after:transition-all after:duration-500 after:ease-out hover:opacity-[0.9] hover:after:scale-x-100"
+            href="mailto:info@vi__six.com"
+          >
+            info@vi__six.com
+          </a>
+          <a
+            target="_blank"
+            class="relative pb-0.5 font-semibold after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[3px] after:bg-theme-green after:origin-left after:scale-x-[0.075] after:transition-all after:duration-500 after:ease-out hover:opacity-[0.9] hover:after:scale-x-100"
+            href="tel:+2125551234"
+          >
+            212 · 555 · 1234
+          </a>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-theme-black text-white pt-20">
-      <div class="max-w-[2000px] mx-auto px-4 space-y-40">
+      <div class="max-w-[2000px] mx-auto px-4 space-y-28 md:space-y-40">
         <!-- Top Row -->
-        <div class="flex justify-between items-center gap-x-8">
-          <h3 class="text-left font-bold w-auto text-[32px] flex-none">Follow Us</h3>
+        <div class="flex flex-col md:flex-row justify-between items-center gap-x-8">
+          <h3 class="text-left font-bold w-auto text-[clamp(32px,_5vw,_40px)] mb-3 md:mb-0 flex-none">Follow Us</h3>
           <ul class="flex items-center justify-around gap-4 w-full">
             <li>
               <a target="_blank" href="https://www.instagram.com/" class="hover:text-theme-green smooth">/ IG</a>
@@ -201,38 +269,53 @@
 
         <!-- Middle Row -->
         <div class="flex flex-wrap justify-between">
-          <div class="w-8/12">
+          <div class="md:w-8/12 w-full">
             <ul class="flex-between w-full gap-y-8 flex-wrap">
               <li class="w-[30%] border-b-2 border-gray-300 pb-2">
-                <a href="#home" class="capitalize hover:text-theme-green transition-colors duration-300 block text-center sm:text-left">
+                <a
+                  href="index.html"
+                  class="capitalize hover:text-theme-green transition-colors duration-300 block text-center sm:text-left"
+                >
                   Home
                 </a>
               </li>
               <li class="w-[30%] border-b-2 border-gray-300 pb-2">
-                <a href="#about" class="capitalize hover:text-theme-green transition-colors duration-300 block text-center sm:text-left">
+                <a
+                  href="index.html#about"
+                  class="capitalize hover:text-theme-green transition-colors duration-300 block text-center sm:text-left"
+                >
                   About
                 </a>
               </li>
               <li class="w-[30%] border-b-2 border-gray-300 pb-2">
-                <a href="#services" class="capitalize hover:text-theme-green transition-colors duration-300 block text-center sm:text-left">
+                <a
+                  href="index.html#services"
+                  class="capitalize hover:text-theme-green transition-colors duration-300 block text-center sm:text-left"
+                >
                   Services
                 </a>
               </li>
               <li class="w-[30%] border-b-2 border-gray-300 pb-2">
                 <a
-                  href="#portfolio"
+                  href="index.html#portfolio"
                   class="capitalize hover:text-theme-green transition-colors duration-300 block text-center sm:text-left"
                 >
                   Portfolio
                 </a>
               </li>
               <li class="w-[30%] border-b-2 border-gray-300 pb-2">
-                <a href="#team" class="capitalize hover:text-theme-green transition-colors duration-300 block text-center sm:text-left">
+                <a
+                  href="index.html#team"
+                  class="capitalize hover:text-theme-green transition-colors duration-300 block text-center sm:text-left"
+                >
                   The Team
                 </a>
               </li>
               <li class="w-[30%] border-b-2 border-gray-300 pb-2">
-                <a href="#contact" class="capitalize hover:text-theme-green transition-colors duration-300 block text-center sm:text-left">
+                <a
+                  href="index.html#contact"
+                  class="capitalize hover:text-theme-green transition-colors duration-300 block text-center sm:text-left"
+                >
                   Book a Call
                 </a>
               </li>
@@ -242,11 +325,11 @@
 
         <!-- Bottom Row -->
         <div class="flex flex-wrap justify-end items-center">
-          <div class="w-3/12">
+          <div class="md:w-3/12 w-full">
             <img src="assets/images/footer-image.png" alt="Footer Image" class="w-full h-auto" />
           </div>
-          <div class="w-9/12 flex justify-end">
-            <img src="assets/images/logo-white.svg" alt="Logo" class="w-9/12 h-auto" />
+          <div class="md:w-9/12 flex justify-end w-full mt-8 md:mt-0 pb-2 md:pb-0">
+            <img src="assets/images/logo-white.svg" alt="Logo" class="md:w-9/12 h-auto w-full" />
           </div>
         </div>
       </div>
