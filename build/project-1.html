@@ -10,103 +10,90 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
-    <!--  -->
-    <!--  -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!--  -->
-    <!--  -->
   </head>
   <body>
     <!-- Header -->
     <header id="home" class="max-w-[2000px] mx-auto pt-4 px-4 pb-24">
       <div class="w-full">
-        <div class="w-full">
-          <div class="flex flex-col h-full justify-between">
-            <div class="flex justify-between items-center">
-              <div class="self-baseline">
+        <div class="flex flex-col h-full justify-between">
+          <div class="flex justify-between items-center">
+            <div class="self-baseline">
+              <a href="index.html"> <img src="assets/images/logo-black.svg" alt="Logo" class="w-30 object-cover" /> </a>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:block text-end">
+              <div>
                 <a href="index.html">
-                  <img src="assets/images/logo-black.svg" alt="Logo" class="w-30 object-cover" />
+                  <p class="uppercase font-semibold smooth hover:text-theme-green">Home</p>
+                </a>
+                <a href="index.html#about">
+                  <p class="uppercase font-semibold smooth hover:text-theme-green">About</p>
+                </a>
+                <a href="index.html#services">
+                  <p class="uppercase font-semibold smooth hover:text-theme-green">services</p>
+                </a>
+                <a href="index.html#portfolio">
+                  <p class="uppercase font-semibold smooth hover:text-theme-green">portfolio</p>
+                </a>
+                <a href="index.html#team">
+                  <p class="uppercase font-semibold smooth hover:text-theme-green">the team</p>
+                </a>
+                <a href="index.html#contact">
+                  <p class="uppercase font-semibold smooth hover:text-theme-green">contact</p>
                 </a>
               </div>
+            </nav>
 
-              <!-- Desktop Nav -->
-              <nav class="hidden md:block text-end">
-                <div>
-                  <a href="index.html">
-                    <p class="uppercase font-semibold smooth hover:text-theme-green">Home</p>
-                  </a>
-                  <a href="index.html#about">
-                    <p class="uppercase font-semibold smooth hover:text-theme-green">About</p>
-                  </a>
-                  <a href="index.html#services">
-                    <p class="uppercase font-semibold smooth hover:text-theme-green">services</p>
-                  </a>
-                  <a href="index.html#portfolio">
-                    <p class="uppercase font-semibold smooth hover:text-theme-green">portfolio</p>
-                  </a>
-                  <a href="index.html#team">
-                    <p class="uppercase font-semibold smooth hover:text-theme-green">the team</p>
-                  </a>
-                  <a href="index.html#contact">
-                    <p class="uppercase font-semibold smooth hover:text-theme-green">contact</p>
-                  </a>
-                </div>
-              </nav>
+            <!-- Mobile Nav -->
+            <nav class="relative z-30 md:hidden">
+              <!-- Hamburger Toggle -->
+              <div onclick="handleNav()" class="sticky top-5 right-5 z-40 cursor-pointer">
+                <!-- Toggle open/close icons (use JS to show/hide) -->
+                <img src="assets/images/menu-close.png" class="w-6 h-auto hidden" id="menuClose" />
+                <img src="assets/images/menu-open.png" class="w-6 h-auto" id="menuOpen" />
+              </div>
 
-              <!-- Mobile Nav -->
-              <nav class="relative z-30 md:hidden">
-                <!-- Hamburger Toggle -->
-                <div onclick="handleNav()" class="sticky top-5 right-5 z-40 cursor-pointer">
-                  <!-- Toggle open/close icons (use JS to show/hide) -->
-                  <img src="assets/images/menu-close.png" class="w-6 h-auto hidden" id="menuClose" />
-                  <img src="assets/images/menu-open.png" class="w-6 h-auto" id="menuOpen" />
-                </div>
+              <!-- Dropdown Menu -->
+              <div
+                id="mobileMenu"
+                class="fixed left-0 -top-[200%] w-full h-full bg-white overflow-hidden opacity-100 z-20 transition-all duration-700 ease-linear"
+              >
+                <ul class="w-full h-full pt-[40px] flex-column justify-evenly smooth">
+                  <!-- Navigation Links -->
+                  <div class="flex flex-col justify-center items-start w-full text-[32px] px-[8px]">
+                    <a href="index.html" class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium">Home</a>
+                    <a href="index.html#about" class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium">About</a>
+                    <a href="index.html#services" class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
+                      >Services</a
+                    >
+                    <a href="index.html#portfolio" class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
+                      >Portfolio</a
+                    >
+                    <a href="index.html#team" class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
+                      >The Team</a
+                    >
+                    <a href="index.html#contact" class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
+                      >Contact</a
+                    >
+                  </div>
 
-                <!-- Dropdown Menu -->
-                <div
-                  id="mobileMenu"
-                  class="fixed left-0 -top-[200%] w-full h-full bg-white overflow-hidden opacity-100 z-20 transition-all duration-700 ease-linear"
-                >
-                  <ul class="w-full h-full pt-[40px] flex-column justify-evenly smooth">
-                    <!-- Navigation Links -->
-                    <div class="flex flex-col justify-center items-start w-full text-[32px] px-[8px]">
-                      <a href="index.html" class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium">Home</a>
-                      <a href="index.html#about" class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
-                        >About</a
-                      >
-                      <a href="index.html#services" class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
-                        >Services</a
-                      >
-                      <a href="index.html#portfolio" class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
-                        >Portfolio</a
-                      >
-                      <a href="index.html#team" class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
-                        >The Team</a
-                      >
-                      <a href="index.html#contact" class="transition-all duration-300 hover:text-theme-green text-[32px] font-medium"
-                        >Contact</a
-                      >
-                    </div>
+                  <!-- Social Links -->
+                  <div class="w-full flex justify-around items-center text-xl">
+                    <a href="https://www.instagram.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green">/ IG</a>
+                    <a href="https://www.facebook.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green">/ FB</a>
+                    <a href="https://x.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green">/ X</a>
+                    <a href="https://www.tiktok.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green">/ TT</a>
+                    <a href="https://www.youtube.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green">/ YT</a>
+                  </div>
 
-                    <!-- Social Links -->
-                    <div class="w-full flex justify-around items-center text-xl">
-                      <a href="https://www.instagram.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green">/ IG</a>
-                      <a href="https://www.facebook.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green">/ FB</a>
-                      <a href="https://x.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green">/ X</a>
-                      <a href="https://www.tiktok.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green">/ TT</a>
-                      <a href="https://www.youtube.com/" target="_blank" class="text-[16px] font-semibold hover:text-theme-green">/ YT</a>
-                    </div>
-
-                    <!-- Image Section -->
-                    <div class="w-full max-w-full h-2/5">
-                      <!-- <div class="w-full max-w-full mt-auto"> -->
-                      <img src="assets/images/hero-image.png" alt="Mobile menu image" class="w-full h-full object-cover" />
-                      <!-- <img src="assets/images/hero-image.png" alt="Mobile menu image" class="w-full h-[230px] object-cover" /> -->
-                    </div>
-                  </ul>
-                </div>
-              </nav>
-            </div>
+                  <!-- Hero Image -->
+                  <div class="w-full max-w-full h-2/5">
+                    <img src="assets/images/hero-image.png" alt="Mobile menu image" class="w-full h-full object-cover" />
+                  </div>
+                </ul>
+              </div>
+            </nav>
           </div>
         </div>
       </div>
@@ -125,12 +112,11 @@
           <h2
             class="text-center mb-10 pb-12 border-b-3 border-gray-300 font-medium uppercase text-[clamp(64px,calc(90vw/6),_300px)] leading-[0.9]"
           >
-            <!-- <h2 class="text-center mb-10 pb-12 border-b-3 border-gray-300 font-medium uppercase text-[calc(90vw/6)] leading-[0.9]"> -->
             About this project
           </h2>
         </div>
 
-        <!-- Copy -->
+        <!-- About Copy -->
         <div>
           <div class="flex flex-wrap -mx-4">
             <div class="w-full md:w-1/2 px-4 font-semibold">Purpose</div>
@@ -162,11 +148,7 @@
 
         <!-- Main Image -->
         <div class="md:max-h-[70vh] overflow-hidden my-10 object-cover">
-          <img
-            src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt=""
-            class="object-cover h-full max-h-[inherit] w-full"
-          />
+          <img src="assets/images/portfolio-project-image1.png" alt="" class="object-cover h-full max-h-[inherit] w-full" />
         </div>
 
         <!-- Details -->
@@ -206,11 +188,7 @@
                   return on ad spend.
                 </p>
 
-                <img
-                  src="https://images.unsplash.com/photo-1498075702571-ecb018f3752d?q=80&w=2078&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                  class="w-full h-full"
-                />
+                <img src="assets/images/portfolio-project-image2.png" alt="" class="w-full h-full" />
               </div>
             </div>
           </div>
@@ -222,7 +200,7 @@
     <section id="contact" class="py-10 md:py-24 bg-theme-black">
       <div class="max-w-[2000px] mx-auto">
         <h2
-          class="text-center bg-[url('assets/images/contact-bg-image.png')] bg-center bg-cover bg-no-repeat text-transparent bg-clip-text uppercase font-black leading-[0.9] text-[clamp(104px,calc(80vw/4),_500px)] tracking-[-8px] wrap-break-word"
+          class="text-center bg-[url('../assets/images/contact-bg-image.png')] bg-center bg-cover bg-no-repeat text-transparent bg-clip-text uppercase font-black leading-[0.9] text-[clamp(104px,calc(80vw/4),_500px)] tracking-[-8px] wrap-break-word"
         >
           Let's Work
         </h2>
