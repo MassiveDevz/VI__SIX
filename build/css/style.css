@@ -597,9 +597,6 @@
   .bg-\[url\(\'\.\.\/assets\/images\/contact-bg-image\.jpeg\'\)\] {
     background-image: url('../assets/images/contact-bg-image.jpeg');
   }
-  .bg-\[url\(\'\.\.\/assets\/images\/contact-bg-image\.png\'\)\] {
-    background-image: url('../assets/images/contact-bg-image.png');
-  }
   .from-black {
     --tw-gradient-from: var(--color-black);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
